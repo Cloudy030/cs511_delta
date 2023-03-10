@@ -1,0 +1,3 @@
+git log generation code
+
+ git log --pretty=format:"%h - %an, %ad : %s" --graph > git-log.txt
