@@ -21,14 +21,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-7gy#qhh=dg_ft6a^uwt(_+%ec6rwp!+ld$ny^p=!i*o@y2@lh='
+SECRET_KEY = 'django-insecure-9x-onx)i5&!a*(j&5ffp$rb3#c_zee(ubp*r^al0mi#rp5kf0!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['questdenmark-machinerepair-8000.codio-box.uk']
+ALLOWED_HOSTS = ['questdenmark-machinerepair-8000.codio-box.uk','localhost','127.0.0.1']
 CSRF_TRUSTED_ORIGINS=['https://questdenmark-machinerepair-8000.codio-box.uk/']
-
 
 # Application definition
 
@@ -39,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'mtco2',
+    'emission.apps.EmissionConfig',
 ]
 
 MIDDLEWARE = [
