@@ -1,3 +1,20 @@
+* 09254a7 - POK NGA HO, Fri Mar 17 16:00:11 2023 +0000 : 4 models country totla emission percapitaemission source
+* 754a7e8 - POK NGA HO, Fri Mar 17 12:34:21 2023 +0000 : rename application to emission
+* b749977 - POK NGA HO, Thu Mar 16 22:57:07 2023 +0000 : startproject configuration mysite 1 application mtco2 with 1 country model
+* 607ec68 - POK NGA HO, Thu Mar 16 16:07:17 2023 +0000 : clear everything before start working readme
+* 34f281b - POK NGA HO, Thu Mar 16 16:06:01 2023 +0000 : clear everything before start working
+*   3132fd5 - POK NGA HO, Fri Mar 10 11:51:33 2023 +0000 : Merge branch 'main' of github.com:Cloudy030/cs511_delta into main
+|\  
+| *   ad6457d - AMALDEV EDAMANA SUDHAKARAN, Fri Mar 10 11:50:04 2023 +0000 : Merge branch 'main' of github.com:Cloudy030/cs511_delta into main
+| |\  
+| * | 599d8ab - AMALDEV EDAMANA SUDHAKARAN, Fri Mar 10 11:49:02 2023 +0000 : Adding files
+* | | 69d0b62 - POK NGA HO, Fri Mar 10 11:51:23 2023 +0000 : data files downloaded from kaggle
+| |/  
+|/|   
+* | eaf2751 - OGUGUA EZEDOZIE, Mon Mar 6 12:20:11 2023 +0000 : jai.html
+* | d7be147 - POK NGA HO, Mon Mar 6 10:54:36 2023 +0000 : commands file for saving git log generation code
+* | 5ac7776 - POK NGA HO, Mon Mar 6 10:52:40 2023 +0000 : git-log generation
+|/  
 * 8721ddd - AMALDEV EDAMANA SUDHAKARAN, Mon Mar 6 10:24:02 2023 +0000 : Test
 * 829ad6c - TASNIM FATEHA, Mon Mar 6 10:16:04 2023 +0000 : this is a tets
 * 5369833 - ESAmaldev, Mon Mar 6 10:10:56 2023 +0000 : Create test.html
