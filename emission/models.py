@@ -11,6 +11,7 @@ class Country(models.Model):
     return f'{self.countryName}, {self.countryCode}'
 
 class TotalEmission(models.Model):
+  id=models.BigAutoField(primary_key=True)
   country_code=models.ForeignKey('emission.Country', on_delete=models.CASCADE, related_name='totalemission')
   year=models.IntegerField()
   total=models.FloatField()
@@ -25,6 +26,7 @@ class TotalEmission(models.Model):
     return f'{self.country_code}, {self.year}, {self.total}, {self.coal}, {self.oil}, {self.gas}, {self.cement}, {self.flaring}, {self.percapita}'
 
 class PerCapitaEmission(models.Model):
+  id=models.BigAutoField(primary_key=True)
   country_code=models.ForeignKey('emission.Country', on_delete=models.CASCADE, related_name='percapitaemission')
   year=models.IntegerField()
   percapita=models.FloatField()  
@@ -38,6 +40,7 @@ class PerCapitaEmission(models.Model):
     return f'{self.country_code}, {self.year}, {self.total}, {self.coal}, {self.oil}, {self.gas}, {self.cement}, {self.flaring}'
 
 class Source(models.Model):
+  id=models.BigAutoField(primary_key=True)
   coal=models.TextField()
   oil=models.TextField()
   gas=models.TextField()

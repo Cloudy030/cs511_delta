@@ -40,7 +40,6 @@ class Command(BaseCommand):
                     gas = float(row[6]),
                     cement = float(row[7]),
                     flaring = float(row[8]),
-                    percapita = float(row[10]),
                 )
                 totalemission.save()
 
@@ -54,7 +53,7 @@ class Command(BaseCommand):
                 percapitaemission = PerCapitaEmission.objects.create(
                     country_code = row[1],
                     year = int(row[2]),
-                    totalpc = float(row[3]),
+                    percapita = float(row[3]),
                     coal = float(row[4]),
                     oil = float(row[5]),
                     gas =float(row[6]),
@@ -78,3 +77,5 @@ class Command(BaseCommand):
                     flaring = row[8],
                 )
                 source.save()
+
+        print("data parsed successfully")
