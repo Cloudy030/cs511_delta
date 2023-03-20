@@ -19,7 +19,7 @@ class TotalEmission(models.Model):
   gas=models.FloatField()
   cement=models.FloatField()
   flaring=models.FloatField()
-  percapita=models.FloatField()
+
 
   def __str__(self):
     return f'{self.country_code}, {self.year}, {self.total}, {self.coal}, {self.oil}, {self.gas}, {self.cement}, {self.flaring}, {self.percapita}'
@@ -27,7 +27,7 @@ class TotalEmission(models.Model):
 class PerCapitaEmission(models.Model):
   country_code=models.ForeignKey('emission.Country', on_delete=models.CASCADE, related_name='percapitaemission')
   year=models.IntegerField()
-  totalpc=models.ForeignKey('emission.TotalEmission', on_delete=models.CASCADE, related_name='totalpercapita')
+  percapita=models.FloatField()  
   coal=models.FloatField()
   oil=models.FloatField()
   gas=models.FloatField()
