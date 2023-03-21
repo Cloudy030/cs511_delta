@@ -1,3 +1,18 @@
+*   f45435d - CHINEDU EZEOKOYE, Tue Mar 21 15:56:14 2023 +0000 : Merge branch 'main' of github.com:Cloudy030/cs511_delta into main
+|\  
+| * 3964baf - OGUGUA EZEDOZIE, Tue Mar 21 14:43:14 2023 +0000 : -a
+* | 7f3d77d - CHINEDU EZEOKOYE, Tue Mar 21 15:55:40 2023 +0000 : db containing parsed data without linked tables
+|/  
+* ab6f35a - CHINEDU EZEOKOYE, Tue Mar 21 14:25:06 2023 +0000 : removed the foreign keys on models.py, modified blank spaces on /data
+* b22bce0 - TASNIM FATEHA, Tue Mar 21 11:14:58 2023 +0000 : Adding view and templates
+* 32bc4f2 - POK NGA HO, Tue Mar 21 10:45:13 2023 +0000 : country.csv
+* 91af3d6 - POK NGA HO, Mon Mar 20 14:27:36 2023 +0000 : migrate 4 models
+* 64ebdd8 - POK NGA HO, Mon Mar 20 14:01:01 2023 +0000 : add index for all models
+* fd084c1 - POK NGA HO, Mon Mar 20 13:36:14 2023 +0000 : add full version of data back
+* 08e1cf6 - CHINEDU EZEOKOYE, Mon Mar 20 13:35:04 2023 +0000 : removed percapita in total table
+* 20ec32e - Chinedu Ezeokoye, Mon Mar 20 12:00:43 2023 +0000 : added parse_csv (unfinshed)
+* d289bb7 - Chinedu Ezeokoye, Mon Mar 20 09:02:35 2023 +0000 : filtered csv files to 25 years range
+* f042d30 - POK NGA HO, Fri Mar 17 16:05:45 2023 +0000 : git log update
 * 09254a7 - POK NGA HO, Fri Mar 17 16:00:11 2023 +0000 : 4 models country totla emission percapitaemission source
 * 754a7e8 - POK NGA HO, Fri Mar 17 12:34:21 2023 +0000 : rename application to emission
 * b749977 - POK NGA HO, Thu Mar 16 22:57:07 2023 +0000 : startproject configuration mysite 1 application mtco2 with 1 country model
