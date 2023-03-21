@@ -1,0 +1,13 @@
+
+.py-1.text-center {
+    background-color: #5ac0d9;
+  }
+
+.my-nav-list .nav-link {
+  color: #5ac0d9;
+}
+
+.my-nav-list .nav-link.active {
+  background-color: #5ac0d9;
+  color: white;
+} 
