@@ -155,32 +155,32 @@ Anguilla,AIA,2018,9.412819,0,9.412819,0,0,0,
 Anguilla,AIA,2019,10.005722,0,10.005722,0,0,0,
 Anguilla,AIA,2020,8.430535,0,8.430535,0,0,0,
 Anguilla,AIA,2021,9.188354,0,9.188354,0,0,0,
-Antarctica,ATA,1996,,,,,,,
-Antarctica,ATA,1997,,,,,,,
-Antarctica,ATA,1998,,,,,,,
-Antarctica,ATA,1999,,,,,,,
-Antarctica,ATA,2000,,,,,,,
-Antarctica,ATA,2001,,,,,,,
-Antarctica,ATA,2002,,,,,,,
-Antarctica,ATA,2003,,,,,,,
-Antarctica,ATA,2004,,,,,,,
-Antarctica,ATA,2005,,,,,,,
-Antarctica,ATA,2006,,,,,,,
-Antarctica,ATA,2007,,,,,,,
-Antarctica,ATA,2008,,,,,,,
-Antarctica,ATA,2009,,,,,,,
-Antarctica,ATA,2010,,,,,,,
-Antarctica,ATA,2011,,,,,,,
-Antarctica,ATA,2012,,,,,,,
-Antarctica,ATA,2013,,,,,,,
-Antarctica,ATA,2014,,,,,,,
-Antarctica,ATA,2015,,,,,,,
-Antarctica,ATA,2016,,,,,,,
-Antarctica,ATA,2017,,,,,,,
-Antarctica,ATA,2018,,,,,,,
-Antarctica,ATA,2019,,,,,,,
-Antarctica,ATA,2020,,,,,,,
-Antarctica,ATA,2021,,,,,,,
+Antarctica,ATA,1996,0,0,0,0,0,0,0
+Antarctica,ATA,1997,0,0,0,0,0,0,0
+Antarctica,ATA,1998,0,0,0,0,0,0,0
+Antarctica,ATA,1999,0,0,0,0,0,0,0
+Antarctica,ATA,2000,0,0,0,0,0,0,0
+Antarctica,ATA,2001,0,0,0,0,0,0,0
+Antarctica,ATA,2002,0,0,0,0,0,0,0
+Antarctica,ATA,2003,0,0,0,0,0,0,0
+Antarctica,ATA,2004,0,0,0,0,0,0,0
+Antarctica,ATA,2005,0,0,0,0,0,0,0
+Antarctica,ATA,2006,0,0,0,0,0,0,0
+Antarctica,ATA,2007,0,0,0,0,0,0,0
+Antarctica,ATA,2008,0,0,0,0,0,0,0
+Antarctica,ATA,2009,0,0,0,0,0,0,0
+Antarctica,ATA,2010,0,0,0,0,0,0,0
+Antarctica,ATA,2011,0,0,0,0,0,0,0
+Antarctica,ATA,2012,0,0,0,0,0,0,0
+Antarctica,ATA,2013,0,0,0,0,0,0,0
+Antarctica,ATA,2014,0,0,0,0,0,0,0
+Antarctica,ATA,2015,0,0,0,0,0,0,0
+Antarctica,ATA,2016,0,0,0,0,0,0,0
+Antarctica,ATA,2017,0,0,0,0,0,0,0
+Antarctica,ATA,2018,0,0,0,0,0,0,0
+Antarctica,ATA,2019,0,0,0,0,0,0,0
+Antarctica,ATA,2020,0,0,0,0,0,0,0
+Antarctica,ATA,2021,0,0,0,0,0,0,0
 Antigua and Barbuda,ATG,1996,3.412132,0,3.412132,0,0,0,
 Antigua and Barbuda,ATG,1997,3.601337,0,3.601337,0,0,0,
 Antigua and Barbuda,ATG,1998,3.736097,0,3.736097,0,0,0,
@@ -675,19 +675,19 @@ Bosnia and Herzegovina,BIH,2018,6.492411,4.882366,1.364476,0.133645,0.111924,0,
 Bosnia and Herzegovina,BIH,2019,6.192254,4.562677,1.393334,0.127559,0.108685,0,
 Bosnia and Herzegovina,BIH,2020,6.308132,4.749921,1.319667,0.128474,0.11007,0,
 Bosnia and Herzegovina,BIH,2021,4.147523,2.535815,1.350757,0.149283,0.111667,0,
-Botswana,BWA,1996,1.741488,1.002745,0.738743,0,,0,
-Botswana,BWA,1997,1.72865,1.049861,0.678789,0,,0,
-Botswana,BWA,1998,2.018222,1.221555,0.796667,0,,0,
-Botswana,BWA,1999,1.867136,0.942232,0.924904,0,,0,
-Botswana,BWA,2000,2.187387,1.188105,0.999281,0,,0,
-Botswana,BWA,2001,2.183515,1.137507,1.046008,0,,0,
-Botswana,BWA,2002,2.214569,1.163414,1.051155,0,,0,
-Botswana,BWA,2003,2.093871,0.986767,1.107104,0,,0,
-Botswana,BWA,2004,2.095026,1.066236,1.02879,0,,0,
-Botswana,BWA,2005,2.162232,1.130478,1.031754,0,,0,
-Botswana,BWA,2006,2.142886,1.08378,1.059106,0,,0,
-Botswana,BWA,2007,2.149621,0.983536,1.166086,0,,0,
-Botswana,BWA,2008,2.243317,0.972895,1.270422,0,,0,
+Botswana,BWA,1996,1.741488,1.002745,0.738743,0,0,0,
+Botswana,BWA,1997,1.72865,1.049861,0.678789,0,0,0,
+Botswana,BWA,1998,2.018222,1.221555,0.796667,0,0,0,
+Botswana,BWA,1999,1.867136,0.942232,0.924904,0,0,0,
+Botswana,BWA,2000,2.187387,1.188105,0.999281,0,0,0,
+Botswana,BWA,2001,2.183515,1.137507,1.046008,0,0,0,
+Botswana,BWA,2002,2.214569,1.163414,1.051155,0,0,0,
+Botswana,BWA,2003,2.093871,0.986767,1.107104,0,0,0,
+Botswana,BWA,2004,2.095026,1.066236,1.02879,0,0,0,
+Botswana,BWA,2005,2.162232,1.130478,1.031754,0,0,0,
+Botswana,BWA,2006,2.142886,1.08378,1.059106,0,0,0,
+Botswana,BWA,2007,2.149621,0.983536,1.166086,0,0,0,
+Botswana,BWA,2008,2.243317,0.972895,1.270422,0,0,0,
 Botswana,BWA,2009,1.881625,0.769653,1.064985,0,0.046988,0,
 Botswana,BWA,2010,2.169218,0.951949,1.169336,0,0.047933,0,
 Botswana,BWA,2011,1.887878,0.670213,1.214977,0,0.002688,0,
@@ -831,18 +831,18 @@ Burkina Faso,BFA,2018,0.242629,0,0.205006,0,0.037623,0,
 Burkina Faso,BFA,2019,0.252788,0,0.2121,0,0.040688,0,
 Burkina Faso,BFA,2020,0.250387,0,0.210778,0,0.039609,0,
 Burkina Faso,BFA,2021,0.257832,0,0.219259,0,0.038573,0,
-Burundi,BDI,1996,0.040776,0.003043,0.037733,0,,0,
-Burundi,BDI,1997,0.042059,0.003048,0.039011,0,,0,
-Burundi,BDI,1998,0.041282,0.002991,0.038291,0,,0,
-Burundi,BDI,1999,0.040908,0.001169,0.039739,0,,0,
-Burundi,BDI,2000,0.042985,0.001146,0.041839,0,,0,
-Burundi,BDI,2001,0.031734,0.00167,0.030064,0,,0,
-Burundi,BDI,2002,0.031962,0.001653,0.030309,0,,0,
-Burundi,BDI,2003,0.023498,0.001068,0.02243,0,,0,
-Burundi,BDI,2004,0.027787,0.001029,0.026758,0,,0,
-Burundi,BDI,2005,0.020827,0.000992,0.019835,0,,0,
-Burundi,BDI,2006,0.023922,0.001914,0.022008,0,,0,
-Burundi,BDI,2007,0.025366,0.001359,0.024007,0,,0,
+Burundi,BDI,1996,0.040776,0.003043,0.037733,0,0,0,
+Burundi,BDI,1997,0.042059,0.003048,0.039011,0,0,0,
+Burundi,BDI,1998,0.041282,0.002991,0.038291,0,0,0,
+Burundi,BDI,1999,0.040908,0.001169,0.039739,0,0,0,
+Burundi,BDI,2000,0.042985,0.001146,0.041839,0,0,0,
+Burundi,BDI,2001,0.031734,0.00167,0.030064,0,0,0,
+Burundi,BDI,2002,0.031962,0.001653,0.030309,0,0,0,
+Burundi,BDI,2003,0.023498,0.001068,0.02243,0,0,0,
+Burundi,BDI,2004,0.027787,0.001029,0.026758,0,0,0,
+Burundi,BDI,2005,0.020827,0.000992,0.019835,0,0,0,
+Burundi,BDI,2006,0.023922,0.001914,0.022008,0,0,0,
+Burundi,BDI,2007,0.025366,0.001359,0.024007,0,0,0,
 Burundi,BDI,2008,0.025229,0.00177,0.023458,0,0,0,
 Burundi,BDI,2009,0.019352,0.001683,0.017669,0,0,0,
 Burundi,BDI,2010,0.032519,0.002007,0.030511,0,0,0,
@@ -961,20 +961,20 @@ Central African Republic,CAF,2018,0.04315,0,0.04315,0,0,0,
 Central African Republic,CAF,2019,0.043608,0,0.043608,0,0,0,
 Central African Republic,CAF,2020,0.040097,0,0.040097,0,0,0,
 Central African Republic,CAF,2021,0.041651,0,0.041651,0,0,0,
-Chad,TCD,1996,0.060555,0,0.060555,0,,0,
-Chad,TCD,1997,0.060486,0,0.060486,0,,0,
-Chad,TCD,1998,0.059885,0,0.059885,0,,0,
-Chad,TCD,1999,0.059675,0,0.059675,0,,0,
-Chad,TCD,2000,0.059003,0,0.059003,0,,0,
-Chad,TCD,2001,0.058787,0,0.058787,0,,0,
-Chad,TCD,2002,0.057623,0,0.057623,0,,0,
-Chad,TCD,2003,0.080879,0,0.080879,0,,0,
-Chad,TCD,2004,0.077751,0,0.077751,0,,0,
-Chad,TCD,2005,0.076539,0,0.076539,0,,0,
-Chad,TCD,2006,0.076351,0,0.076351,0,,0,
-Chad,TCD,2007,0.079617,0,0.079617,0,,0,
-Chad,TCD,2008,0.090125,0,0.090125,0,,0,
-Chad,TCD,2009,0.09434,0,0.09434,0,,0,
+Chad,TCD,1996,0.060555,0,0.060555,0,0,0,
+Chad,TCD,1997,0.060486,0,0.060486,0,0,0,
+Chad,TCD,1998,0.059885,0,0.059885,0,0,0,
+Chad,TCD,1999,0.059675,0,0.059675,0,0,0,
+Chad,TCD,2000,0.059003,0,0.059003,0,0,0,
+Chad,TCD,2001,0.058787,0,0.058787,0,0,0,
+Chad,TCD,2002,0.057623,0,0.057623,0,0,0,
+Chad,TCD,2003,0.080879,0,0.080879,0,0,0,
+Chad,TCD,2004,0.077751,0,0.077751,0,0,0,
+Chad,TCD,2005,0.076539,0,0.076539,0,0,0,
+Chad,TCD,2006,0.076351,0,0.076351,0,0,0,
+Chad,TCD,2007,0.079617,0,0.079617,0,0,0,
+Chad,TCD,2008,0.090125,0,0.090125,0,0,0,
+Chad,TCD,2009,0.09434,0,0.09434,0,0,0,
 Chad,TCD,2010,0.097339,0,0.097339,0,0,0,
 Chad,TCD,2011,0.104767,0,0.104705,0,0.000062,0,
 Chad,TCD,2012,0.09988,0,0.080433,0,0.004197,0.015249,
@@ -1039,32 +1039,32 @@ China,CHN,2018,7.306542,5.163049,1.058857,0.406027,0.555191,0.002365,0.121052
 China,CHN,2019,7.554165,5.305119,1.09696,0.443201,0.581544,0.002677,0.124665
 China,CHN,2020,7.68895,5.337608,1.14232,0.482747,0.602298,0.003592,0.120384
 China,CHN,2021,8.045741,5.579649,1.20159,0.542724,0.598194,0.00328,0.120303
-Christmas Island,CXR,1996,,,,,,,
-Christmas Island,CXR,1997,,,,,,,
-Christmas Island,CXR,1998,,,,,,,
-Christmas Island,CXR,1999,,,,,,,
-Christmas Island,CXR,2000,,,,,,,
-Christmas Island,CXR,2001,,,,,,,
-Christmas Island,CXR,2002,,,,,,,
-Christmas Island,CXR,2003,,,,,,,
-Christmas Island,CXR,2004,,,,,,,
-Christmas Island,CXR,2005,,,,,,,
-Christmas Island,CXR,2006,,,,,,,
-Christmas Island,CXR,2007,,,,,,,
-Christmas Island,CXR,2008,,,,,,,
-Christmas Island,CXR,2009,,,,,,,
-Christmas Island,CXR,2010,,,,,,,
-Christmas Island,CXR,2011,,,,,,,
-Christmas Island,CXR,2012,,,,,,,
-Christmas Island,CXR,2013,,,,,,,
-Christmas Island,CXR,2014,,,,,,,
-Christmas Island,CXR,2015,,,,,,,
-Christmas Island,CXR,2016,,,,,,,
-Christmas Island,CXR,2017,,,,,,,
-Christmas Island,CXR,2018,,,,,,,
-Christmas Island,CXR,2019,,,,,,,
-Christmas Island,CXR,2020,,,,,,,
-Christmas Island,CXR,2021,,,,,,,
+Christmas Island,CXR,1996,0,0,0,0,0,0,0
+Christmas Island,CXR,1997,0,0,0,0,0,0,0
+Christmas Island,CXR,1998,0,0,0,0,0,0,0
+Christmas Island,CXR,1999,0,0,0,0,0,0,0
+Christmas Island,CXR,2000,0,0,0,0,0,0,0
+Christmas Island,CXR,2001,0,0,0,0,0,0,0
+Christmas Island,CXR,2002,0,0,0,0,0,0,0
+Christmas Island,CXR,2003,0,0,0,0,0,0,0
+Christmas Island,CXR,2004,0,0,0,0,0,0,0
+Christmas Island,CXR,2005,0,0,0,0,0,0,0
+Christmas Island,CXR,2006,0,0,0,0,0,0,0
+Christmas Island,CXR,2007,0,0,0,0,0,0,0
+Christmas Island,CXR,2008,0,0,0,0,0,0,0
+Christmas Island,CXR,2009,0,0,0,0,0,0,0
+Christmas Island,CXR,2010,0,0,0,0,0,0,0
+Christmas Island,CXR,2011,0,0,0,0,0,0,0
+Christmas Island,CXR,2012,0,0,0,0,0,0,0
+Christmas Island,CXR,2013,0,0,0,0,0,0,0
+Christmas Island,CXR,2014,0,0,0,0,0,0,0
+Christmas Island,CXR,2015,0,0,0,0,0,0,0
+Christmas Island,CXR,2016,0,0,0,0,0,0,0
+Christmas Island,CXR,2017,0,0,0,0,0,0,0
+Christmas Island,CXR,2018,0,0,0,0,0,0,0
+Christmas Island,CXR,2019,0,0,0,0,0,0,0
+Christmas Island,CXR,2020,0,0,0,0,0,0,0
+Christmas Island,CXR,2021,0,0,0,0,0,0,0
 Colombia,COL,1996,1.631632,0.341569,0.88928,0.279357,0.101822,0.019604,
 Colombia,COL,1997,1.729503,0.329536,0.933097,0.333958,0.103239,0.029672,
 Colombia,COL,1998,1.717188,0.308034,0.931826,0.343182,0.100542,0.033604,
@@ -1429,19 +1429,19 @@ Denmark,DNK,2018,6.021652,1.103162,3.483738,1.123461,0.201111,0.040329,0.069852
 Denmark,DNK,2019,5.340941,0.619126,3.398762,1.038093,0.194828,0.033596,0.056536
 Denmark,DNK,2020,4.85475,0.539483,3.191264,0.822584,0.210613,0.021673,0.069133
 Denmark,DNK,2021,5.052228,0.747621,3.188446,0.816214,0.209584,0.021568,0.068796
-Djibouti,DJI,1996,0.454697,0,0.454697,0,,0,
-Djibouti,DJI,1997,0.493811,0,0.493811,0,,0,
-Djibouti,DJI,1998,0.553618,0,0.553618,0,,0,
-Djibouti,DJI,1999,0.534801,0,0.534801,0,,0,
-Djibouti,DJI,2000,0.493779,0,0.493779,0,,0,
-Djibouti,DJI,2001,0.478648,0,0.478648,0,,0,
-Djibouti,DJI,2002,0.506097,0,0.506097,0,,0,
-Djibouti,DJI,2003,0.522513,0,0.522513,0,,0,
-Djibouti,DJI,2004,0.496967,0,0.496967,0,,0,
-Djibouti,DJI,2005,0.498317,0,0.498317,0,,0,
-Djibouti,DJI,2006,0.484526,0,0.484526,0,,0,
-Djibouti,DJI,2007,0.533595,0,0.533595,0,,0,
-Djibouti,DJI,2008,0.564404,0,0.564404,0,,0,
+Djibouti,DJI,1996,0.454697,0,0.454697,0,0,0,
+Djibouti,DJI,1997,0.493811,0,0.493811,0,0,0,
+Djibouti,DJI,1998,0.553618,0,0.553618,0,0,0,
+Djibouti,DJI,1999,0.534801,0,0.534801,0,0,0,
+Djibouti,DJI,2000,0.493779,0,0.493779,0,0,0,
+Djibouti,DJI,2001,0.478648,0,0.478648,0,0,0,
+Djibouti,DJI,2002,0.506097,0,0.506097,0,0,0,
+Djibouti,DJI,2003,0.522513,0,0.522513,0,0,0,
+Djibouti,DJI,2004,0.496967,0,0.496967,0,0,0,
+Djibouti,DJI,2005,0.498317,0,0.498317,0,0,0,
+Djibouti,DJI,2006,0.484526,0,0.484526,0,0,0,
+Djibouti,DJI,2007,0.533595,0,0.533595,0,0,0,
+Djibouti,DJI,2008,0.564404,0,0.564404,0,0,0,
 Djibouti,DJI,2009,0.508266,0,0.508266,0,0,0,
 Djibouti,DJI,2010,0.562037,0,0.562037,0,0,0,
 Djibouti,DJI,2011,0.504537,0,0.504537,0,0,0,
@@ -1793,32 +1793,32 @@ Finland,FIN,2018,8.303288,3.249484,4.007055,0.799873,0.10909,0.01646,0.121326
 Finland,FIN,2019,7.675732,2.762942,3.908552,0.780621,0.105674,0.011798,0.106145
 Finland,FIN,2020,6.799194,2.14699,3.642148,0.788731,0.103024,0.013806,0.104496
 Finland,FIN,2021,6.792338,2.22024,3.581235,0.770695,0.102902,0.013685,0.10358
-Panama Canal Zone,PCZ,1996,,,,,,,
-Panama Canal Zone,PCZ,1997,,,,,,,
-Panama Canal Zone,PCZ,1998,,,,,,,
-Panama Canal Zone,PCZ,1999,,,,,,,
-Panama Canal Zone,PCZ,2000,,,,,,,
-Panama Canal Zone,PCZ,2001,,,,,,,
-Panama Canal Zone,PCZ,2002,,,,,,,
-Panama Canal Zone,PCZ,2003,,,,,,,
-Panama Canal Zone,PCZ,2004,,,,,,,
-Panama Canal Zone,PCZ,2005,,,,,,,
-Panama Canal Zone,PCZ,2006,,,,,,,
-Panama Canal Zone,PCZ,2007,,,,,,,
-Panama Canal Zone,PCZ,2008,,,,,,,
-Panama Canal Zone,PCZ,2009,,,,,,,
-Panama Canal Zone,PCZ,2010,,,,,,,
-Panama Canal Zone,PCZ,2011,,,,,,,
-Panama Canal Zone,PCZ,2012,,,,,,,
-Panama Canal Zone,PCZ,2013,,,,,,,
-Panama Canal Zone,PCZ,2014,,,,,,,
-Panama Canal Zone,PCZ,2015,,,,,,,
-Panama Canal Zone,PCZ,2016,,,,,,,
-Panama Canal Zone,PCZ,2017,,,,,,,
-Panama Canal Zone,PCZ,2018,,,,,,,
-Panama Canal Zone,PCZ,2019,,,,,,,
-Panama Canal Zone,PCZ,2020,,,,,,,
-Panama Canal Zone,PCZ,2021,,,,,,,
+Panama Canal Zone,PCZ,1996,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,1997,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,1998,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,1999,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,2000,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,2001,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,2002,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,2003,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,2004,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,2005,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,2006,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,2007,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,2008,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,2009,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,2010,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,2011,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,2012,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,2013,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,2014,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,2015,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,2016,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,2017,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,2018,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,2019,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,2020,0,0,0,0,0,0,0
+Panama Canal Zone,PCZ,2021,0,0,0,0,0,0,0
 France,FRA,1996,6.96548,1.131576,4.209741,1.318507,0.143872,0.078333,0.083451
 France,FRA,1997,6.811022,1.057827,4.150875,1.3008,0.137703,0.077088,0.086728
 France,FRA,1998,7.121762,1.225549,4.259977,1.32684,0.146858,0.075357,0.087181
@@ -1845,32 +1845,32 @@ France,FRA,2018,5.017701,0.543988,2.945701,1.318802,0.101048,0.045199,0.062963
 France,FRA,2019,4.912857,0.454883,2.914578,1.340943,0.102304,0.038896,0.061252
 France,FRA,2020,4.342917,0.369525,2.550423,1.241329,0.092963,0.033048,0.055629
 France,FRA,2021,4.741312,0.4475,2.785402,1.326183,0.092889,0.033295,0.056044
-French Equatorial Africa,,1996,,,,,,,
-French Equatorial Africa,,1997,,,,,,,
-French Equatorial Africa,,1998,,,,,,,
-French Equatorial Africa,,1999,,,,,,,
-French Equatorial Africa,,2000,,,,,,,
-French Equatorial Africa,,2001,,,,,,,
-French Equatorial Africa,,2002,,,,,,,
-French Equatorial Africa,,2003,,,,,,,
-French Equatorial Africa,,2004,,,,,,,
-French Equatorial Africa,,2005,,,,,,,
-French Equatorial Africa,,2006,,,,,,,
-French Equatorial Africa,,2007,,,,,,,
-French Equatorial Africa,,2008,,,,,,,
-French Equatorial Africa,,2009,,,,,,,
-French Equatorial Africa,,2010,,,,,,,
-French Equatorial Africa,,2011,,,,,,,
-French Equatorial Africa,,2012,,,,,,,
-French Equatorial Africa,,2013,,,,,,,
-French Equatorial Africa,,2014,,,,,,,
-French Equatorial Africa,,2015,,,,,,,
-French Equatorial Africa,,2016,,,,,,,
-French Equatorial Africa,,2017,,,,,,,
-French Equatorial Africa,,2018,,,,,,,
-French Equatorial Africa,,2019,,,,,,,
-French Equatorial Africa,,2020,,,,,,,
-French Equatorial Africa,,2021,,,,,,,
+French Equatorial Africa,,1996,0,0,0,0,0,0,0
+French Equatorial Africa,,1997,0,0,0,0,0,0,0
+French Equatorial Africa,,1998,0,0,0,0,0,0,0
+French Equatorial Africa,,1999,0,0,0,0,0,0,0
+French Equatorial Africa,,2000,0,0,0,0,0,0,0
+French Equatorial Africa,,2001,0,0,0,0,0,0,0
+French Equatorial Africa,,2002,0,0,0,0,0,0,0
+French Equatorial Africa,,2003,0,0,0,0,0,0,0
+French Equatorial Africa,,2004,0,0,0,0,0,0,0
+French Equatorial Africa,,2005,0,0,0,0,0,0,0
+French Equatorial Africa,,2006,0,0,0,0,0,0,0
+French Equatorial Africa,,2007,0,0,0,0,0,0,0
+French Equatorial Africa,,2008,0,0,0,0,0,0,0
+French Equatorial Africa,,2009,0,0,0,0,0,0,0
+French Equatorial Africa,,2010,0,0,0,0,0,0,0
+French Equatorial Africa,,2011,0,0,0,0,0,0,0
+French Equatorial Africa,,2012,0,0,0,0,0,0,0
+French Equatorial Africa,,2013,0,0,0,0,0,0,0
+French Equatorial Africa,,2014,0,0,0,0,0,0,0
+French Equatorial Africa,,2015,0,0,0,0,0,0,0
+French Equatorial Africa,,2016,0,0,0,0,0,0,0
+French Equatorial Africa,,2017,0,0,0,0,0,0,0
+French Equatorial Africa,,2018,0,0,0,0,0,0,0
+French Equatorial Africa,,2019,0,0,0,0,0,0,0
+French Equatorial Africa,,2020,0,0,0,0,0,0,0
+French Equatorial Africa,,2021,0,0,0,0,0,0,0
 French Guiana,GUF,1996,4.195675,0,4.195675,0,0,0,
 French Guiana,GUF,1997,3.765775,0,3.765775,0,0,0,
 French Guiana,GUF,1998,4.285933,0,4.285933,0,0,0,
@@ -1923,32 +1923,32 @@ French Polynesia,PYF,2018,2.942468,0,2.942468,0,0,0,
 French Polynesia,PYF,2019,2.921743,0,2.921743,0,0,0,
 French Polynesia,PYF,2020,3.061156,0,3.061156,0,0,0,
 French Polynesia,PYF,2021,3.124014,0,3.124014,0,0,0,
-French West Africa,,1996,,,,,,,
-French West Africa,,1997,,,,,,,
-French West Africa,,1998,,,,,,,
-French West Africa,,1999,,,,,,,
-French West Africa,,2000,,,,,,,
-French West Africa,,2001,,,,,,,
-French West Africa,,2002,,,,,,,
-French West Africa,,2003,,,,,,,
-French West Africa,,2004,,,,,,,
-French West Africa,,2005,,,,,,,
-French West Africa,,2006,,,,,,,
-French West Africa,,2007,,,,,,,
-French West Africa,,2008,,,,,,,
-French West Africa,,2009,,,,,,,
-French West Africa,,2010,,,,,,,
-French West Africa,,2011,,,,,,,
-French West Africa,,2012,,,,,,,
-French West Africa,,2013,,,,,,,
-French West Africa,,2014,,,,,,,
-French West Africa,,2015,,,,,,,
-French West Africa,,2016,,,,,,,
-French West Africa,,2017,,,,,,,
-French West Africa,,2018,,,,,,,
-French West Africa,,2019,,,,,,,
-French West Africa,,2020,,,,,,,
-French West Africa,,2021,,,,,,,
+French West Africa,,1996,0,0,0,0,0,0,0
+French West Africa,,1997,0,0,0,0,0,0,0
+French West Africa,,1998,0,0,0,0,0,0,0
+French West Africa,,1999,0,0,0,0,0,0,0
+French West Africa,,2000,0,0,0,0,0,0,0
+French West Africa,,2001,0,0,0,0,0,0,0
+French West Africa,,2002,0,0,0,0,0,0,0
+French West Africa,,2003,0,0,0,0,0,0,0
+French West Africa,,2004,0,0,0,0,0,0,0
+French West Africa,,2005,0,0,0,0,0,0,0
+French West Africa,,2006,0,0,0,0,0,0,0
+French West Africa,,2007,0,0,0,0,0,0,0
+French West Africa,,2008,0,0,0,0,0,0,0
+French West Africa,,2009,0,0,0,0,0,0,0
+French West Africa,,2010,0,0,0,0,0,0,0
+French West Africa,,2011,0,0,0,0,0,0,0
+French West Africa,,2012,0,0,0,0,0,0,0
+French West Africa,,2013,0,0,0,0,0,0,0
+French West Africa,,2014,0,0,0,0,0,0,0
+French West Africa,,2015,0,0,0,0,0,0,0
+French West Africa,,2016,0,0,0,0,0,0,0
+French West Africa,,2017,0,0,0,0,0,0,0
+French West Africa,,2018,0,0,0,0,0,0,0
+French West Africa,,2019,0,0,0,0,0,0,0
+French West Africa,,2020,0,0,0,0,0,0,0
+French West Africa,,2021,0,0,0,0,0,0,0
 Gabon,GAB,1996,4.131914,0,0.882085,0.210172,0.065406,2.974251,
 Gabon,GAB,1997,4.047121,0,0.866461,0.21118,0.068853,2.900626,
 Gabon,GAB,1998,4.096607,0,1.009242,0.190938,0.065701,2.830726,
@@ -2261,20 +2261,20 @@ Guinea-Bissau,GNB,2018,0.161791,0,0.161791,0,0,0,
 Guinea-Bissau,GNB,2019,0.163633,0,0.163633,0,0,0,
 Guinea-Bissau,GNB,2020,0.163398,0,0.163398,0,0,0,
 Guinea-Bissau,GNB,2021,0.170736,0,0.170736,0,0,0,
-Guyana,GUY,1996,2.192844,0,2.192844,0,,0,
-Guyana,GUY,1997,2.391851,0,2.391851,0,,0,
-Guyana,GUY,1998,2.416206,0,2.416206,0,,0,
-Guyana,GUY,1999,2.416842,0,2.416842,0,,0,
-Guyana,GUY,2000,2.302517,0,2.302517,0,,0,
-Guyana,GUY,2001,2.295398,0,2.295398,0,,0,
-Guyana,GUY,2002,2.255294,0,2.255294,0,,0,
-Guyana,GUY,2003,2.442468,0,2.442468,0,,0,
-Guyana,GUY,2004,2.53446,0,2.53446,0,,0,
-Guyana,GUY,2005,2.131721,0,2.131721,0,,0,
-Guyana,GUY,2006,1.990551,0,1.990551,0,,0,
-Guyana,GUY,2007,2.353806,0,2.353806,0,,0,
-Guyana,GUY,2008,2.264038,0,2.264038,0,,0,
-Guyana,GUY,2009,2.540997,0,2.540997,0,,0,
+Guyana,GUY,1996,2.192844,0,2.192844,0,0,0,
+Guyana,GUY,1997,2.391851,0,2.391851,0,0,0,
+Guyana,GUY,1998,2.416206,0,2.416206,0,0,0,
+Guyana,GUY,1999,2.416842,0,2.416842,0,0,0,
+Guyana,GUY,2000,2.302517,0,2.302517,0,0,0,
+Guyana,GUY,2001,2.295398,0,2.295398,0,0,0,
+Guyana,GUY,2002,2.255294,0,2.255294,0,0,0,
+Guyana,GUY,2003,2.442468,0,2.442468,0,0,0,
+Guyana,GUY,2004,2.53446,0,2.53446,0,0,0,
+Guyana,GUY,2005,2.131721,0,2.131721,0,0,0,
+Guyana,GUY,2006,1.990551,0,1.990551,0,0,0,
+Guyana,GUY,2007,2.353806,0,2.353806,0,0,0,
+Guyana,GUY,2008,2.264038,0,2.264038,0,0,0,
+Guyana,GUY,2009,2.540997,0,2.540997,0,0,0,
 Guyana,GUY,2010,2.522903,0,2.522903,0,0,0,
 Guyana,GUY,2011,2.633917,0,2.633917,0,0,0,
 Guyana,GUY,2012,2.634852,0,2.634852,0,0,0,
@@ -2416,7 +2416,7 @@ Iceland,ISL,2017,10.481037,2.017334,8.02785,0.000139,0,0.426266,0.009448
 Iceland,ISL,2018,10.366893,2.025887,7.886053,0.00009,0,0.443303,0.011561
 Iceland,ISL,2019,9.829598,1.895957,7.462608,0.00063,0,0.4521,0.018302
 Iceland,ISL,2020,9.078694,1.820641,6.76371,0.000547,0,0.476923,0.016873
-Iceland,ISL,2021,9.113272,1.802619,6.821205,0.000541,,0.472201,0.016706
+Iceland,ISL,2021,9.113272,1.802619,6.821205,0.000541,0,0.472201,0.016706
 India,IND,1996,0.839232,0.513077,0.247295,0.040423,0.034659,0.003778,
 India,IND,1997,0.856934,0.526493,0.243633,0.045916,0.037331,0.00356,
 India,IND,1998,0.858549,0.513127,0.257375,0.046597,0.038208,0.003243,
@@ -2755,18 +2755,18 @@ Kiribati,KIR,2018,0.539436,0,0.539436,0,0,0,
 Kiribati,KIR,2019,0.530839,0,0.530839,0,0,0,
 Kiribati,KIR,2020,0.550413,0,0.550413,0,0,0,
 Kiribati,KIR,2021,0.555062,0,0.555062,0,0,0,
-Kosovo,KSV,1996,0,,,,,,
-Kosovo,KSV,1997,0,,,,,,
-Kosovo,KSV,1998,0,,,,,,
-Kosovo,KSV,1999,0,,,,,,
-Kosovo,KSV,2000,0,,,,,,
-Kosovo,KSV,2001,0,,,,,,
-Kosovo,KSV,2002,0,,,,,,
-Kosovo,KSV,2003,0,,,,,,
-Kosovo,KSV,2004,0,,,,,,
-Kosovo,KSV,2005,0,,,,,,
-Kosovo,KSV,2006,0,,,,,,
-Kosovo,KSV,2007,0,,,,,,
+Kosovo,KSV,1996,0,0,0,0,0,0,0
+Kosovo,KSV,1997,0,0,0,0,0,0,0
+Kosovo,KSV,1998,0,0,0,0,0,0,0
+Kosovo,KSV,1999,0,0,0,0,0,0,0
+Kosovo,KSV,2000,0,0,0,0,0,0,0
+Kosovo,KSV,2001,0,0,0,0,0,0,0
+Kosovo,KSV,2002,0,0,0,0,0,0,0
+Kosovo,KSV,2003,0,0,0,0,0,0,0
+Kosovo,KSV,2004,0,0,0,0,0,0,0
+Kosovo,KSV,2005,0,0,0,0,0,0,0
+Kosovo,KSV,2006,0,0,0,0,0,0,0
+Kosovo,KSV,2007,0,0,0,0,0,0,0
 Kosovo,KSV,2008,4.096011,3.057786,0.910225,0,0.128,0,
 Kosovo,KSV,2009,4.523266,3.483669,0.93156,0,0.108037,0,
 Kosovo,KSV,2010,4.670542,3.689421,0.891184,0,0.089936,0,
@@ -2807,32 +2807,32 @@ Kuwait,KWT,2018,22.47887,0,11.995994,9.836817,0.266971,0.379089,
 Kuwait,KWT,2019,23.49882,0,12.49659,10.417538,0.27525,0.309442,
 Kuwait,KWT,2020,22.882707,0,12.187947,10.095835,0.280342,0.318584,
 Kuwait,KWT,2021,24.972098,0,12.643539,11.721402,0.287619,0.319538,
-Kuwaiti Oil Fires,,1996,,,,,,,
-Kuwaiti Oil Fires,,1997,,,,,,,
-Kuwaiti Oil Fires,,1998,,,,,,,
-Kuwaiti Oil Fires,,1999,,,,,,,
-Kuwaiti Oil Fires,,2000,,,,,,,
-Kuwaiti Oil Fires,,2001,,,,,,,
-Kuwaiti Oil Fires,,2002,,,,,,,
-Kuwaiti Oil Fires,,2003,,,,,,,
-Kuwaiti Oil Fires,,2004,,,,,,,
-Kuwaiti Oil Fires,,2005,,,,,,,
-Kuwaiti Oil Fires,,2006,,,,,,,
-Kuwaiti Oil Fires,,2007,,,,,,,
-Kuwaiti Oil Fires,,2008,,,,,,,
-Kuwaiti Oil Fires,,2009,,,,,,,
-Kuwaiti Oil Fires,,2010,,,,,,,
-Kuwaiti Oil Fires,,2011,,,,,,,
-Kuwaiti Oil Fires,,2012,,,,,,,
-Kuwaiti Oil Fires,,2013,,,,,,,
-Kuwaiti Oil Fires,,2014,,,,,,,
-Kuwaiti Oil Fires,,2015,,,,,,,
-Kuwaiti Oil Fires,,2016,,,,,,,
-Kuwaiti Oil Fires,,2017,,,,,,,
-Kuwaiti Oil Fires,,2018,,,,,,,
-Kuwaiti Oil Fires,,2019,,,,,,,
-Kuwaiti Oil Fires,,2020,,,,,,,
-Kuwaiti Oil Fires,,2021,,,,,,,
+Kuwaiti Oil Fires,,1996,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,1997,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,1998,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,1999,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,2000,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,2001,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,2002,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,2003,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,2004,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,2005,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,2006,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,2007,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,2008,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,2009,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,2010,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,2011,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,2012,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,2013,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,2014,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,2015,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,2016,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,2017,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,2018,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,2019,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,2020,0,0,0,0,0,0,0
+Kuwaiti Oil Fires,,2021,0,0,0,0,0,0,0
 Kyrgyzstan,KGZ,1996,1.21377,0.397289,0.330551,0.433406,0.052523,0,
 Kyrgyzstan,KGZ,1997,1.176491,0.409827,0.353379,0.35106,0.062225,0,
 Kyrgyzstan,KGZ,1998,1.229529,0.402929,0.354943,0.405976,0.065681,0,
@@ -2937,32 +2937,32 @@ Lebanon,LBN,2018,4.40322,0.105287,3.946711,0,0.351223,0,
 Lebanon,LBN,2019,4.566017,0.108363,4.088639,0,0.369016,0,
 Lebanon,LBN,2020,4.321999,0.087067,3.858163,0,0.376769,0,
 Lebanon,LBN,2021,4.462819,0.077514,4.0038,0,0.381504,0,
-Leeward Islands,,1996,,,,,,,
-Leeward Islands,,1997,,,,,,,
-Leeward Islands,,1998,,,,,,,
-Leeward Islands,,1999,,,,,,,
-Leeward Islands,,2000,,,,,,,
-Leeward Islands,,2001,,,,,,,
-Leeward Islands,,2002,,,,,,,
-Leeward Islands,,2003,,,,,,,
-Leeward Islands,,2004,,,,,,,
-Leeward Islands,,2005,,,,,,,
-Leeward Islands,,2006,,,,,,,
-Leeward Islands,,2007,,,,,,,
-Leeward Islands,,2008,,,,,,,
-Leeward Islands,,2009,,,,,,,
-Leeward Islands,,2010,,,,,,,
-Leeward Islands,,2011,,,,,,,
-Leeward Islands,,2012,,,,,,,
-Leeward Islands,,2013,,,,,,,
-Leeward Islands,,2014,,,,,,,
-Leeward Islands,,2015,,,,,,,
-Leeward Islands,,2016,,,,,,,
-Leeward Islands,,2017,,,,,,,
-Leeward Islands,,2018,,,,,,,
-Leeward Islands,,2019,,,,,,,
-Leeward Islands,,2020,,,,,,,
-Leeward Islands,,2021,,,,,,,
+Leeward Islands,,1996,0,0,0,0,0,0,0
+Leeward Islands,,1997,0,0,0,0,0,0,0
+Leeward Islands,,1998,0,0,0,0,0,0,0
+Leeward Islands,,1999,0,0,0,0,0,0,0
+Leeward Islands,,2000,0,0,0,0,0,0,0
+Leeward Islands,,2001,0,0,0,0,0,0,0
+Leeward Islands,,2002,0,0,0,0,0,0,0
+Leeward Islands,,2003,0,0,0,0,0,0,0
+Leeward Islands,,2004,0,0,0,0,0,0,0
+Leeward Islands,,2005,0,0,0,0,0,0,0
+Leeward Islands,,2006,0,0,0,0,0,0,0
+Leeward Islands,,2007,0,0,0,0,0,0,0
+Leeward Islands,,2008,0,0,0,0,0,0,0
+Leeward Islands,,2009,0,0,0,0,0,0,0
+Leeward Islands,,2010,0,0,0,0,0,0,0
+Leeward Islands,,2011,0,0,0,0,0,0,0
+Leeward Islands,,2012,0,0,0,0,0,0,0
+Leeward Islands,,2013,0,0,0,0,0,0,0
+Leeward Islands,,2014,0,0,0,0,0,0,0
+Leeward Islands,,2015,0,0,0,0,0,0,0
+Leeward Islands,,2016,0,0,0,0,0,0,0
+Leeward Islands,,2017,0,0,0,0,0,0,0
+Leeward Islands,,2018,0,0,0,0,0,0,0
+Leeward Islands,,2019,0,0,0,0,0,0,0
+Leeward Islands,,2020,0,0,0,0,0,0,0
+Leeward Islands,,2021,0,0,0,0,0,0,0
 Lesotho,LSO,1996,0.888311,0.705039,0.183273,0,0,0,
 Lesotho,LSO,1997,0.897156,0.711794,0.185363,0,0,0,
 Lesotho,LSO,1998,0.907863,0.721493,0.18637,0,0,0,
@@ -3119,32 +3119,32 @@ Luxembourg,LUX,2018,15.736909,0.439529,11.915452,2.646612,0.607804,0.000067,0.12
 Luxembourg,LUX,2019,15.729279,0.442609,11.929398,2.593754,0.636791,0.000066,0.126662
 Luxembourg,LUX,2020,12.843474,0.376735,9.42457,2.330852,0.633154,0.000059,0.078105
 Luxembourg,LUX,2021,13.067857,0.327207,9.581352,2.457908,0.624318,0.000058,0.077015
-Macao,MAC,1996,3.480056,0,3.480056,0,,0,
-Macao,MAC,1997,3.613272,0,3.613272,0,,0,
-Macao,MAC,1998,3.718456,0,3.718456,0,,0,
-Macao,MAC,1999,3.564822,0,3.564822,0,,0,
-Macao,MAC,2000,3.775168,0,3.775168,0,,0,
-Macao,MAC,2001,3.838204,0,3.838204,0,,0,
-Macao,MAC,2002,3.373391,0,3.373391,0,,0,
-Macao,MAC,2003,3.311228,0,3.311228,0,,0,
-Macao,MAC,2004,3.605988,0,3.605988,0,,0,
-Macao,MAC,2005,3.741844,0,3.741844,0,,0,
-Macao,MAC,2006,3.226952,0,3.226952,0,,0,
-Macao,MAC,2007,2.644923,0,2.644923,0,,0,
-Macao,MAC,2008,2.140066,0,1.84129,0.298775,,0,
-Macao,MAC,2009,3.481678,0.006747,3.144306,0.330624,,0,
-Macao,MAC,2010,2.215637,0,1.68151,0.534127,,0,
+Macao,MAC,1996,3.480056,0,3.480056,0,0,0,
+Macao,MAC,1997,3.613272,0,3.613272,0,0,0,
+Macao,MAC,1998,3.718456,0,3.718456,0,0,0,
+Macao,MAC,1999,3.564822,0,3.564822,0,0,0,
+Macao,MAC,2000,3.775168,0,3.775168,0,0,0,
+Macao,MAC,2001,3.838204,0,3.838204,0,0,0,
+Macao,MAC,2002,3.373391,0,3.373391,0,0,0,
+Macao,MAC,2003,3.311228,0,3.311228,0,0,0,
+Macao,MAC,2004,3.605988,0,3.605988,0,0,0,
+Macao,MAC,2005,3.741844,0,3.741844,0,0,0,
+Macao,MAC,2006,3.226952,0,3.226952,0,0,0,
+Macao,MAC,2007,2.644923,0,2.644923,0,0,0,
+Macao,MAC,2008,2.140066,0,1.84129,0.298775,0,0,
+Macao,MAC,2009,3.481678,0.006747,3.144306,0.330624,0,0,
+Macao,MAC,2010,2.215637,0,1.68151,0.534127,0,0,
 Macao,MAC,2011,2.563214,0,2.014869,0.250254,0.298091,0,
 Macao,MAC,2012,2.227511,0,1.942763,0,0.284748,0,
 Macao,MAC,2013,2.040935,0,1.667212,0,0.373724,0,
 Macao,MAC,2014,2.51345,0,1.952785,0.188001,0.372664,0,
 Macao,MAC,2015,3.248623,0,2.870507,0.005955,0.37216,0,
-Macao,MAC,2016,2.841452,0,2.812219,0.029233,,0,
-Macao,MAC,2017,3.017909,0,2.491064,0.526846,,0,
-Macao,MAC,2018,1.908008,0,1.63303,0.274978,,0,
-Macao,MAC,2019,1.827437,0,1.44097,0.386467,,0,
-Macao,MAC,2020,1.880563,0,1.492421,0.388142,,0,
-Macao,MAC,2021,1.874101,0,1.51066,0.363442,,0,
+Macao,MAC,2016,2.841452,0,2.812219,0.029233,0,0,
+Macao,MAC,2017,3.017909,0,2.491064,0.526846,0,0,
+Macao,MAC,2018,1.908008,0,1.63303,0.274978,0,0,
+Macao,MAC,2019,1.827437,0,1.44097,0.386467,0,0,
+Macao,MAC,2020,1.880563,0,1.492421,0.388142,0,0,
+Macao,MAC,2021,1.874101,0,1.51066,0.363442,0,0,
 North Macedonia,MKD,1996,5.859163,3.96917,1.79081,0,0.099183,0,
 North Macedonia,MKD,1997,5.277811,3.690994,1.48627,0,0.100547,0,
 North Macedonia,MKD,1998,6.245484,4.774244,1.358347,0.020029,0.092863,0,
@@ -3282,14 +3282,14 @@ Mali,MLI,1999,0.08894,0,0.08894,0,0,0,
 Mali,MLI,2000,0.094867,0,0.094867,0,0,0,
 Mali,MLI,2001,0.100268,0,0.100268,0,0,0,
 Mali,MLI,2002,0.101159,0,0.101159,0,0,0,
-Mali,MLI,2003,0.100935,0,0.100935,0,,0,
-Mali,MLI,2004,0.110334,0,0.110334,0,,0,
-Mali,MLI,2005,0.11036,0,0.11036,0,,0,
-Mali,MLI,2006,0.112688,0,0.112688,0,,0,
-Mali,MLI,2007,0.126983,0,0.126983,0,,0,
-Mali,MLI,2008,0.134462,0,0.134462,0,,0,
-Mali,MLI,2009,0.125524,0,0.125524,0,,0,
-Mali,MLI,2010,0.134487,0,0.134487,0,,0,
+Mali,MLI,2003,0.100935,0,0.100935,0,0,0,
+Mali,MLI,2004,0.110334,0,0.110334,0,0,0,
+Mali,MLI,2005,0.11036,0,0.11036,0,0,0,
+Mali,MLI,2006,0.112688,0,0.112688,0,0,0,
+Mali,MLI,2007,0.126983,0,0.126983,0,0,0,
+Mali,MLI,2008,0.134462,0,0.134462,0,0,0,
+Mali,MLI,2009,0.125524,0,0.125524,0,0,0,
+Mali,MLI,2010,0.134487,0,0.134487,0,0,0,
 Mali,MLI,2011,0.142085,0,0.142085,0,0,0,
 Mali,MLI,2012,0.147539,0,0.147539,0,0,0,
 Mali,MLI,2013,0.161338,0,0.151266,0,0.010072,0,
@@ -3977,32 +3977,32 @@ Oman,OMN,2018,15.769026,0,2.887404,11.468149,0.402309,1.011165,
 Oman,OMN,2019,15.681253,0,2.811703,11.464159,0.39458,1.010811,
 Oman,OMN,2020,15.958578,0,2.493781,12.041041,0.399736,1.02402,
 Oman,OMN,2021,17.916536,0,2.697747,13.787812,0.401763,1.029214,
-Pacific Islands (Palau),,1996,,,,,,,
-Pacific Islands (Palau),,1997,,,,,,,
-Pacific Islands (Palau),,1998,,,,,,,
-Pacific Islands (Palau),,1999,,,,,,,
-Pacific Islands (Palau),,2000,,,,,,,
-Pacific Islands (Palau),,2001,,,,,,,
-Pacific Islands (Palau),,2002,,,,,,,
-Pacific Islands (Palau),,2003,,,,,,,
-Pacific Islands (Palau),,2004,,,,,,,
-Pacific Islands (Palau),,2005,,,,,,,
-Pacific Islands (Palau),,2006,,,,,,,
-Pacific Islands (Palau),,2007,,,,,,,
-Pacific Islands (Palau),,2008,,,,,,,
-Pacific Islands (Palau),,2009,,,,,,,
-Pacific Islands (Palau),,2010,,,,,,,
-Pacific Islands (Palau),,2011,,,,,,,
-Pacific Islands (Palau),,2012,,,,,,,
-Pacific Islands (Palau),,2013,,,,,,,
-Pacific Islands (Palau),,2014,,,,,,,
-Pacific Islands (Palau),,2015,,,,,,,
-Pacific Islands (Palau),,2016,,,,,,,
-Pacific Islands (Palau),,2017,,,,,,,
-Pacific Islands (Palau),,2018,,,,,,,
-Pacific Islands (Palau),,2019,,,,,,,
-Pacific Islands (Palau),,2020,,,,,,,
-Pacific Islands (Palau),,2021,,,,,,,
+Pacific Islands (Palau),,1996,0,0,0,0,0,0,0
+Pacific Islands (Palau),,1997,0,0,0,0,0,0,0
+Pacific Islands (Palau),,1998,0,0,0,0,0,0,0
+Pacific Islands (Palau),,1999,0,0,0,0,0,0,0
+Pacific Islands (Palau),,2000,0,0,0,0,0,0,0
+Pacific Islands (Palau),,2001,0,0,0,0,0,0,0
+Pacific Islands (Palau),,2002,0,0,0,0,0,0,0
+Pacific Islands (Palau),,2003,0,0,0,0,0,0,0
+Pacific Islands (Palau),,2004,0,0,0,0,0,0,0
+Pacific Islands (Palau),,2005,0,0,0,0,0,0,0
+Pacific Islands (Palau),,2006,0,0,0,0,0,0,0
+Pacific Islands (Palau),,2007,0,0,0,0,0,0,0
+Pacific Islands (Palau),,2008,0,0,0,0,0,0,0
+Pacific Islands (Palau),,2009,0,0,0,0,0,0,0
+Pacific Islands (Palau),,2010,0,0,0,0,0,0,0
+Pacific Islands (Palau),,2011,0,0,0,0,0,0,0
+Pacific Islands (Palau),,2012,0,0,0,0,0,0,0
+Pacific Islands (Palau),,2013,0,0,0,0,0,0,0
+Pacific Islands (Palau),,2014,0,0,0,0,0,0,0
+Pacific Islands (Palau),,2015,0,0,0,0,0,0,0
+Pacific Islands (Palau),,2016,0,0,0,0,0,0,0
+Pacific Islands (Palau),,2017,0,0,0,0,0,0,0
+Pacific Islands (Palau),,2018,0,0,0,0,0,0,0
+Pacific Islands (Palau),,2019,0,0,0,0,0,0,0
+Pacific Islands (Palau),,2020,0,0,0,0,0,0,0
+Pacific Islands (Palau),,2021,0,0,0,0,0,0,0
 Pakistan,PAK,1996,0.681598,0.068186,0.365625,0.221538,0.026249,0,
 Pakistan,PAK,1997,0.66361,0.060665,0.349237,0.227959,0.025749,0,
 Pakistan,PAK,1998,0.664994,0.056243,0.361437,0.222605,0.02471,0,
@@ -4263,32 +4263,32 @@ Portugal,PRT,2018,5.000965,1.009599,2.479536,1.100676,0.218747,0.101833,0.090575
 Portugal,PRT,2019,4.627714,0.489787,2.541583,1.18154,0.216241,0.110129,0.088434
 Portugal,PRT,2020,4.058955,0.236056,2.254302,1.164543,0.224278,0.098344,0.081431
 Portugal,PRT,2021,3.964704,0.107059,2.321238,1.132036,0.224454,0.098422,0.081495
-Puerto Rico,PRI,1996,0,,,,,,
-Puerto Rico,PRI,1997,0,,,,,,
-Puerto Rico,PRI,1998,0,,,,,,
-Puerto Rico,PRI,1999,0,,,,,,
-Puerto Rico,PRI,2000,0,,,,,,
-Puerto Rico,PRI,2001,0,,,,,,
-Puerto Rico,PRI,2002,0,,,,,,
-Puerto Rico,PRI,2003,0,,,,,,
-Puerto Rico,PRI,2004,0,,,,,,
-Puerto Rico,PRI,2005,0,,,,,,
-Puerto Rico,PRI,2006,0,,,,,,
-Puerto Rico,PRI,2007,0,,,,,,
-Puerto Rico,PRI,2008,0,,,,,,
-Puerto Rico,PRI,2009,0,,,,,,
-Puerto Rico,PRI,2010,0,,,,,,
-Puerto Rico,PRI,2011,0,,,,,,
-Puerto Rico,PRI,2012,0,,,,,,
-Puerto Rico,PRI,2013,0,,,,,,
-Puerto Rico,PRI,2014,0,,,,,,
-Puerto Rico,PRI,2015,0,,,,,,
-Puerto Rico,PRI,2016,0,,,,,,
-Puerto Rico,PRI,2017,0,,,,,,
-Puerto Rico,PRI,2018,0,,,,,,
-Puerto Rico,PRI,2019,0,,,,,,
-Puerto Rico,PRI,2020,0,,,,,,
-Puerto Rico,PRI,2021,0,,,,,,
+Puerto Rico,PRI,1996,0,0,0,0,0,0,0
+Puerto Rico,PRI,1997,0,0,0,0,0,0,0
+Puerto Rico,PRI,1998,0,0,0,0,0,0,0
+Puerto Rico,PRI,1999,0,0,0,0,0,0,0
+Puerto Rico,PRI,2000,0,0,0,0,0,0,0
+Puerto Rico,PRI,2001,0,0,0,0,0,0,0
+Puerto Rico,PRI,2002,0,0,0,0,0,0,0
+Puerto Rico,PRI,2003,0,0,0,0,0,0,0
+Puerto Rico,PRI,2004,0,0,0,0,0,0,0
+Puerto Rico,PRI,2005,0,0,0,0,0,0,0
+Puerto Rico,PRI,2006,0,0,0,0,0,0,0
+Puerto Rico,PRI,2007,0,0,0,0,0,0,0
+Puerto Rico,PRI,2008,0,0,0,0,0,0,0
+Puerto Rico,PRI,2009,0,0,0,0,0,0,0
+Puerto Rico,PRI,2010,0,0,0,0,0,0,0
+Puerto Rico,PRI,2011,0,0,0,0,0,0,0
+Puerto Rico,PRI,2012,0,0,0,0,0,0,0
+Puerto Rico,PRI,2013,0,0,0,0,0,0,0
+Puerto Rico,PRI,2014,0,0,0,0,0,0,0
+Puerto Rico,PRI,2015,0,0,0,0,0,0,0
+Puerto Rico,PRI,2016,0,0,0,0,0,0,0
+Puerto Rico,PRI,2017,0,0,0,0,0,0,0
+Puerto Rico,PRI,2018,0,0,0,0,0,0,0
+Puerto Rico,PRI,2019,0,0,0,0,0,0,0
+Puerto Rico,PRI,2020,0,0,0,0,0,0,0
+Puerto Rico,PRI,2021,0,0,0,0,0,0,0
 Qatar,QAT,1996,59.83461,0,9.629626,49.684993,0.519991,0,
 Qatar,QAT,1997,66.817851,0,15.292426,51.02799,0.497435,0,
 Qatar,QAT,1998,54.598803,0,19.474166,34.458174,0.666463,0,
@@ -4549,32 +4549,32 @@ Rwanda,RWA,2018,0.102241,0.00117,0.081865,0.007602,0.011604,0,
 Rwanda,RWA,2019,0.14118,0.00143,0.119853,0.007151,0.012746,0,
 Rwanda,RWA,2020,0.126413,0.00136,0.105922,0.006687,0.012445,0,
 Rwanda,RWA,2021,0.130333,0.001428,0.109183,0.00757,0.012153,0,
-Ryukyu Islands,,1996,,,,,,,
-Ryukyu Islands,,1997,,,,,,,
-Ryukyu Islands,,1998,,,,,,,
-Ryukyu Islands,,1999,,,,,,,
-Ryukyu Islands,,2000,,,,,,,
-Ryukyu Islands,,2001,,,,,,,
-Ryukyu Islands,,2002,,,,,,,
-Ryukyu Islands,,2003,,,,,,,
-Ryukyu Islands,,2004,,,,,,,
-Ryukyu Islands,,2005,,,,,,,
-Ryukyu Islands,,2006,,,,,,,
-Ryukyu Islands,,2007,,,,,,,
-Ryukyu Islands,,2008,,,,,,,
-Ryukyu Islands,,2009,,,,,,,
-Ryukyu Islands,,2010,,,,,,,
-Ryukyu Islands,,2011,,,,,,,
-Ryukyu Islands,,2012,,,,,,,
-Ryukyu Islands,,2013,,,,,,,
-Ryukyu Islands,,2014,,,,,,,
-Ryukyu Islands,,2015,,,,,,,
-Ryukyu Islands,,2016,,,,,,,
-Ryukyu Islands,,2017,,,,,,,
-Ryukyu Islands,,2018,,,,,,,
-Ryukyu Islands,,2019,,,,,,,
-Ryukyu Islands,,2020,,,,,,,
-Ryukyu Islands,,2021,,,,,,,
+Ryukyu Islands,,1996,0,0,0,0,0,0,0
+Ryukyu Islands,,1997,0,0,0,0,0,0,0
+Ryukyu Islands,,1998,0,0,0,0,0,0,0
+Ryukyu Islands,,1999,0,0,0,0,0,0,0
+Ryukyu Islands,,2000,0,0,0,0,0,0,0
+Ryukyu Islands,,2001,0,0,0,0,0,0,0
+Ryukyu Islands,,2002,0,0,0,0,0,0,0
+Ryukyu Islands,,2003,0,0,0,0,0,0,0
+Ryukyu Islands,,2004,0,0,0,0,0,0,0
+Ryukyu Islands,,2005,0,0,0,0,0,0,0
+Ryukyu Islands,,2006,0,0,0,0,0,0,0
+Ryukyu Islands,,2007,0,0,0,0,0,0,0
+Ryukyu Islands,,2008,0,0,0,0,0,0,0
+Ryukyu Islands,,2009,0,0,0,0,0,0,0
+Ryukyu Islands,,2010,0,0,0,0,0,0,0
+Ryukyu Islands,,2011,0,0,0,0,0,0,0
+Ryukyu Islands,,2012,0,0,0,0,0,0,0
+Ryukyu Islands,,2013,0,0,0,0,0,0,0
+Ryukyu Islands,,2014,0,0,0,0,0,0,0
+Ryukyu Islands,,2015,0,0,0,0,0,0,0
+Ryukyu Islands,,2016,0,0,0,0,0,0,0
+Ryukyu Islands,,2017,0,0,0,0,0,0,0
+Ryukyu Islands,,2018,0,0,0,0,0,0,0
+Ryukyu Islands,,2019,0,0,0,0,0,0,0
+Ryukyu Islands,,2020,0,0,0,0,0,0,0
+Ryukyu Islands,,2021,0,0,0,0,0,0,0
 Saint Helena,SHN,1996,1.748648,0,1.748648,0,0,0,
 Saint Helena,SHN,1997,1.766067,0,1.766067,0,0,0,
 Saint Helena,SHN,1998,1.784416,0,1.784416,0,0,0,
@@ -4943,28 +4943,28 @@ Somalia,SOM,1996,0.076002,0,0.076002,0,0,0,
 Somalia,SOM,1997,0.069639,0,0.069639,0,0,0,
 Somalia,SOM,1998,0.063667,0,0.063667,0,0,0,
 Somalia,SOM,1999,0.058558,0,0.058558,0,0,0,
-Somalia,SOM,2000,0.055035,0,0.055035,0,,0,
-Somalia,SOM,2001,0.055339,0,0.055339,0,,0,
-Somalia,SOM,2002,0.062292,0,0.062292,0,,0,
-Somalia,SOM,2003,0.060827,0,0.060827,0,,0,
-Somalia,SOM,2004,0.058668,0,0.058668,0,,0,
-Somalia,SOM,2005,0.056707,0,0.056707,0,,0,
-Somalia,SOM,2006,0.055037,0,0.055037,0,,0,
-Somalia,SOM,2007,0.054706,0,0.054706,0,,0,
-Somalia,SOM,2008,0.052504,0,0.052504,0,,0,
-Somalia,SOM,2009,0.050915,0,0.050915,0,,0,
-Somalia,SOM,2010,0.050878,0,0.050878,0,,0,
-Somalia,SOM,2011,0.050086,0,0.050086,0,,0,
-Somalia,SOM,2012,0.048891,0,0.048891,0,,0,
-Somalia,SOM,2013,0.049034,0,0.049034,0,,0,
-Somalia,SOM,2014,0.047351,0,0.047351,0,,0,
-Somalia,SOM,2015,0.045787,0,0.045787,0,,0,
-Somalia,SOM,2016,0.044605,0,0.044605,0,,0,
-Somalia,SOM,2017,0.042891,0,0.042891,0,,0,
-Somalia,SOM,2018,0.041369,0,0.041369,0,,0,
-Somalia,SOM,2019,0.039893,0,0.039893,0,,0,
-Somalia,SOM,2020,0.034968,0,0.034968,0,,0,
-Somalia,SOM,2021,0.035766,0,0.035766,0,,0,
+Somalia,SOM,2000,0.055035,0,0.055035,0,0,0,
+Somalia,SOM,2001,0.055339,0,0.055339,0,0,0,
+Somalia,SOM,2002,0.062292,0,0.062292,0,0,0,
+Somalia,SOM,2003,0.060827,0,0.060827,0,0,0,
+Somalia,SOM,2004,0.058668,0,0.058668,0,0,0,
+Somalia,SOM,2005,0.056707,0,0.056707,0,0,0,
+Somalia,SOM,2006,0.055037,0,0.055037,0,0,0,
+Somalia,SOM,2007,0.054706,0,0.054706,0,0,0,
+Somalia,SOM,2008,0.052504,0,0.052504,0,0,0,
+Somalia,SOM,2009,0.050915,0,0.050915,0,0,0,
+Somalia,SOM,2010,0.050878,0,0.050878,0,0,0,
+Somalia,SOM,2011,0.050086,0,0.050086,0,0,0,
+Somalia,SOM,2012,0.048891,0,0.048891,0,0,0,
+Somalia,SOM,2013,0.049034,0,0.049034,0,0,0,
+Somalia,SOM,2014,0.047351,0,0.047351,0,0,0,
+Somalia,SOM,2015,0.045787,0,0.045787,0,0,0,
+Somalia,SOM,2016,0.044605,0,0.044605,0,0,0,
+Somalia,SOM,2017,0.042891,0,0.042891,0,0,0,
+Somalia,SOM,2018,0.041369,0,0.041369,0,0,0,
+Somalia,SOM,2019,0.039893,0,0.039893,0,0,0,
+Somalia,SOM,2020,0.034968,0,0.034968,0,0,0,
+Somalia,SOM,2021,0.035766,0,0.035766,0,0,0,
 South Africa,ZAF,1996,8.141431,7.257019,0.708654,0.079086,0.096672,0,
 South Africa,ZAF,1997,8.502076,7.359952,0.976985,0.069663,0.095476,0,
 South Africa,ZAF,1998,8.222435,7.105906,0.972412,0.057934,0.086182,0,
@@ -5069,32 +5069,32 @@ Saint Kitts and Nevis,KNA,2018,5.139926,0,5.139926,0,0,0,
 Saint Kitts and Nevis,KNA,2019,5.298793,0,5.298793,0,0,0,
 Saint Kitts and Nevis,KNA,2020,4.530767,0,4.530767,0,0,0,
 Saint Kitts and Nevis,KNA,2021,4.995041,0,4.995041,0,0,0,
-St. Kitts-Nevis-Anguilla,KNA,1996,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,1997,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,1998,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,1999,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,2000,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,2001,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,2002,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,2003,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,2004,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,2005,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,2006,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,2007,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,2008,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,2009,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,2010,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,2011,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,2012,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,2013,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,2014,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,2015,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,2016,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,2017,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,2018,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,2019,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,2020,,,,,,,
-St. Kitts-Nevis-Anguilla,KNA,2021,,,,,,,
+St. Kitts-Nevis-Anguilla,KNA,1996,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,1997,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,1998,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,1999,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,2000,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,2001,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,2002,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,2003,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,2004,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,2005,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,2006,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,2007,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,2008,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,2009,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,2010,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,2011,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,2012,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,2013,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,2014,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,2015,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,2016,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,2017,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,2018,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,2019,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,2020,0,0,0,0,0,0,0
+St. Kitts-Nevis-Anguilla,KNA,2021,0,0,0,0,0,0,0
 Saint Pierre and Miquelon,SPM,1996,10.86053,0,10.86053,0,0,0,
 Saint Pierre and Miquelon,SPM,1997,7.449484,0,7.449484,0,0,0,
 Saint Pierre and Miquelon,SPM,1998,8.66467,0,8.66467,0,0,0,
@@ -5355,12 +5355,12 @@ Thailand,THA,2018,3.966176,0.851829,1.647302,1.142572,0.315852,0.008622,
 Thailand,THA,2019,4.070233,0.876244,1.696994,1.175913,0.312789,0.008293,
 Thailand,THA,2020,3.880599,0.934656,1.551684,1.07902,0.306756,0.008484,
 Thailand,THA,2021,3.889545,0.986674,1.518872,1.080827,0.295402,0.00777,
-Timor-Leste,TLS,1996,0,,,,,,
-Timor-Leste,TLS,1997,0,,,,,,
-Timor-Leste,TLS,1998,0,,,,,,
-Timor-Leste,TLS,1999,0,,,,,,
-Timor-Leste,TLS,2000,0,,,,,,
-Timor-Leste,TLS,2001,0,,,,,,
+Timor-Leste,TLS,1996,0,0,0,0,0,0,0
+Timor-Leste,TLS,1997,0,0,0,0,0,0,0
+Timor-Leste,TLS,1998,0,0,0,0,0,0,0
+Timor-Leste,TLS,1999,0,0,0,0,0,0,0
+Timor-Leste,TLS,2000,0,0,0,0,0,0,0
+Timor-Leste,TLS,2001,0,0,0,0,0,0,0
 Timor-Leste,TLS,2002,0.177231,0,0.177231,0,0,0,
 Timor-Leste,TLS,2003,0.173964,0,0.173964,0,0,0,
 Timor-Leste,TLS,2004,0.185913,0,0.185913,0,0,0,
@@ -5875,11 +5875,11 @@ Viet Nam,VNM,2018,2.889164,1.420792,0.735006,0.195487,0.522971,0.014908,
 Viet Nam,VNM,2019,3.560416,1.998842,0.796989,0.197401,0.551855,0.015329,
 Viet Nam,VNM,2020,3.403044,1.989463,0.675848,0.175673,0.548774,0.013286,
 Viet Nam,VNM,2021,3.344827,2.016234,0.621885,0.140346,0.555266,0.011096,
-Wallis and Futuna Islands,WLF,1996,1.538311,0,1.538311,0,,0,
-Wallis and Futuna Islands,WLF,1997,1.527728,0,1.527728,0,,0,
-Wallis and Futuna Islands,WLF,1998,1.517184,0,1.517184,0,,0,
-Wallis and Futuna Islands,WLF,1999,1.756592,0,1.756592,0,,0,
-Wallis and Futuna Islands,WLF,2000,1.742036,0,1.742036,0,,0,
+Wallis and Futuna Islands,WLF,1996,1.538311,0,1.538311,0,0,0,
+Wallis and Futuna Islands,WLF,1997,1.527728,0,1.527728,0,0,0,
+Wallis and Futuna Islands,WLF,1998,1.517184,0,1.517184,0,0,0,
+Wallis and Futuna Islands,WLF,1999,1.756592,0,1.756592,0,0,0,
+Wallis and Futuna Islands,WLF,2000,1.742036,0,1.742036,0,0,0,
 Wallis and Futuna Islands,WLF,2001,1.726905,0,1.726905,0,0,0,
 Wallis and Futuna Islands,WLF,2002,1.711236,0,1.711236,0,0,0,
 Wallis and Futuna Islands,WLF,2003,1.70634,0,1.70634,0,0,0,
@@ -5979,32 +5979,32 @@ Zimbabwe,ZWE,2018,0.783639,0.476859,0.269709,0,0.03707,0,
 Zimbabwe,ZWE,2019,0.723861,0.448616,0.238148,0,0.037097,0,
 Zimbabwe,ZWE,2020,0.67697,0.428954,0.211664,0,0.036351,0,
 Zimbabwe,ZWE,2021,0.706293,0.451784,0.218894,0,0.035615,0,
-International Transport,XIT,1996,,,,,,,
-International Transport,XIT,1997,,,,,,,
-International Transport,XIT,1998,,,,,,,
-International Transport,XIT,1999,,,,,,,
-International Transport,XIT,2000,,,,,,,
-International Transport,XIT,2001,,,,,,,
-International Transport,XIT,2002,,,,,,,
-International Transport,XIT,2003,,,,,,,
-International Transport,XIT,2004,,,,,,,
-International Transport,XIT,2005,,,,,,,
-International Transport,XIT,2006,,,,,,,
-International Transport,XIT,2007,,,,,,,
-International Transport,XIT,2008,,,,,,,
-International Transport,XIT,2009,,,,,,,
-International Transport,XIT,2010,,,,,,,
-International Transport,XIT,2011,,,,,,,
-International Transport,XIT,2012,,,,,,,
-International Transport,XIT,2013,,,,,,,
-International Transport,XIT,2014,,,,,,,
-International Transport,XIT,2015,,,,,,,
-International Transport,XIT,2016,,,,,,,
-International Transport,XIT,2017,,,,,,,
-International Transport,XIT,2018,,,,,,,
-International Transport,XIT,2019,,,,,,,
-International Transport,XIT,2020,,,,,,,
-International Transport,XIT,2021,,,,,,,
+International Transport,XIT,1996,0,0,0,0,0,0,0
+International Transport,XIT,1997,0,0,0,0,0,0,0
+International Transport,XIT,1998,0,0,0,0,0,0,0
+International Transport,XIT,1999,0,0,0,0,0,0,0
+International Transport,XIT,2000,0,0,0,0,0,0,0
+International Transport,XIT,2001,0,0,0,0,0,0,0
+International Transport,XIT,2002,0,0,0,0,0,0,0
+International Transport,XIT,2003,0,0,0,0,0,0,0
+International Transport,XIT,2004,0,0,0,0,0,0,0
+International Transport,XIT,2005,0,0,0,0,0,0,0
+International Transport,XIT,2006,0,0,0,0,0,0,0
+International Transport,XIT,2007,0,0,0,0,0,0,0
+International Transport,XIT,2008,0,0,0,0,0,0,0
+International Transport,XIT,2009,0,0,0,0,0,0,0
+International Transport,XIT,2010,0,0,0,0,0,0,0
+International Transport,XIT,2011,0,0,0,0,0,0,0
+International Transport,XIT,2012,0,0,0,0,0,0,0
+International Transport,XIT,2013,0,0,0,0,0,0,0
+International Transport,XIT,2014,0,0,0,0,0,0,0
+International Transport,XIT,2015,0,0,0,0,0,0,0
+International Transport,XIT,2016,0,0,0,0,0,0,0
+International Transport,XIT,2017,0,0,0,0,0,0,0
+International Transport,XIT,2018,0,0,0,0,0,0,0
+International Transport,XIT,2019,0,0,0,0,0,0,0
+International Transport,XIT,2020,0,0,0,0,0,0,0
+International Transport,XIT,2021,0,0,0,0,0,0,0
 Global,WLD,1996,4.14743,1.547737,1.655445,0.754658,0.109064,0.042432,0.038094
 Global,WLD,1997,4.114562,1.518254,1.65697,0.747057,0.11195,0.042461,0.03787
 Global,WLD,1998,4.044095,1.457413,1.650735,0.748996,0.110001,0.040127,0.036823
