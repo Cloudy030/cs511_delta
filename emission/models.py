@@ -13,8 +13,7 @@ class Country(models.Model):
 
 class TotalEmission(models.Model):
   id=models.BigAutoField(primary_key=True)
-  # country_id=models.IntegerField()
-  # ('emission.Country', on_delete=models.CASCADE, related_name='totalemission123')
+  country=models.ForeignKey('Country', on_delete=models.CASCADE, null=True)
   year=models.IntegerField()
   total=models.FloatField()
   coal=models.FloatField()
@@ -29,7 +28,7 @@ class TotalEmission(models.Model):
 
 class PerCapitaEmission(models.Model):
   id=models.BigAutoField(primary_key=True)
-  # country_id=models.ForeignKey('emission.Country', on_delete=models.CASCADE, related_name='percapitaemission')
+  country=models.ForeignKey('Country', on_delete=models.CASCADE, null=True)
   year=models.IntegerField()
   percapita=models.FloatField()  
   coal=models.FloatField()

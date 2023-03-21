@@ -12,45 +12,47 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
 
         # Drop the data from the tables to initialise the database, soc we can rerun the files without repitition
-        #Country.objects.all().delete()
-        #TotalEmission.objects.all().delete()
+        Country.objects.all().delete()
+        TotalEmission.objects.all().delete()
         PerCapitaEmission.objects.all().delete()
         Source.objects.all().delete()
         print('tables dropped successfully')
 
-        # # Open the csv data files to parse them into the database
-        # base_dir = Path(__file__).resolve().parent.parent.parent.parent
-        # with open(str(base_dir) + '/data/country.csv', newline='') as f:
-        #     reader = csv.reader(f, delimiter=",")
-        #     next(reader)    # To skip header line
-        #     for row in reader:
-        #         print(row)
+        # Open the csv data files to parse them into the database
+        base_dir = Path(__file__).resolve().parent.parent.parent.parent
+        with open(str(base_dir) + '/data/country.csv', newline='') as f:
+            reader = csv.reader(f, delimiter=",")
+            next(reader)    # To skip header line
+            for row in reader:
+                print(row)
 
-        #         country = Country.objects.create(
-        #             country_name = row[0],
-        #             country_code =row[1],
-        #         )
-        #         country.save()
-        # print('Country Table Parsed Successfully')
+                country = Country.objects.create(
+                    country_name = row[0],
+                    country_code =row[1],
+                )
+                country.save()
+        print('Country Table Parsed Successfully')
 
-        # # Open the csv data files to parse them into the database
-        # base_dir = Path(__file__).resolve().parent.parent.parent.parent
-        # with open(str(base_dir) + '/data/GCB2022v27_MtCO2_flat.csv', newline='') as f:
-        #     reader = csv.reader(f, delimiter=",")
-        #     next(reader)    # To skip header line
-        #     for row in reader:
-        #         print(row)
+        # Open the csv data files to parse them into the database
+        base_dir = Path(__file__).resolve().parent.parent.parent.parent
+        with open(str(base_dir) + '/data/GCB2022v27_MtCO2_flat.csv', newline='') as f:
+            reader = csv.reader(f, delimiter=",")
+            next(reader)    # To skip header line
+            for row in reader:
+                print(row)
 
-        #         totalemission = TotalEmission.objects.create(
-        #             year = int(row[2]),
-        #             total = float(row[3]),
-        #             coal = float(row[4]),
-        #             oil = float(row[5]),
-        #             gas = float(row[6]),
-        #             cement = float(row[7]),
-        #             flaring = float(row[8]),
-        #         )
-        #         totalemission.save()
+                totalemission = TotalEmission.objects.create(
+                    year = int(row[2]),
+                    total = float(row[3]),
+                    coal = float(row[4]),
+                    oil = float(row[5]),
+                    gas = float(row[6]),
+                    cement = float(row[7]),
+                    flaring = float(row[8]),
+                )
+                totalemission.save()
+
+        print('TotalEmission Table Parsed Successfully')
         
         base_dir = Path(__file__).resolve().parent.parent.parent.parent
         with open(str(base_dir) + '/data/GCB2022v27_percapita_flat.csv', newline='') as f:
@@ -70,6 +72,8 @@ class Command(BaseCommand):
                 )
                 percapitaemission.save()
 
+        print('PerCapitaEmission Table Parsed Successfully')
+
         base_dir = Path(__file__).resolve().parent.parent.parent.parent
         with open(str(base_dir) + '/data/GCB2022v27_sources_flat.csv', newline='') as f:
             reader = csv.reader(f, delimiter=",")
@@ -85,5 +89,7 @@ class Command(BaseCommand):
                     flaring = row[8],
                 )
                 source.save()
+
+        print('Source Table Parsed Successfully')
 
         print("data parsed successfully")
