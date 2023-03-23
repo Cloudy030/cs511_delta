@@ -6,8 +6,13 @@
     <h1>DB verification</h1>
     {% for source in sources %}
     <p>
+      {{source.country}} |
+      {{source.year}} |
       {{source.coal}} | 
-      {{source.oil}} 
+      {{source.oil}} | 
+      {{source.gas}} | 
+      {{source.cement}} | 
+      {{source.flaring}} 
       <!-- country, year not available -->
     </p>
     {% endfor %}

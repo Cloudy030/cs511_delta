@@ -7,7 +7,13 @@
     {% for totalemission in totalemissions %}
     <p>
       {{totalemission.country}} | 
-      {{totalemission.year}}
+      {{totalemission.year}} | 
+      {{totalemission.total}} | 
+      {{totalemission.coal}} | 
+      {{totalemission.oil}} |
+      {{totalemission.gas}} |
+      {{totalemission.cement}} | 
+      {{totalemission.flaring}}
     </p>
     {% endfor %}
   </body>

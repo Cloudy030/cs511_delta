@@ -43,6 +43,8 @@ class PerCapitaEmission(models.Model):
 
 class Source(models.Model):
   id=models.BigAutoField(primary_key=True)
+  country=models.ForeignKey('Country', on_delete=models.CASCADE, null=True)
+  year=models.IntegerField()
   coal=models.TextField()
   oil=models.TextField()
   gas=models.TextField()
