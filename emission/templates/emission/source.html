@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Database verification</title>
+  </head>
+  <body>
+    <h1>DB verification</h1>
+    {% for source in sources %}
+    <p>
+      {{source.coal}} | 
+      {{source.oil}} 
+      <!-- country, year not available -->
+    </p>
+    {% endfor %}
+  </body>
+</html>

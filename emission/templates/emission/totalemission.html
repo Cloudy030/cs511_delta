@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Database verification</title>
+  </head>
+  <body>
+    <h1>DB verification</h1>
+    {% for totalemission in totalemissions %}
+    <p>
+      {{totalemission.country}} | 
+      {{totalemission.year}}
+    </p>
+    {% endfor %}
+  </body>
+</html>

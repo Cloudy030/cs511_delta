@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Database verification</title>
+  </head>
+  <body>
+    <h1>DB verification</h1>
+    {% for percapitaemission in percapitaemissions %}
+    <p>
+      {{percapitaemission.country}} | 
+      {{percapitaemission.year}} | 
+      {{percapitaemission.percapita}}
+    </p>
+    {% endfor %}
+  </body>
+</html>

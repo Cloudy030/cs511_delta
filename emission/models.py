@@ -6,10 +6,11 @@ from django.db import models
 class Country(models.Model):
   id=models.BigAutoField(primary_key=True)
   country_name=models.TextField()
-  country_code=models.TextField()
+  # country_code=models.TextField()
 
   def __str__(self):
-    return f'{self.country_name}, {self.country_code}'
+    return f'{self.country_name}'
+    # ', {self.country_code}'
 
 class TotalEmission(models.Model):
   id=models.BigAutoField(primary_key=True)
@@ -24,7 +25,7 @@ class TotalEmission(models.Model):
 
 
   def __str__(self):
-    return f'{self.year}, {self.total}, {self.coal}, {self.oil}, {self.gas}, {self.cement}, {self.flaring}'
+    return f'{self.country}, {self.year}, {self.total}, {self.coal}, {self.oil}, {self.gas}, {self.cement}, {self.flaring}'
 
 class PerCapitaEmission(models.Model):
   id=models.BigAutoField(primary_key=True)
@@ -38,7 +39,7 @@ class PerCapitaEmission(models.Model):
   flaring=models.FloatField()
 
   def __str__(self):
-    return f'{self.year}, {self.percapita}, {self.coal}, {self.oil}, {self.gas}, {self.cement}, {self.flaring}'
+    return f'{self.country}, {self.year}, {self.percapita}, {self.coal}, {self.oil}, {self.gas}, {self.cement}, {self.flaring}'
 
 class Source(models.Model):
   id=models.BigAutoField(primary_key=True)
