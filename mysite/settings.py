@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-9x-onx)i5&!a*(j&5ffp$rb3#c_zee(ubp*r^al0mi#rp5kf0!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['fictionzigzag-plasmatempo-8000.codio-box.uk','questdenmark-machinerepair-8000.codio-box.uk','atlantamedia-shoegermany-8000.codio-box.uk','editionhazard-camelparlor-8000.codio-box.uk','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['fictionzigzag-plasmatempo-8000.codio-box.uk','questdenmark-machinerepair-8000.codio-box.uk','atlantamedia-shoegermany-8000.codio-box.uk','editionhazard-camelparlor-8000.codio-box.uk','yescharlie-aprilflame-8000.codio-box.uk','localhost','127.0.0.1']
 CSRF_TRUSTED_ORIGINS=['https://questdenmark-machinerepair-8000.codio-box.uk/']
 
 # Application definition
@@ -121,6 +121,8 @@ STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
+
+TEST_RUNNER = 'django.test.runner.DiscoverRunner'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
