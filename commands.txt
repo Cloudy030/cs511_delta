@@ -1,3 +1,14 @@
 git log generation code
 
- git log --pretty=format:"%h - %an, %ad : %s" --graph > git-log.txt
+  git log --pretty=format:"%h - %an, %ad : %s" --graph > git-log.txt
+
+every time git commands before git push
+
+  git pull
+    ~ test if your code work
+  git add .
+  git commit -m 'meaningful commit message'
+  git log --pretty=format:"%h - %an, %ad : %s" --graph > git-log.txt
+  git pull
+    ~ make sure is up to date
+  git push

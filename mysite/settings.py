@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-9x-onx)i5&!a*(j&5ffp$rb3#c_zee(ubp*r^al0mi#rp5kf0!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['questdenmark-machinerepair-8000.codio-box.uk','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['fictionzigzag-plasmatempo-8000.codio-box.uk','questdenmark-machinerepair-8000.codio-box.uk','atlantamedia-shoegermany-8000.codio-box.uk','editionhazard-camelparlor-8000.codio-box.uk','localhost','127.0.0.1']
 CSRF_TRUSTED_ORIGINS=['https://questdenmark-machinerepair-8000.codio-box.uk/']
 
 # Application definition
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -51,6 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 ROOT_URLCONF = 'mysite.urls'
 
 TEMPLATES = [
