@@ -19,8 +19,8 @@
 
     <div class="py-1 text-center">
 
-        <a class="p-2 text-muted" href="#">Per capita</a>
-        <a class="p-2 text-muted" href="#">By country</a>
+        <a class="p-2 text-muted" href="{% url 'percapitaemission' %}">Per capita</a>
+        <a class="p-2 text-muted" href="{% url 'country_list' %}">By country</a>
         <a class="p-2 text-muted" href="#">By sector</a>
 
     </div>
@@ -58,13 +58,13 @@ In the navigation menu you also find Country Profiles, so you can see how your c
     <nav class="my-nav">
       <ul class="nav nav-pills flex-row mt-3 my-nav-list">
         <li class="nav-item mr-auto">
-          <a class="nav-link active" href="#">Chart</a>
+          <a class="nav-link" href="#">Chart</a>
         </li>
         <li class="nav-item mr-auto">
           <a class="nav-link" href="#">Map</a>
         </li>
         <li class="nav-item mr-auto">
-          <a class="nav-link" href="#">Table</a>
+          <a class="nav-link" href="{% url 'totalemission' %}">Table</a>
         </li>
       </ul>
     </nav>
