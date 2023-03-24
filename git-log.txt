@@ -1,3 +1,4 @@
+* e1076c7 - TASNIM FATEHA, Fri Mar 24 15:45:33 2023 +0000 : changing Django version to see if it works on render
 * 5b53733 - TASNIM FATEHA, Fri Mar 24 15:12:56 2023 +0000 : Adding requirement.txt and updating settings to deploy in render
 * c4515a8 - POK NGA HO, Fri Mar 24 11:57:13 2023 +0000 : update git commands.txt
 * 0f5a4ea - TASNIM FATEHA, Fri Mar 24 05:10:23 2023 +0000 : Linking file to the menu and designing the table
