@@ -1,4 +1,15 @@
+<<<<<<< HEAD
 *   95d123d - POK NGA HO, Fri Mar 24 15:33:21 2023 +0000 : second merge branch with done database
+=======
+* e1076c7 - TASNIM FATEHA, Fri Mar 24 15:45:33 2023 +0000 : changing Django version to see if it works on render
+* 5b53733 - TASNIM FATEHA, Fri Mar 24 15:12:56 2023 +0000 : Adding requirement.txt and updating settings to deploy in render
+* c4515a8 - POK NGA HO, Fri Mar 24 11:57:13 2023 +0000 : update git commands.txt
+* 0f5a4ea - TASNIM FATEHA, Fri Mar 24 05:10:23 2023 +0000 : Linking file to the menu and designing the table
+* 9bf0f19 - POK NGA HO, Thu Mar 23 14:39:04 2023 +0000 : done all 4 models with parse_csv.py and make data verification templates to confirm data in tables can be shown in html
+* ed58068 - POK NGA HO, Thu Mar 23 11:22:54 2023 +0000 : foreign keys for totalemission, percapitaemission complete using country name, html testing for showing data from different tables
+* 93bcc79 - POK NGA HO, Tue Mar 21 23:22:23 2023 +0000 : successfully parse all tables using parse_csv.py
+*   1bd979a - CHINEDU EZEOKOYE, Tue Mar 21 17:32:51 2023 +0000 : Merge branch 'main' of github.com:Cloudy030/cs511_delta into main
+>>>>>>> origin
 |\  
 | * b2936c9 - POK NGA HO, Fri Mar 24 15:25:16 2023 +0000 : update git log
 | * 5b53733 - TASNIM FATEHA, Fri Mar 24 15:12:56 2023 +0000 : Adding requirement.txt and updating settings to deploy in render
