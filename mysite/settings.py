@@ -26,11 +26,9 @@ SECRET_KEY = 'django-insecure-9x-onx)i5&!a*(j&5ffp$rb3#c_zee(ubp*r^al0mi#rp5kf0!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-<<<<<<< HEAD
-ALLOWED_HOSTS = ['fictionzigzag-plasmatempo-8000.codio-box.uk','questdenmark-machinerepair-8000.codio-box.uk','atlantamedia-shoegermany-8000.codio-box.uk','editionhazard-camelparlor-8000.codio-box.uk','yescharlie-aprilflame-8000.codio-box.uk','localhost','127.0.0.1']
-=======
-ALLOWED_HOSTS = ['fictionzigzag-plasmatempo-8000.codio-box.uk','questdenmark-machinerepair-8000.codio-box.uk','atlantamedia-shoegermany-8000.codio-box.uk','editionhazard-camelparlor-8000.codio-box.uk','localhost','127.0.0.1','delta-emission.onrender.com']
->>>>>>> ba853b34e79279da1364519d3bc7de5b778dc572
+
+ALLOWED_HOSTS = ['fictionzigzag-plasmatempo-8000.codio-box.uk','questdenmark-machinerepair-8000.codio-box.uk','atlantamedia-shoegermany-8000.codio-box.uk','editionhazard-camelparlor-8000.codio-box.uk','yescharlie-aprilflame-8000.codio-box.uk','moneyanimal-tripodcherry-8000.codio-box.uk','localhost','127.0.0.1','delta-emission.onrender.com']
+
 CSRF_TRUSTED_ORIGINS=['https://questdenmark-machinerepair-8000.codio-box.uk/']
 
 # Application definition
