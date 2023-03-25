@@ -77,7 +77,8 @@ class SourceModelTestCase(TestCase):
             oil="CDIAC 2022",
             gas="CDIAC 2022",
             cement="CDIAC 2022",
-            flaring="Andrew cement"
+            flaring="Andrew cement",
+            year=2012
         )
 
         # Check if the Source instance has been successfully created and saved to the database
