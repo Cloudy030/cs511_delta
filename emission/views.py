@@ -16,6 +16,17 @@ def total(request):
 def totalemission(request, format=None):
     totalemissions = TotalEmission.objects.all()
 
+    # Get the year from the request's GET parameters
+    year = request.GET.get('year')
+
+    # Filter the total emissions by year, if year is provided
+    if year:
+        year_emissions = totalemissions.filter(year=year)
+    else:
+        # Retrieve total emissions for the latest year
+        latest_year = TotalEmission.objects.latest('year').year
+        year_emissions = totalemissions.filter(year=latest_year)
+
     # Get the current page number from the request's GET parameters
     page_number = request.GET.get('page')
 
@@ -33,8 +44,12 @@ def totalemission(request, format=None):
         page_obj = paginator.get_page(paginator.num_pages)
 
     if format == 'map':
+        # Create a list of countries and their total emissions for the selected year
+        country_emissions = []
+        for emission in year_emissions:
+            country_emissions.append((emission.country.country_name, emission.total))
         # Render map template
-        return render(request, 'emission/totalemission_map.html', {'totalemissions': totalemissions, 'format': format})
+        return render(request, 'emission/totalemission_map.html', {'country_emissions': country_emissions, 'format': format})
     elif format == 'chart':
         # Render chart template
         return render(request, 'emission/totalemission_chart.html', {'totalemissions': totalemissions, 'format': format})

@@ -1,0 +1,51 @@
+{% extends 'emission/total.html' %}
+
+{% block content %}
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+
+<form method="get">
+    <label for="year">Search by year:</label>
+    <input type="text" id="year" name="year" value="{{ year }}" />
+    <button type="submit">Search</button>
+</form>
+
+<div id="map" style="height: 400px; width: 100%; position: relative;"></div>
+
+<script>
+    // Initialize the map
+    var mymap = L.map('map').setView([0, 0], 2);
+
+    // Add the tile layer (OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1
+    }).addTo(mymap);
+
+    // Loop through the country_emissions list and add markers for each country
+    var country_emissions = {{ country_emissions|safe }};
+    for (var i = 0; i < country_emissions.length; i++) {
+        var country = country_emissions[i][0];
+        var emission = country_emissions[i][1];
+
+        // Use the Mapbox geocoding API to get the latitude and longitude of the country
+        var url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + country + '.json?access_token=pk.eyJ1IjoidGFzbmltMDEzIiwiYSI6ImNsZm9yNDZjbzB2OWQzeG9mMWNqbGlzMzIifQ.CKtq2Eu-lLaI2ff9Fzm1IA';
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                var coordinates = data.features[0].center;
+                var marker = L.marker([coordinates[1], coordinates[0]])
+                    .bindPopup('<b>' + country + '</b><br>Total Emissions: ' + emission + ' metric tons CO2e')
+                    .addTo(mymap);
+            })
+            .catch(error => console.error(error));
+    }
+</script>
+{% endblock %}
