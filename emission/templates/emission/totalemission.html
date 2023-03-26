@@ -35,24 +35,55 @@
     {% else %}
 <p>No total emissions available.</p>
 {% endif %}
-</div>
 
-<div class="pagination">
-  <span class="step-links">
+
+<div class="pagination my-5">
+  <ul class="pagination justify-content-center">
     {% if page_obj.has_previous %}
-        <a href="?page=1">&laquo; first</a>
-        <a href="?page={{ page_obj.previous_page_number }}">&lsaquo; previous</a>
+      <li class="page-item">
+        <a class="page-link" href="?page=1">&laquo; First</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="?page={{ page_obj.previous_page_number }}">&lsaquo; Previous</a>
+      </li>
+    {% else %}
+      <li class="page-item disabled">
+        <span class="page-link">&laquo; First</span>
+      </li>
+      <li class="page-item disabled">
+        <span class="page-link">&lsaquo; Previous</span>
+      </li>
     {% endif %}
 
-    <span class="current-page">
-        Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
-    </span>
+    {% for num in page_obj.paginator.page_range %}
+      {% if page_obj.number == num %}
+        <li class="page-item active">
+          <span class="page-link">{{ num }} <span class="sr-only">(current)</span></span>
+        </li>
+      {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+        <li class="page-item">
+          <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
 
     {% if page_obj.has_next %}
-        <a href="?page={{ page_obj.next_page_number }}">next &rsaquo;</a>
-        <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+      <li class="page-item">
+        <a class="page-link" href="?page={{ page_obj.next_page_number }}">Next &rsaquo;</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="?page={{ page_obj.paginator.num_pages }}">Last &raquo;</a>
+      </li>
+    {% else %}
+      <li class="page-item disabled">
+        <span class="page-link">Next &rsaquo;</span>
+      </li>
+      <li class="page-item disabled">
+        <span class="page-link">Last &raquo;</span>
+      </li>
     {% endif %}
-  </span>
+  </ul>
 </div>
 
+</div>
 {% endblock %}
