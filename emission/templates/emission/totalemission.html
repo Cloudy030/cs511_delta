@@ -1,9 +1,9 @@
 {% extends 'emission/total.html' %}
 
 {% block table %}
-{% if totalemissions %}
-<div class="table-responsive" style="overflow-x: auto;">
-    <table>
+{% if page_obj %}
+<div class="table-responsive">
+    <table class="my-table">
       <thead>
         <tr>
           <th>Country</th>
@@ -17,22 +17,42 @@
         </tr>
       </thead>
       <tbody>
-        {% for totalemission in totalemissions %}
-        <tr>
-          <td>{{totalemission.country}}</td>
-          <td>{{totalemission.year}}</td>
-          <td>{{totalemission.total}}</td>
-          <td>{{totalemission.coal}}</td>
-          <td>{{totalemission.oil}}</td>
-          <td>{{totalemission.gas}}</td>
-          <td>{{totalemission.cement}}</td>
-          <td>{{totalemission.flaring}}</td>
-        </tr>
-        {% endfor %}
+        {% for totalemission in page_obj %}
+  <tr>
+    <td>{{totalemission.country}}</td>
+    <td>{{totalemission.year}}</td>
+    <td>{{totalemission.total}}</td>
+    <td>{{totalemission.coal}}</td>
+    <td>{{totalemission.oil}}</td>
+    <td>{{totalemission.gas}}</td>
+    <td>{{totalemission.cement}}</td>
+    <td>{{totalemission.flaring}}</td>
+  </tr>
+{% endfor %}
+
       </tbody>
     </table>
     {% else %}
 <p>No total emissions available.</p>
 {% endif %}
 </div>
+
+<div class="pagination">
+  <span class="step-links">
+    {% if page_obj.has_previous %}
+        <a href="?page=1">&laquo; first</a>
+        <a href="?page={{ page_obj.previous_page_number }}">&lsaquo; previous</a>
+    {% endif %}
+
+    <span class="current-page">
+        Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+    </span>
+
+    {% if page_obj.has_next %}
+        <a href="?page={{ page_obj.next_page_number }}">next &rsaquo;</a>
+        <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+    {% endif %}
+  </span>
+</div>
+
 {% endblock %}

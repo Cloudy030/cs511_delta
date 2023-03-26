@@ -102,7 +102,7 @@ to {background-position: -100px 0px;background-size:2750px;}
   margin-right: 1rem;
 }
 
-.table-responsive {
+.my-table {
   max-width: 100%;
   overflow-x: auto;
 }
