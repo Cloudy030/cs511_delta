@@ -69,7 +69,7 @@ python3 manage.py runserver
 
 For starting the server in Codio, run the following command in Codio terminal:
 ~~~
-pythonr manage.py runserver 0.0.0.0:8000
+python3 manage.py runserver 0.0.0.0:8000
 ~~~
 
 ## Maintenance
