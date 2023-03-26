@@ -36,3 +36,74 @@ th {
 tr:nth-child(even) {
         background-color: #f9f9f9;
       }
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+body  {
+    background-image: url('pollution-gfa2421106_1920.jpg');
+
+  background-size:cover;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;              
+}
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+}
+
+
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.center h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-family: 'Source Code Pro', monospace;
+  text-transform: uppercase;
+}
+
+.center form {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.center form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.center form input {
+  margin-right: 1rem;
+}
+
+.table-responsive {
+  max-width: 100%;
+  overflow-x: auto;
+}
+

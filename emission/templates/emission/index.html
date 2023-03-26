@@ -10,72 +10,55 @@
 
 <body>
 
-<div class="bg-info-subtle">
-    <header class="py-3">
-        <div class="text-center">
-          <h1>Global CO2 emissions from fossil fuels</h1>
-        </div>
-    </header>
-
-    <div class="py-1 text-center">
-
-        <a class="p-2 text-muted" href="{% url 'percapitaemission' %}">Per capita</a>
-        <a class="p-2 text-muted" href="{% url 'country_list' %}">By country</a>
-        <a class="p-2 text-muted" href="#">By sector</a>
-
-    </div>
-  </div>
-
-
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-6 blog-main">
-          <div class="blog-post py-5">
-
-                  <p>
-Carbon dioxide emissions are the primary driver of global climate change. It’s widely recognised that to avoid the worst impacts of climate change, the world needs to urgently reduce emissions. But, how this responsibility is shared between regions, countries, and individuals has been an endless point of contention in international discussions.
-
-This debate arises from the various ways in which emissions are compared: as annual emissions by country; emissions per person; historical contributions; and whether they adjust for traded goods and services. These metrics can tell very different stories.
-
-We teamed up with the YouTube channel, Kurzgesagt, to produce a video which explored these different metrics in detail: ‘Who is responsible for climate change? – Who needs to fix it?’. All of the data and research featured in this video is contained in this article: below we look in detail at the many ways emissions are broken down.
-
-Co2 kurzgesagt
- ‘Who is responsible for climate change? – Who needs to fix it?’
-We teamed up with YouTube channel Kurzgesagt to make a video on comparisons of CO2 emissions.
-This page is just one in our collection of work on CO2 and Greenhouse Gas Emissions. The rest can be explored via the navigation menu at the top of this page. There you can explore emissions of other greenhouse gases; where our emissions come from; what trajectories of future emissions look like; and what is driving emissions across the world.
-
-In the navigation menu you also find Country Profiles, so you can see how your country is doing in reducing emissions, and our CO2 Data Explorer where you can browse all of these metrics in one place.
-
-      </p>
-          </div><!-- /.blog-post -->
-
-        </div><!-- /.blog-main -->
-
-<aside class="col-md-6 blog-sidebar py-5">
-  <div class="p-5 bg-light rounded" style="height: 570px; font-size: 16px;">
-    <h4 class="font-italic">Annual CO2 emissions</h4>
-    <nav class="my-nav">
-      <ul class="nav nav-pills flex-row mt-3 my-nav-list">
-        <li class="nav-item mr-auto">
-          <a class="nav-link" href="#">Chart</a>
-        </li>
-        <li class="nav-item mr-auto">
-          <a class="nav-link" href="#">Map</a>
-        </li>
-        <li class="nav-item mr-auto">
-          <a class="nav-link" href="{% url 'totalemission' %}">Table</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</aside>
-
-
-
-
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">CO2 Emissions</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'percapitaemission' %}">Per Capita Emission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'total' %}">Total Emission</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
+
+<div class="center">
+  <div class="row mb-3">
+    <div class="col">
+      <h1>Global fossil CO2 emissions</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <form>
+        <div class="mb-3 d-inline-block">
+          <label for="country" class="form-label">Country:</label>
+          <input type="text" class="form-control" id="country">
+        </div>
+        <div class="mb-3 d-inline-block">
+          <label for="type" class="form-label">Type:</label>
+          <input type="text" class="form-control" id="type">
+        </div>
+        <div class="mb-3 d-inline-block">
+          <label for="sector" class="form-label">Sector:</label>
+          <input type="text" class="form-control" id="sector">
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+    </div>
+  </div>
+</div>
+
 
 </body>
 </html>

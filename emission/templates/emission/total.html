@@ -17,13 +17,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'index' %}">Home</a>
+            <a class="nav-link"href="{% url 'index' %}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{% url 'percapitaemission' %}">Per Capita Emission</a>
+            <a class="nav-link" href="{% url 'percapitaemission' %}">Per Capita Emission</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'totalemission' %}">Total Emission</a>
+            <a class="nav-link active"  aria-current="page"  href="{% url 'totalemission' %}">Total Emission</a>
           </li>
         </ul>
       </div>
@@ -55,6 +55,7 @@
 
 <aside class="col-md-6 blog-sidebar py-5">
 <div class="p-5 bg-light rounded position-relative" style="height: 570px;font-size: 16px;">
+
   <h4 class="font-italic">Annual CO2 emissions</h4>
   <nav class="my-nav">
     <ul class="nav nav-pills flex-row mt-3 my-nav-list">
@@ -66,30 +67,15 @@
       </li>
       <li class="nav-item mr-auto">
         <a class="nav-link" href="{% url 'totalemission' %}">Table</a>
+    {% block table %}
+    {% endblock %}
       </li>
     </ul>
   </nav>
 </div>
 
 </aside>
-
-
-
-
       </div>
     </div>
-    <h1>DB verification</h1>
-    {% for percapitaemission in percapitaemissions %}
-    <p>
-      {{percapitaemission.country}} | 
-      {{percapitaemission.year}} | 
-      {{percapitaemission.percapita}} | 
-      {{percapitaemission.coal}} | 
-      {{percapitaemission.oil}} |
-      {{percapitaemission.gas}} |
-      {{percapitaemission.cement}} | 
-      {{percapitaemission.flaring}}
-    </p>
-    {% endfor %}
   </body>
 </html>
