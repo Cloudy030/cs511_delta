@@ -90,31 +90,34 @@ class SourceModelTestCase(TestCase):
         self.assertEqual(source.cement, "CDIAC 2022")
         self.assertEqual(source.flaring, "Andrew cement")
 
-
+#Test cases for views.
 class ViewTestCase(TestCase):
+    #Test for index page.
     def test_index(self):
         response = self.client.get('')
         self.assertTemplateUsed(response, 'emission/index.html')
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "Global")
 
-
+    #Test for country page.
     def test_country_list(self):
         response = self.client.get('/country_list')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'emission/country.html')
 
-    
+    #Test for Total emission page.
     def test_total(self):
         response = self.client.get('/total/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'emission/total.html')
         
+    #Test for emission source page.
     def test_source(self):
         response = self.client.get('/source')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'emission/source.html')
 
+    #Test for percapita emission page.
     def test_percapitaemission(self):
         response = self.client.get('/percapitaemission')
         self.assertEqual(response.status_code, 200)
