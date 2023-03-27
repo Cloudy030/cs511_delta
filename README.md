@@ -115,7 +115,7 @@ This is a production of Team Delta in March 2023.
 ### Team Delta
 - Amaldev Edamana Sudhakaran (ESAmadev)
 - Chinedu Ezeokoye (dunchee)
-- Ogugua Ezedozie (Ogugua Ezedozie)
+- Ogugua Ezedozie (Gugusjay)
 - Pok Nga Ho (Cloudy0303)
 - Tasnim Fateha (Tasnim Fetcha)
 - Zishuo Liu (dingzhen00)
