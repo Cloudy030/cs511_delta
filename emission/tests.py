@@ -1,6 +1,7 @@
 # test for models
-from django.test import TestCase
+from django.test import TestCase, Client
 from .models import Country, TotalEmission, PerCapitaEmission, Source
+from django.urls import reverse
 
 class CountryModelTestCase(TestCase):
     def test_country_creation(self):
@@ -88,4 +89,39 @@ class SourceModelTestCase(TestCase):
         self.assertEqual(source.gas, "CDIAC 2022")
         self.assertEqual(source.cement, "CDIAC 2022")
         self.assertEqual(source.flaring, "Andrew cement")
+
+
+class ViewTestCase(TestCase):
+    def test_index(self):
+        response = self.client.get('')
+        self.assertTemplateUsed(response, 'emission/index.html')
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "Global")
+
+
+    def test_country_list(self):
+        response = self.client.get('/country_list')
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'emission/country.html')
+
+    
+    def test_total(self):
+        response = self.client.get('/total/')
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'emission/total.html')
+        
+    def test_source(self):
+        response = self.client.get('/source')
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'emission/source.html')
+
+    def test_percapitaemission(self):
+        response = self.client.get('/percapitaemission')
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'emission/percapitaemission.html')
+
+        
+
+
+   
 
