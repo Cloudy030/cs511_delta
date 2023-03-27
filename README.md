@@ -78,6 +78,11 @@ At most two websites can be opened at once from the Render deployed link.
 The number of rows of data in the three data csv files can be increased and include data from more number of years.
 However, the server ability on Render should also be considered when doing such decision.
 
+Generate git log using the following command:
+~~~
+git log --pretty=format:"%h - %an, %ad : %s" --graph > git-log.txt
+~~~
+
 ## Testing
 Django tests for model setup and data input are used.
 Random data objects are created to be passed into the model in testing database for testing.
@@ -90,7 +95,7 @@ python3 manage.py test
 ## Documents
 Git-log: git.log.txt
 
-Submission report: ?
+One page design and development report: ?
 
 ## License
 MIT License

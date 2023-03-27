@@ -1,3 +1,4 @@
+* fa27e09 - POK NGA HO, Sun Mar 26 18:30:48 2023 +0000 : readme fix typo
 * 0a487b7 - POK NGA HO, Sun Mar 26 18:29:04 2023 +0000 : readme update
 * 1592ce2 - POK NGA HO, Sun Mar 26 16:15:27 2023 +0000 : read me update
 * 6ff45a4 - TASNIM FATEHA, Sun Mar 26 13:20:13 2023 +0000 : changing text in totalemission page
