@@ -1,95 +1,86 @@
-{% load static %}
-<html>
-  <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<link rel="stylesheet" href="{% static 'emission/style.css' %}">
-    <title>Total Emission</title>
-  </head>
-<body>
+{% extends 'emission/per_capita.html' %}
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">CO2 Emissions</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'index' %}">Home</a>
+{% block table %}
+{% if page_obj %}
+<div class="table-responsive">
+    <table class="my-table">
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Year</th>
+          <th>Per Capita</th>
+          <th>Coal</th>
+          <th>Oil</th>
+          <th>Gas</th>
+          <th>Cement</th>
+          <th>Flaring</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for percapitaemission in page_obj %}
+          <tr>
+            <td>{{percapitaemission.country}}</td>
+            <td>{{percapitaemission.year}}</td>
+            <td>{{percapitaemission.percapita}}</td>
+            <td>{{percapitaemission.coal}}</td>
+            <td>{{percapitaemission.oil}}</td>
+            <td>{{percapitaemission.gas}}</td>
+            <td>{{percapitaemission.cement}}</td>
+            <td>{{percapitaemission.flaring}}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+      <p>No per capita emissions available.</p>
+    {% endif %}
+
+    <div class="pagination my-5">
+      <ul class="pagination justify-content-center">
+        {% if page_obj.has_previous %}
+          <li class="page-item">
+            <a class="page-link" href="?page=1">&laquo; First</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{% url 'percapitaemission' %}">Per Capita Emission</a>
+          <li class="page-item">
+            <a class="page-link" href="?page={{ page_obj.previous_page_number }}">&lsaquo; Previous</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'totalemission' %}">Total Emission</a>
+        {% else %}
+          <li class="page-item disabled">
+            <span class="page-link">&laquo; First</span>
           </li>
-        </ul>
-      </div>
+          <li class="page-item disabled">
+            <span class="page-link">&lsaquo; Previous</span>
+          </li>
+        {% endif %}
+
+        {% for num in page_obj.paginator.page_range %}
+          {% if page_obj.number == num %}
+            <li class="page-item active">
+              <span class="page-link">{{ num }} <span class="sr-only">(current)</span></span>
+            </li>
+          {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+            <li class="page-item">
+              <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+
+        {% if page_obj.has_next %}
+          <li class="page-item">
+            <a class="page-link" href="?page={{ page_obj.next_page_number }}">Next &rsaquo;</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="?page={{ page_obj.paginator.num_pages }}">Last &raquo;</a>
+          </li>
+        {% else %}
+          <li class="page-item disabled">
+            <span class="page-link">Next &rsaquo;</span>
+          </li>
+          <li class="page-item disabled">
+            <span class="page-link">Last &raquo;</span>
+          </li>
+        {% endif %}
+      </ul>
     </div>
-  </nav>
-
-        <div class="container">
-
-      <div class="row">
-        <div class="col-md-6 blog-main">
-          <div class="blog-post py-5">
-  <div class="row">
-    <div class="col-md-8">
-      <h2 class="text-primary mb-3">Understanding CO2 Emissions</h2>
-      <p class="lead">
-        Carbon dioxide emissions are the primary driver of global climate change. To avoid the worst impacts of climate change, the world needs to urgently reduce emissions. However, determining how this responsibility should be shared among regions, countries, and individuals is a complex issue that depends on various factors.
-      </p>
-      <p>
-        In our collaboration with the YouTube channel Kurzgesagt, we produced a video that delves into the different metrics used to compare emissions, such as annual emissions by country, emissions per person, historical contributions, and adjustments for traded goods and services. The video, titled "Who is responsible for climate change? – Who needs to fix it?", can be accessed via the navigation menu at the top of this page.
-      </p>
-      <p>
-        This page is part of our collection of work on CO2 and Greenhouse Gas Emissions. We invite you to explore the menu for more information on other greenhouse gases, emission sources, future trajectories, and global drivers. You can also access country profiles to see how your country is doing in reducing emissions, and use our CO2 Data Explorer to browse all these metrics in one place.
-      </p>
-    </div>
-  </div>
 </div>
-
-        </div><!-- /.blog-main -->
-
-<aside class="col-md-6 blog-sidebar py-5">
-<div class="p-5 bg-light rounded position-relative" style="height: 570px;font-size: 16px;">
-  <h4 class="font-italic">Annual CO2 emissions</h4>
-  <nav class="my-nav">
-    <ul class="nav nav-pills flex-row mt-3 my-nav-list">
-      <li class="nav-item mr-auto">
-        <a class="nav-link" href="#">Chart</a>
-      </li>
-      <li class="nav-item mr-auto">
-        <a class="nav-link" href="#">Map</a>
-      </li>
-      <li class="nav-item mr-auto">
-        <a class="nav-link" href="{% url 'totalemission' %}">Table</a>
-      </li>
-    </ul>
-  </nav>
-</div>
-
-</aside>
-
-
-
-
-      </div>
-    </div>
-    <h1>DB verification</h1>
-    {% for percapitaemission in percapitaemissions %}
-    <p>
-      {{percapitaemission.country}} | 
-      {{percapitaemission.year}} | 
-      {{percapitaemission.percapita}} | 
-      {{percapitaemission.coal}} | 
-      {{percapitaemission.oil}} |
-      {{percapitaemission.gas}} |
-      {{percapitaemission.cement}} | 
-      {{percapitaemission.flaring}}
-    </p>
-    {% endfor %}
-  </body>
-</html>
+{% endblock %}

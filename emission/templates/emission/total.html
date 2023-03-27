@@ -20,7 +20,7 @@
             <a class="nav-link"href="{% url 'index' %}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'percapitaemission' %}">Per Capita Emission</a>
+            <a class="nav-link" href="{% url 'per_capita' %}">Per Capita Emission</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active"  aria-current="page"  href="{% url 'totalemission' %}">Total Emission</a>
@@ -58,9 +58,7 @@
       <li class="nav-item mr-auto">
         <a class="nav-link" href="{% url 'totalemission_map' %}">Map</a>
       </li>
-
-
-      <li class="nav-item">
+      <li class="nav-item mr-auto">
         <a class="nav-link" href="{% url 'totalemission' %}">Table</a>
       </li>
     </ul>
