@@ -1,14 +1,19 @@
 from django.shortcuts import render
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
-from .models import Country, TotalEmission, PerCapitaEmission, Source
+from .models import Year, Country, TotalEmission, PerCapitaEmission, Source
 
 # Create your views here.
 def index(request):
-    return render(request, 'emission/index.html')
+    years=Year.objects.all()
+    return render(request, 'emission/index.html', {'years':years})
 
 def country_list(request):
   countries=Country.objects.all()
   return render(request, 'emission/country.html',{'countries':countries})
+
+def year(request):
+    years=Year.objects.all()
+    return render(request, 'emission/search.html', {'years':years} )
 
 def total(request):
     return render(request, 'emission/total.html')

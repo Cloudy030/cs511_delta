@@ -12,4 +12,6 @@ urlpatterns = [
     path('per_capita/chart/', views.percapitaemission, {'format': 'chart'}, name='per_capita_chart'),
     path('percapitaemission', views.percapitaemission, name='percapitaemission'),
     path('source', views.source, name='source'),
+    path('year', views.year, name='year'),
+   
 ]
