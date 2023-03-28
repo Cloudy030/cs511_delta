@@ -2,6 +2,11 @@ from django.conf import settings
 from django.db import models
 
 # Create your models here.
+class Year(models.Model):
+    year=models.IntegerField()
+     
+    def __str__(self):
+      return f'{self.year}'
 
 class Country(models.Model):
   # model for Country with only the country name form country.csv with automated generated id
@@ -12,6 +17,7 @@ class Country(models.Model):
   def __str__(self):
     return f'{self.country_name}'
     # ', {self.country_code}'
+
 
 class TotalEmission(models.Model):
   # model for total emission table from GCB2022v27_MtCO2_flat.csv

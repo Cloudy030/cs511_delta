@@ -4,7 +4,7 @@ from pathlib import Path
 from django.db import models
 from django.core.management.base import BaseCommand, CommandError
 
-from emission.models import Country, TotalEmission, PerCapitaEmission, Source
+from emission.models import Year, Country, TotalEmission, PerCapitaEmission, Source
 
 class Command(BaseCommand):
     help = 'Load data from csv'
@@ -12,11 +12,19 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
 
         # Drop the data from the tables to initialise the database, soc we can rerun the files without repitition
+        Year.objects.all().delete()
         Country.objects.all().delete()
         TotalEmission.objects.all().delete()
         PerCapitaEmission.objects.all().delete()
         Source.objects.all().delete()
         print('tables dropped successfully')
+
+        for i in range(1996,2022):
+            year=Year.objects.create(
+                year=i
+            )
+            year.save()
+        print('Year Table Parsed Successfully')
 
         # Open the csv data files to parse them into the database
         base_dir = Path(__file__).resolve().parent.parent.parent.parent
@@ -28,7 +36,7 @@ class Command(BaseCommand):
 
                 country = Country.objects.create(
                     country_name = row[0],
-                    country_code =row[1],
+                    #country_code =row[1],
                 )
                 country.save()
         print('Country Table Parsed Successfully')
