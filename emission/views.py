@@ -6,6 +6,7 @@ from .models import Year, Country, TotalEmission, PerCapitaEmission, Source
 def index(request):
     years=Year.objects.all()
     countries=Country.objects.all()
+    #for the 2 drop down filters
     return render(request, 'emission/index.html', {'years':years, 'countries':countries})
 
 def country_list(request):
