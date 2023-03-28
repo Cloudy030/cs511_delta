@@ -40,7 +40,7 @@
   </div>
   <div class="row">
     <div class="col">
-      <form method="POST" action="total/">
+      <form method="POST" action={%url 'total' %}>
         {% csrf_token %}
         <select year="year">
             <option selected disabled=true>--Select Year--</option>
