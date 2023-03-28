@@ -48,6 +48,12 @@
             <option value="{{ year.year }}">{{ year.year }}</option>
             {% endfor %}
       </select>
+      <select country="country">
+            <option selected disabled=true>--Select Country--</option>
+            {% for country in countries %}
+            <option value="{{ country.country_name }}">{{ country.country_name }}</option>
+            {% endfor %}
+      </select>
         <!-- <div class="mb-3 d-inline-block">
           <label for="year" class="form-label">year:</label>
           <input type="dropdown" class="form-control" id="year">

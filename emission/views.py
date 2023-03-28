@@ -5,7 +5,8 @@ from .models import Year, Country, TotalEmission, PerCapitaEmission, Source
 # Create your views here.
 def index(request):
     years=Year.objects.all()
-    return render(request, 'emission/index.html', {'years':years})
+    countries=Country.objects.all()
+    return render(request, 'emission/index.html', {'years':years, 'countries':countries})
 
 def country_list(request):
   countries=Country.objects.all()
