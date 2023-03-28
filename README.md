@@ -114,11 +114,7 @@ This is a production of Team Delta in March 2023.
 
 ### Team Delta
 - Amaldev Edamana Sudhakaran (ESAmadev)
-<<<<<<< HEAD
 - Chinedu Ezeokoye (dunechee)
-=======
-- Chinedu Ezeokoye (dunchee)
->>>>>>> 7f1ab217fd891045e2382376a4bdce634f879ac5
 - Ogugua Ezedozie (Gugusjay)
 - Pok Nga Ho (Cloudy0303)
 - Tasnim Fateha (tasnimfeteha)
