@@ -12,7 +12,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
 
-        # Drop the data from the tables to initialise the database, soc we can rerun the files without repitition
+        # Drop the data from the tables to initialise the database, so we can rerun the files without repitition
         Year.objects.all().delete()
         Country.objects.all().delete()
         TotalEmission.objects.all().delete()
