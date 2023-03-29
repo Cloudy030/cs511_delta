@@ -1,5 +1,8 @@
-from django.conf import settings
-from django.db import models
+try:
+  from django.conf import settings
+  from django.db import models
+except ImportError as error:
+  print("Error importing Module: ", error)
 
 # Create your models here.
 class Year(models.Model):

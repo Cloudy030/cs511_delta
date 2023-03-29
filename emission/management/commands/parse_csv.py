@@ -3,6 +3,7 @@ import os
 from pathlib import Path
 from django.db import models
 from django.core.management.base import BaseCommand, CommandError
+from django.db.utils import DatabaseError
 
 from emission.models import Year, Country, TotalEmission, PerCapitaEmission, Source
 
@@ -27,87 +28,105 @@ class Command(BaseCommand):
         print('Year Table Parsed Successfully')
 
         # Open the csv data files to parse them into the database
-        base_dir = Path(__file__).resolve().parent.parent.parent.parent
-        with open(str(base_dir) + '/data/country.csv', newline='') as f:
-            reader = csv.reader(f, delimiter=",")
-            next(reader)    # To skip header line
-            for row in reader:
-                print(row)
+        try:
+            base_dir = Path(__file__).resolve().parent.parent.parent.parent
+            with open(str(base_dir) + '/data/country.csv', newline='') as f:
+                reader = csv.reader(f, delimiter=",")
+                next(reader)    # To skip header line
+                for row in reader:
+                    print(row)
 
-                country = Country.objects.create(
-                    country_name = row[0],
-                    #country_code =row[1],
-                )
-                country.save()
-        print('Country Table Parsed Successfully')
-
+                    country = Country.objects.create(
+                        country_name = row[0],
+                        #country_code =row[1],
+                    )
+                    country.save()
+            print('Country Table Parsed Successfully')
+        except FileNotFoundError:
+            raise CommandError("country.csv file not found")
         # Open the csv data files to parse them into the database
-        base_dir = Path(__file__).resolve().parent.parent.parent.parent
-        with open(str(base_dir) + '/data/GCB2022v27_MtCO2_flat.csv', newline='') as f:
-            reader = csv.reader(f, delimiter=",")
-            next(reader)    # To skip header line
-            for row in reader:
-                print(row)
+        try:
+            base_dir = Path(__file__).resolve().parent.parent.parent.parent
+            with open(str(base_dir) + '/data/GCB2022v27_MtCO2_flat.csv', newline='') as f:
+                reader = csv.reader(f, delimiter=",")
+                next(reader)    # To skip header line
+                for row in reader:
+                    print(row)
 
-                # country_id_temp = 0
-                # for c in Country.objects.all():
-                #     if c.country_name == row[1]:
-                #         country_id_temp = c.id
-                #         break
+                    # country_id_temp = 0
+                    # for c in Country.objects.all():
+                    #     if c.country_name == row[1]:
+                    #         country_id_temp = c.id
+                    #         break
+                    try:
+                        totalemission = TotalEmission.objects.create(
+                            country = Country.objects.filter(country_name=row[0]).first(),
+                            year = int(row[2]),
+                            total = float(row[3]),
+                            coal = float(row[4]),
+                            oil = float(row[5]),
+                            gas = float(row[6]),
+                            cement = float(row[7]),
+                            flaring = float(row[8]),
+                        )
+                        totalemission.save()
+                    except (ValueError, DatabaseError) as error:
+                        print(f"Error parsing row {row}: {error}")
 
-                totalemission = TotalEmission.objects.create(
-                    country = Country.objects.filter(country_name=row[0]).first(),
-                    year = int(row[2]),
-                    total = float(row[3]),
-                    coal = float(row[4]),
-                    oil = float(row[5]),
-                    gas = float(row[6]),
-                    cement = float(row[7]),
-                    flaring = float(row[8]),
-                )
-                totalemission.save()
+            print('TotalEmission Table Parsed Successfully')
+        except FileNotFoundError:
+            raise CommandError("GCB2022v27_MtCO2_flat.csv file not found")
 
-        print('TotalEmission Table Parsed Successfully')
-        
-        base_dir = Path(__file__).resolve().parent.parent.parent.parent
-        with open(str(base_dir) + '/data/GCB2022v27_percapita_flat.csv', newline='') as f:
-            reader = csv.reader(f, delimiter=",")
-            next(reader)  # To skip header line
-            for row in reader:
-                print(row)
+        try:
+            base_dir = Path(__file__).resolve().parent.parent.parent.parent
+            with open(str(base_dir) + '/data/GCB2022v27_percapita_flat.csv', newline='') as f:
+                reader = csv.reader(f, delimiter=",")
+                next(reader)  # To skip header line
+                for row in reader:
+                    print(row)
 
-                percapitaemission = PerCapitaEmission.objects.create(
-                    country = Country.objects.filter(country_name=row[0]).first(),
-                    year = int(row[2]),
-                    percapita = float(row[3]),
-                    coal = float(row[4]),
-                    oil = float(row[5]),
-                    gas =float(row[6]),
-                    cement = float(row[7]),
-                    flaring = float(row[8]),
-                )
-                percapitaemission.save()
+                    try:
+                        percapitaemission = PerCapitaEmission.objects.create(
+                            country = Country.objects.filter(country_name=row[0]).first(),
+                            year = int(row[2]),
+                            percapita = float(row[3]),
+                            coal = float(row[4]),
+                            oil = float(row[5]),
+                            gas =float(row[6]),
+                            cement = float(row[7]),
+                            flaring = float(row[8]),
+                        )
+                        percapitaemission.save()
+                    except (ValueError, DatabaseError) as error:
+                        print(f"Error parsing row {row}: {error}")
+            print('PerCapitaEmission Table Parsed Successfully')
 
-        print('PerCapitaEmission Table Parsed Successfully')
+        except FileNotFoundError:
+            raise CommandError("GCB2022v27_percapita_flat.csv file not found")
 
-        base_dir = Path(__file__).resolve().parent.parent.parent.parent
-        with open(str(base_dir) + '/data/GCB2022v27_sources_flat.csv', newline='') as f:
-            reader = csv.reader(f, delimiter=",")
-            next(reader)  # To skip header line
-            for row in reader:
-                print(row)
+        try:
+            base_dir = Path(__file__).resolve().parent.parent.parent.parent
+            with open(str(base_dir) + '/data/GCB2022v27_sources_flat.csv', newline='') as f:
+                reader = csv.reader(f, delimiter=",")
+                next(reader)  # To skip header line
+                for row in reader:
+                    print(row)
 
-                source = Source.objects.create(
-                    country = Country.objects.filter(country_name=row[0]).first(),
-                    year = int(row[2]),
-                    coal = row[4],
-                    oil = row[5],
-                    gas = row[6],
-                    cement = row[7],
-                    flaring = row[8],
-                )
-                source.save()
-
-        print('Source Table Parsed Successfully')
+                    try:
+                        source = Source.objects.create(
+                            country = Country.objects.filter(country_name=row[0]).first(),
+                            year = int(row[2]),
+                            coal = row[4],
+                            oil = row[5],
+                            gas = row[6],
+                            cement = row[7],
+                            flaring = row[8],
+                        )
+                        source.save()
+                    except(ValueError, DatabaseError) as error:
+                        print(f"Error parsing row {row}: {error}")
+            print('Source Table Parsed Successfully')
+        except FileNotFoundError:
+            raise CommandError("GCB2022v27_sources_flat.csv file not found")
 
         print("data parsed successfully")
