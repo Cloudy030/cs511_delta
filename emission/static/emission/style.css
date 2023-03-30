@@ -1,19 +1,6 @@
-
-.py-1.text-center {
-    background-color: #5ac0d9;
-  }
-
-.my-nav-list .nav-link {
-  color: #5ac0d9;
-}
-
-.my-nav-list .nav-link.active {
-  background-color: #5ac0d9;
-  color: white;
-} 
+ 
 body {
         font-family: Arial, sans-serif;
-        font-size: 14px;
         line-height: 1.5;
       }
 h1 {
@@ -39,11 +26,11 @@ tr:nth-child(even) {
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
 
 body  {
-    background-image: url('pollution-gfa2421106_1920.jpg');
+    background-image: url('spheres-g14fa6d1b1_1920.jpg');
 
   background-size:cover;
         -webkit-animation: slidein 100s;
-        animation: slidein 100s;
+        animation: slidein 50s;
 
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
@@ -79,7 +66,7 @@ to {background-position: -100px 0px;background-size:2750px;}
 .center h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
-  color: #fff;
+  color: #e2edf3;
   font-family: 'Source Code Pro', monospace;
   text-transform: uppercase;
 }
@@ -107,4 +94,7 @@ to {background-position: -100px 0px;background-size:2750px;}
   overflow-x: auto;
 }
 
+.navbar {
+  background-color: #e2edf3;
+}
 
