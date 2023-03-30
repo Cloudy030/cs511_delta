@@ -27,9 +27,9 @@ SECRET_KEY = 'django-insecure-9x-onx)i5&!a*(j&5ffp$rb3#c_zee(ubp*r^al0mi#rp5kf0!
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['fictionzigzag-plasmatempo-8000.codio-box.uk','questdenmark-machinerepair-8000.codio-box.uk','atlantamedia-shoegermany-8000.codio-box.uk','editionhazard-camelparlor-8000.codio-box.uk','yescharlie-aprilflame-8000.codio-box.uk','moneyanimal-tripodcherry-8000.codio-box.uk','localhost','127.0.0.1','delta-emission.onrender.com']
+ALLOWED_HOSTS = ['fictionzigzag-plasmatempo-8000.codio-box.uk','dianaeurope-spirallorenzo-8000.codio-box.uk','questdenmark-machinerepair-8000.codio-box.uk','atlantamedia-shoegermany-8000.codio-box.uk','editionhazard-camelparlor-8000.codio-box.uk','yescharlie-aprilflame-8000.codio-box.uk','moneyanimal-tripodcherry-8000.codio-box.uk','localhost','127.0.0.1','delta-emission.onrender.com']
 
-CSRF_TRUSTED_ORIGINS=['https://questdenmark-machinerepair-8000.codio-box.uk','https://atlantamedia-shoegermany-8000.codio-box.uk','https://fictionzigzag-plasmatempo-8000.codio-box.uk']
+CSRF_TRUSTED_ORIGINS=['https://questdenmark-machinerepair-8000.codio-box.uk','https://dianaeurope-spirallorenzo-8000.codio-box.uk','https://atlantamedia-shoegermany-8000.codio-box.uk','https://fictionzigzag-plasmatempo-8000.codio-box.uk','https://delta-emission.onrender.com']
 
 # Application definition
 
