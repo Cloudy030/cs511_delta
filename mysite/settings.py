@@ -29,7 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['fictionzigzag-plasmatempo-8000.codio-box.uk','questdenmark-machinerepair-8000.codio-box.uk','atlantamedia-shoegermany-8000.codio-box.uk','editionhazard-camelparlor-8000.codio-box.uk','yescharlie-aprilflame-8000.codio-box.uk','moneyanimal-tripodcherry-8000.codio-box.uk','localhost','127.0.0.1','delta-emission.onrender.com']
 
-CSRF_TRUSTED_ORIGINS=['https://questdenmark-machinerepair-8000.codio-box.uk/','https://questdenmark-machinerepair-8000.codio-box.uk','https://atlantamedia-shoegermany-8000.codio-box.uk']
+CSRF_TRUSTED_ORIGINS=['https://questdenmark-machinerepair-8000.codio-box.uk','https://atlantamedia-shoegermany-8000.codio-box.uk','https://fictionzigzag-plasmatempo-8000.codio-box.uk']
 
 # Application definition
 

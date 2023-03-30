@@ -1,0 +1,111 @@
+{% extends 'emission/total.html' %}
+
+{% block table %}
+      <form method="POST" action="{%url 'totalfilter' %}">
+      <!-- <form id="total_filter" method="POST" action="{totalemission}"> -->
+        {% csrf_token %}
+        <select  id="yfilter" name="yfilter" year="year">
+            <option selected disabled=true>--Select Year--</option>
+            {% for year in years %}
+            <option value="{{ year.year }}">{{ year.year }}</option>
+            {% endfor %}
+      </select>
+      <select id="cfilter" name="cfilter" country="country">
+            <option selected disabled=true>--Select Country--</option>
+            {% for country in countries %}
+            <option value="{{ country.id }}">{{ country.country_name }}</option>
+            {% endfor %}
+      </select>
+        <!-- <div class="mb-3 d-inline-block">
+          <label for="year" class="form-label">year:</label>
+          <input type="dropdown" class="form-control" id="year">
+        </div> -->
+
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+{% if page_obj %}
+<div class="table-responsive">
+    <table class="my-table">
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Year</th>
+          <th>Total</th>
+          <th>Coal</th>
+          <th>Oil</th>
+          <th>Gas</th>
+          <th>Cement</th>
+          <th>Flaring</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for totalemi in page_obj %}
+  <tr>
+    <td>{{totalemi.country}}</td>
+    <td>{{totalemi.year}}</td>
+    <td>{{totalemi.total}}</td>
+    <td>{{totalemi.coal}}</td>
+    <td>{{totalemi.oil}}</td>
+    <td>{{totalemi.gas}}</td>
+    <td>{{totalemi.cement}}</td>
+    <td>{{totalemi.flaring}}</td>
+  </tr>
+{% endfor %}
+
+      </tbody>
+    </table>
+    {% else %}
+<p>No total emissions available.</p>
+{% endif %}
+
+
+<div class="pagination my-5">
+  <ul class="pagination justify-content-center">
+    {% if page_obj.has_previous %}
+      <li class="page-item">
+        <a class="page-link" href="?page=1">&laquo; First</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="?page={{ page_obj.previous_page_number }}">&lsaquo; Previous</a>
+      </li>
+    {% else %}
+      <li class="page-item disabled">
+        <span class="page-link">&laquo; First</span>
+      </li>
+      <li class="page-item disabled">
+        <span class="page-link">&lsaquo; Previous</span>
+      </li>
+    {% endif %}
+
+    {% for num in page_obj.paginator.page_range %}
+      {% if page_obj.number == num %}
+        <li class="page-item active">
+          <span class="page-link">{{ num }} <span class="sr-only">(current)</span></span>
+        </li>
+      {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+        <li class="page-item">
+          <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+
+    {% if page_obj.has_next %}
+      <li class="page-item">
+        <a class="page-link" href="?page={{ page_obj.next_page_number }}">Next &rsaquo;</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="?page={{ page_obj.paginator.num_pages }}">Last &raquo;</a>
+      </li>
+    {% else %}
+      <li class="page-item disabled">
+        <span class="page-link">Next &rsaquo;</span>
+      </li>
+      <li class="page-item disabled">
+        <span class="page-link">Last &raquo;</span>
+      </li>
+    {% endif %}
+  </ul>
+</div>
+
+</div>
+{% endblock %}

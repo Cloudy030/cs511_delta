@@ -12,6 +12,7 @@ path('per_capita/map/', views.per_capita, {'format': 'map'}, name='per_capita_ma
 path('per_capita/chart/', views.per_capita, {'format': 'chart'}, name='per_capita_chart'),
 path('source', views.source, name='source'),
 path('year', views.year, name='year'),
+path('totalfilter', views.totalfilter, name='totalfilter'),
 
    
 ]
