@@ -1,13 +1,24 @@
 from django.test import TestCase, Client
-from emission.models import Country, TotalEmission, PerCapitaEmission, Source
+from emission.models import Country, TotalEmission, PerCapitaEmission, Source, Year
 from django.urls import reverse
+
+class YearModelTestCase(TestCase):
+    def setUp(self):
+        self.year = Year.objects.create(year=2022)
+    
+    def test_year_creation(self):
+        self.assertTrue(isinstance(self.year, Year))
+        self.assertEqual(self.year.year, 2022)
+    
+    def test_year_str_representation(self):
+        self.assertEqual(str(self.year), '2022')
+
 
 class CountryModelTestCase(TestCase):
     def test_country_creation(self):
 
         country = Country.objects.create(country_name="Testland")
         
-
         self.assertIsInstance(country, Country)
         self.assertEqual(country.country_name, "Testland")
 
