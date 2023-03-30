@@ -133,6 +133,7 @@ def source(request):
 
 
 def totalfilter(request, format=None):
+    #to do: add error handkling to check this is a post request
     totalemissions = TotalEmission.objects.all()
     years=Year.objects.all()
     countries=Country.objects.all()
@@ -148,17 +149,27 @@ def totalfilter(request, format=None):
         latest_year = TotalEmission.objects.latest('year').year
         year_emissions = totalemissions.filter(year=latest_year)
     
-    if request.method=='POST':
-        c=request.POST.get('cfilter')
-        print('my country info: ',c,request)
+
+    #totalemi = TotalEmission.objects.all()
+    #if request.method=='POST':
+    c=request.POST.get('cfilter')
+    y=request.POST.get('yfilter')
+    print('my country info: ',c,request)
+    print('my country info: ',y,request)
+    if c==None:
+        totalemi = TotalEmission.objects.filter(year=y)
+    elif y==None:
         totalemi = TotalEmission.objects.filter(country=c)
+    else:
+        totalemi = TotalEmission.objects.filter(country=c).filter(year=y)
+
 
 
     # Get the current page number from the request's GET parameters
     page_number = request.GET.get('page')
 
     # Create a Paginator object that contains the totalemissions
-    paginator = Paginator(totalemissions, 10) # Show 10 totalemissions per page
+    paginator = Paginator(totalemi, 10) # Show 10 totalemissions per page
 
     try:
         # Get the Page object for the current page number
@@ -170,7 +181,7 @@ def totalfilter(request, format=None):
         # If page_number is out of range (e.g. 9999), show the last page
         page_obj = paginator.get_page(paginator.num_pages)
     
-    return render(request, 'emission/total_filter.html', {'page_obj': totalemi, 'format': format, 'years': years, 'countries': countries})
+    return render(request, 'emission/total_filter.html', {'page_obj': page_obj, 'format': format, 'years': years, 'countries': countries, 'totalemi': totalemi})
 
 
     # if format == 'map':
