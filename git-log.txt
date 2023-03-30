@@ -1,3 +1,8 @@
+* c0f62dc - POK NGA HO, Thu Mar 30 18:57:01 2023 +0000 : update readme, comment unused methods in views.py and urls.py
+* 6325c08 - POK NGA HO, Thu Mar 30 18:33:48 2023 +0000 : per capita filter work without pagination direction to correct link
+* 7357f74 - POK NGA HO, Thu Mar 30 18:07:55 2023 +0000 : remove search bar in index.html
+* 61e06a0 - AMALDEV EDAMANA SUDHAKARAN, Thu Mar 30 16:29:27 2023 +0000 : Graph line
+* 46f7574 - POK NGA HO, Thu Mar 30 16:19:37 2023 +0000 : update git-log
 *   6c731f3 - POK NGA HO, Thu Mar 30 16:18:46 2023 +0000 : Merge branch 'main' of github.com:Cloudy030/cs511_delta into main
 |\  
 | * b67fa62 - ZISHUO LIU, Thu Mar 30 16:17:23 2023 +0000 : change the test_models.py about year part
