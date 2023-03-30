@@ -8,7 +8,7 @@ def index(request):
     years=Year.objects.all()
     countries=Country.objects.all()
     #for the 2 drop down filters
-    return render(request, 'emission/index.html', {'years':years, 'countries':countries})
+    return render(request, 'emission/index.html')#, {'years':years, 'countries':countries})
 
 def country_list(request):
   countries=Country.objects.all()
@@ -20,6 +20,7 @@ def year(request):
 
 def total(request, format=None):
     totalemissions = TotalEmission.objects.all()
+    #for dropdown search bar
     years=Year.objects.all()
     countries=Country.objects.all()
 
@@ -80,6 +81,9 @@ def total(request, format=None):
 
 def per_capita(request, format=None):
     percapitaemissions = PerCapitaEmission.objects.all()
+    # for dropdown search bar
+    years=Year.objects.all()
+    countries=Country.objects.all()
 
     # Get the year from the request's GET parameters
     year = request.GET.get('year')
@@ -120,7 +124,7 @@ def per_capita(request, format=None):
         return render(request, 'emission/per_capita_chart.html', {'percapitaemissions': percapitaemissions, 'format': format})
     else:
         # Render table template by default
-        return render(request, 'emission/per_capita.html', {'page_obj': page_obj, 'format': format, 'percapitaemissions': percapitaemissions})
+        return render(request, 'emission/per_capita.html', {'page_obj': page_obj, 'format': format, 'years': years, 'countries': countries})
 
 
 
@@ -139,6 +143,7 @@ def totalfilter(request, format=None):
         return render(request, 'emission/total.html', {'page_obj': page_obj, 'format': format, 'years': years, 'countries': countries})
 
     totalemissions = TotalEmission.objects.all()
+    # for dropdown search bar
     years=Year.objects.all()
     countries=Country.objects.all()
 
@@ -159,7 +164,7 @@ def totalfilter(request, format=None):
     c=request.POST.get('cfilter')
     y=request.POST.get('yfilter')
     print('my country info: ',c,request)
-    print('my country info: ',y,request)
+    print('my year info: ',y,request)
     if c==None:
         totalemi = TotalEmission.objects.filter(year=y)
     elif y==None:
@@ -251,3 +256,79 @@ def search_matierial(request):
         return render(request, 'emission/totalemission_graph.html',{'sources_list':sources_list,'countries':countries})
 
     return render(request, 'emission/totalemission_graph.html',{'countries':countries})
+
+def percapitafilter(request, format=None):
+    #to do: add error handkling to check this is a post request
+    if request.method != "POST":
+        return render(request, 'emission/per_capita.html', {'page_obj': page_obj, 'format': format, 'years': years, 'countries': countries})
+
+    percapitaemissions = PerCapitaEmission.objects.all()
+    #for drowpdown search bar
+    years=Year.objects.all()
+    countries=Country.objects.all()
+
+    # # Get the year from the request's GET parameters
+    # year = request.GET.get('year')
+
+    # # Filter the total emissions by year, if year is provided
+    # if year:
+    #     year_emissions = totalemissions.filter(year=year)
+    # else:
+    #     # Retrieve total emissions for the latest year
+    #     latest_year = TotalEmission.objects.latest('year').year
+    #     year_emissions = totalemissions.filter(year=latest_year)
+    
+
+    #totalemi = TotalEmission.objects.all()
+    #if request.method=='POST':
+    c=request.POST.get('cfilter')
+    y=request.POST.get('yfilter')
+    print('my country info: ',c,request)
+    print('my year info: ',y,request)
+    if c==None:
+        percapitaemi = PerCapitaEmission.objects.filter(year=y)
+    elif y==None:
+        percapitaemi = PerCapitaEmission.objects.filter(country=c)
+    else:
+        percapitaemi = PerCapitaEmission.objects.filter(country=c).filter(year=y)
+
+
+
+    # Get the current page number from the request's GET parameters
+    page_number = request.GET.get('page')
+
+    # Create a Paginator object that contains the totalemissions
+    paginator = Paginator(percapitaemi, 10) # Show 10 totalemissions per page
+
+    try:
+        # Get the Page object for the current page number
+        page_obj = paginator.get_page(page_number)
+    except PageNotAnInteger:
+        # If page_number is not an integer, show the first page
+        page_obj = paginator.get_page(1)
+    except EmptyPage:
+        # If page_number is out of range (e.g. 9999), show the last page
+        page_obj = paginator.get_page(paginator.num_pages)
+    
+    return render(request, 'emission/per_capita_filter.html', {'page_obj': page_obj, 'format': format, 'years': years, 'countries': countries, 'percapitaemi': percapitaemi})
+
+
+    # if format == 'map':
+    #     # Create a list of countries and their total emissions for the selected year
+    #     country_emissions = []
+    #     for emission in year_emissions:
+    #         country_emissions.append((emission.country.country_name, emission.total))
+    #     # Render map template
+    #     return render(request, 'emission/totalemission_map.html', {'country_emissions': country_emissions, 'format': format})
+    # elif format == 'chart':
+    #     def totalemission_chart (request,country):
+    #         country = request.GET.get('country')
+    #         country_emissions = country_emissions.objects.filter(
+    #             country = country_list).first()                    
+
+    #     # Render chart template
+    #     return render(request, 'emission/totalemission_chart.html', {'totalemissions': totalemissions, 'format': format})
+    # else:
+    #     # Render table template by default
+    #     return render(request, 'emission/total_filter.html', {'page_obj': page_obj, 'format': format, 'years': years, 'countries': countries})
+

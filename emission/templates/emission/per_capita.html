@@ -62,6 +62,30 @@
                     {% block content %}
                 {% endblock %}
 {% block table %}
+
+           <!-- filter search bar -->
+            <form method="POST" action="{%url 'totalfilter' %}">
+        {% csrf_token %}
+        <select id="yfilter" name="yfilter" year="year">
+            <option selected disabled=true>--Select Year--</option>
+            {% for year in years %}
+            <option value="{{ year.year }}">{{ year.year }}</option>
+            {% endfor %}
+      </select>
+      <select id="cfilter" name="cfilter" country="country">
+            <option selected disabled=true>--Select Country--</option>
+            {% for country in countries %}
+            <option value="{{ country.id }}">{{ country.country_name }}</option>
+            {% endfor %}
+      </select>
+        <!-- <div class="mb-3 d-inline-block">
+          <label for="year" class="form-label">year:</label>
+          <input type="dropdown" class="form-control" id="year">
+        </div> -->
+
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+
 {% if page_obj %}
 <div class="table-responsive">
     <table class="my-table">

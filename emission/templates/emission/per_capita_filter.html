@@ -1,8 +1,8 @@
-{% extends 'emission/total.html' %}
+{% extends 'emission/per_capita.html' %}
 
 {% block table %}
   <!-- filter search bar -->
-      <form method="POST" action="{%url 'totalfilter' %}">
+      <form method="POST" action="{%url 'percapitafilter' %}">
       <!-- <form id="total_filter" method="POST" action="{totalemission}"> -->
         {% csrf_token %}
         <select  id="yfilter" name="yfilter" year="year">
@@ -31,7 +31,7 @@
         <tr>
           <th>Country</th>
           <th>Year</th>
-          <th>Total</th>
+          <th>Per Capita</th>
           <th>Coal</th>
           <th>Oil</th>
           <th>Gas</th>
@@ -40,23 +40,23 @@
         </tr>
       </thead>
       <tbody>
-        {% for totalemi in page_obj %}
+        {% for percapitaemi in page_obj %}
   <tr>
-    <td>{{totalemi.country}}</td>
-    <td>{{totalemi.year}}</td>
-    <td>{{totalemi.total}}</td>
-    <td>{{totalemi.coal}}</td>
-    <td>{{totalemi.oil}}</td>
-    <td>{{totalemi.gas}}</td>
-    <td>{{totalemi.cement}}</td>
-    <td>{{totalemi.flaring}}</td>
+    <td>{{percapitaemi.country}}</td>
+    <td>{{percapitaemi.year}}</td>
+    <td>{{percapitaemi.percapita}}</td>
+    <td>{{percapitaemi.coal}}</td>
+    <td>{{percapitaemi.oil}}</td>
+    <td>{{percapitaemi.gas}}</td>
+    <td>{{percapitaemi.cement}}</td>
+    <td>{{percapitaemi.flaring}}</td>
   </tr>
 {% endfor %}
 
       </tbody>
     </table>
     {% else %}
-<p>No total emissions available.</p>
+<p>No per capita emissions available.</p>
 {% endif %}
 
 

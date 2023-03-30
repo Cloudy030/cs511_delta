@@ -14,6 +14,6 @@ path('source', views.source, name='source'),
 path('year', views.year, name='year'),
 path('totalfilter', views.totalfilter, name='totalfilter'),
 path('totalemission_graph/search_matierial',views.search_matierial,name='search_matierial'),
-
+path('percapitafilter', views.percapitafilter, name='percapitafilter'),
    
 ]

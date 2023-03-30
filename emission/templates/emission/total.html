@@ -61,6 +61,7 @@
                 {% block content %}
                 {% endblock %}
             {% block table %}
+            <!-- filter search bar -->
             <form method="POST" action="{%url 'totalfilter' %}">
         {% csrf_token %}
         <select id="yfilter" name="yfilter" year="year">
