@@ -1,24 +1,23 @@
-# test for models
 from django.test import TestCase, Client
-from .models import Country, TotalEmission, PerCapitaEmission, Source
+from emission.models import Country, TotalEmission, PerCapitaEmission, Source
 from django.urls import reverse
 
 class CountryModelTestCase(TestCase):
     def test_country_creation(self):
-        # Create a new Country instance
+
         country = Country.objects.create(country_name="Testland")
         
-        # Check if the Country instance has been successfully created and saved to the database
+
         self.assertIsInstance(country, Country)
         self.assertEqual(country.country_name, "Testland")
 
 class TotalEmissionModelTestCase(TestCase):
     def setUp(self):
-        # Create a Country instance before the test starts to be used in other tests
+
         self.country = Country.objects.create(country_name="Testland")
 
     def test_total_emission_creation(self):
-        # Create a TotalEmission instance using the Country instance already created
+
         total_emission = TotalEmission.objects.create(
             country=self.country,
             year=2021,
@@ -30,7 +29,7 @@ class TotalEmissionModelTestCase(TestCase):
             flaring=0.021278
         )
 
-        # Check if the TotalEmission instance has been successfully created and saved to the database
+
         self.assertIsInstance(total_emission, TotalEmission)
         self.assertEqual(total_emission.country, self.country)
         self.assertEqual(total_emission.year, 2021)
@@ -43,11 +42,11 @@ class TotalEmissionModelTestCase(TestCase):
 
 class PerCapitaEmissionModelTestCase(TestCase):
     def setUp(self):
-        # Create a Country instance before the test starts to be used in other tests
+
         self.country = Country.objects.create(country_name="Testland")
 
     def test_percapita_emission_creation(self):
-        # Create a PerCapitaEmission instance using the Country instance already created
+
         percapita_emission = PerCapitaEmission.objects.create(
             country=self.country,
             year=2021,
@@ -59,7 +58,7 @@ class PerCapitaEmissionModelTestCase(TestCase):
             flaring=0.5
         )
 
-        # Check if the PerCapitaEmission instance has been successfully created and saved to the database
+
         self.assertIsInstance(percapita_emission, PerCapitaEmission)
         self.assertEqual(percapita_emission.country, self.country)
         self.assertEqual(percapita_emission.year, 2021)
@@ -72,7 +71,7 @@ class PerCapitaEmissionModelTestCase(TestCase):
 
 class SourceModelTestCase(TestCase):
     def test_source_creation(self):
-        # Create a new Source instance
+
         source = Source.objects.create(
             coal="CDIAC 2022",
             oil="CDIAC 2022",
@@ -82,49 +81,10 @@ class SourceModelTestCase(TestCase):
             year=2012
         )
 
-        # Check if the Source instance has been successfully created and saved to the database
+
         self.assertIsInstance(source, Source)
         self.assertEqual(source.coal, "CDIAC 2022")
         self.assertEqual(source.oil, "CDIAC 2022")
         self.assertEqual(source.gas, "CDIAC 2022")
         self.assertEqual(source.cement, "CDIAC 2022")
         self.assertEqual(source.flaring, "Andrew cement")
-
-#Test cases for views.
-class ViewTestCase(TestCase):
-    #Test for index page.
-    def test_index(self):
-        response = self.client.get('')
-        self.assertTemplateUsed(response, 'emission/index.html')
-        self.assertEqual(response.status_code, 200)
-        self.assertContains(response, "Global")
-
-    #Test for country page.
-    def test_country_list(self):
-        response = self.client.get('/country_list')
-        self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'emission/country.html')
-
-    #Test for Total emission page.
-    def test_total(self):
-        response = self.client.get('/total/')
-        self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'emission/total.html')
-        
-    #Test for emission source page.
-    def test_source(self):
-        response = self.client.get('/source')
-        self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'emission/source.html')
-
-    #Test for percapita emission page.
-    def test_percapitaemission(self):
-        response = self.client.get('/percapitaemission')
-        self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'emission/percapitaemission.html')
-
-        
-
-
-   
-
