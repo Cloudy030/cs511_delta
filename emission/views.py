@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from .models import Year, Country, TotalEmission, PerCapitaEmission, Source
+import json
 
 # Create your views here.
 def index(request):
@@ -205,3 +206,48 @@ def totalfilter(request, format=None):
     # else:
     #     # Render table template by default
     #     return render(request, 'emission/total_filter.html', {'page_obj': page_obj, 'format': format, 'years': years, 'countries': countries})
+
+
+def search_matierial(request):
+    countries=Country.objects.all()
+    matierial=""
+    country_id=""
+    if request.method=='POST':
+        matierial=request.POST.get("matierial")
+        print(matierial)
+        country_name=request.POST.get("country_name")
+        print(country_name)
+
+        id = Country.objects.filter(country_name=country_name).first()
+        print(id.id)
+        id_country=id.id
+        sources=TotalEmission.objects.filter(country_id=id_country)
+        sources_temp=[]
+        if matierial=='Total':
+            for source in sources:
+                sources_temp.append(source.oil)
+        elif matierial=='Coal':
+            for source in sources:
+                sources_temp.append(source.coal)
+        elif  matierial=='Oil':
+            for source in sources:
+                sources_temp.append(source.oil)
+        elif  matierial=='Gas':
+            for source in sources:
+                sources_temp.append(source.gas)
+        elif  matierial=='Cement':
+            for source in sources:
+                sources_temp.append(source.cement)
+        elif  matierial=='Flaring':
+            for source in sources:
+                sources_temp.append(source.flaring)
+
+
+
+        #sources=list(source)
+        #print(source)
+        sources_list = json.dumps(sources_temp)
+        print(sources_list)
+        return render(request, 'emission/totalemission_graph.html',{'sources_list':sources_list,'countries':countries})
+
+    return render(request, 'emission/totalemission_graph.html',{'countries':countries})

@@ -13,6 +13,7 @@ path('per_capita/chart/', views.per_capita, {'format': 'chart'}, name='per_capit
 path('source', views.source, name='source'),
 path('year', views.year, name='year'),
 path('totalfilter', views.totalfilter, name='totalfilter'),
+path('totalemission_graph/search_matierial',views.search_matierial,name='search_matierial'),
 
    
 ]
