@@ -8,6 +8,19 @@ produced by The Devastator by quantifying sources and emission levels.
 Such data is retrieved from the Global Carbon Project's fossil CO2 emissions dataset: 2022 release by Robbie Andrew and Glen P. Peters, CICERO Center for International Climate Research.
 
 ## Main features of the website
+Filtering function is implemented in many parts of the website with different criteria.
+- Total CO2 emissions table (country, year)
+- Per Capita CO2 emissions table (country, year)
+- Total CO2 emissions line graph (country, material)
+- Total CO2 emissions bar graph (country, material)
+- Per Capita CO2 emissions line graph (country, material)
+- Per Capita CO2 emissions bar graph (country, material)
+
+Visual components are implemented in the website
+- Total CO2 emissions line and bar graph
+- Per Capita CO2 emissions line and bar graph
+
+## Templates in the website
 There are 3 sets of templates in this web application.
 - Home Page (index.html)
 - Total CO2 emissions Page (total.html)
