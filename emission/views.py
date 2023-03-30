@@ -134,20 +134,23 @@ def source(request):
 
 def totalfilter(request, format=None):
     #to do: add error handkling to check this is a post request
+    if request.method != "POST":
+        return render(request, 'emission/total.html', {'page_obj': page_obj, 'format': format, 'years': years, 'countries': countries})
+
     totalemissions = TotalEmission.objects.all()
     years=Year.objects.all()
     countries=Country.objects.all()
 
-    # Get the year from the request's GET parameters
-    year = request.GET.get('year')
+    # # Get the year from the request's GET parameters
+    # year = request.GET.get('year')
 
-    # Filter the total emissions by year, if year is provided
-    if year:
-        year_emissions = totalemissions.filter(year=year)
-    else:
-        # Retrieve total emissions for the latest year
-        latest_year = TotalEmission.objects.latest('year').year
-        year_emissions = totalemissions.filter(year=latest_year)
+    # # Filter the total emissions by year, if year is provided
+    # if year:
+    #     year_emissions = totalemissions.filter(year=year)
+    # else:
+    #     # Retrieve total emissions for the latest year
+    #     latest_year = TotalEmission.objects.latest('year').year
+    #     year_emissions = totalemissions.filter(year=latest_year)
     
 
     #totalemi = TotalEmission.objects.all()
