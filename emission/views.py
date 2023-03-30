@@ -55,6 +55,11 @@ def total(request, format=None):
         # Render map template
         return render(request, 'emission/totalemission_map.html', {'country_emissions': country_emissions, 'format': format})
     elif format == 'chart':
+        def totalemission_chart (request,country):
+            country = request.GET.get('country')
+            country_emissions = country_emissions.objects.filter(
+                country = country_list).first()                    
+
         # Render chart template
         return render(request, 'emission/totalemission_chart.html', {'totalemissions': totalemissions, 'format': format})
     else:
