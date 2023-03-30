@@ -35,6 +35,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
 pip install django
+pip install whitenoise
 ~~~
 For later times for open the previously created virtual environment, run the following code in the project folder.
 ~~~
