@@ -10,13 +10,13 @@ def index(request):
     #for the 2 drop down filters
     return render(request, 'emission/index.html')#, {'years':years, 'countries':countries})
 
-def country_list(request):
-  countries=Country.objects.all()
-  return render(request, 'emission/country.html',{'countries':countries})
+# def country_list(request):
+#   countries=Country.objects.all()
+#   return render(request, 'emission/country.html',{'countries':countries})
 
-def year(request):
-    years=Year.objects.all()
-    return render(request, 'emission/search.html', {'years':years} )
+# def year(request):
+#     years=Year.objects.all()
+#     return render(request, 'emission/search.html', {'years':years} )
 
 def total(request, format=None):
     totalemissions = TotalEmission.objects.all()
@@ -132,9 +132,9 @@ def per_capita(request, format=None):
   #percapitaemissions=PerCapitaEmission.objects.all()
   #return render(request, 'emission/percapitaemission.html',{'percapitaemissions':percapitaemissions})
 
-def source(request):
-  sources=Source.objects.all()
-  return render(request, 'emission/source.html',{'sources':sources})
+# def source(request):
+#   sources=Source.objects.all()
+#   return render(request, 'emission/source.html',{'sources':sources})
 
 
 def totalfilter(request, format=None):
