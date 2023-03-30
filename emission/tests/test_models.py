@@ -4,14 +4,14 @@ from django.urls import reverse
 
 class YearModelTestCase(TestCase):
     def setUp(self):
-        self.year = Year.objects.create(year=2022)
+        self.year = Year.objects.create(year=2020)
     
     def test_year_creation(self):
         self.assertTrue(isinstance(self.year, Year))
-        self.assertEqual(self.year.year, 2022)
+        self.assertEqual(self.year.year, 2020)
     
     def test_year_str_representation(self):
-        self.assertEqual(str(self.year), '2022')
+        self.assertEqual(str(self.year), '2020')
 
 
 class CountryModelTestCase(TestCase):
