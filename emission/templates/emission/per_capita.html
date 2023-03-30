@@ -50,19 +50,102 @@
   <nav class="my-nav">
     <ul class="nav nav-pills flex-row mt-3 my-nav-list">
       <li class="nav-item mr-auto">
-        <a class="nav-link" href="{% url 'percapitaemission' %}">Table</a>
+        <a class="nav-link active" href="{% url 'per_capita' %}">Table</a>
       </li>
       <li class="nav-item mr-auto">
-        <a class="nav-link" href="#">Chart</a>
+        <a class="nav-link" href="per_capita_chart">Chart</a>
       </li>
       <li class="nav-item mr-auto">
-        <a class="nav-link" href="{% url 'totalemission_map' %}">Graph</a>
+        <a class="nav-link" href="{% url 'per_capita_map' %}">Graph</a>
       </li>
     </ul>
                     {% block content %}
                 {% endblock %}
-            {% block table %}
-                {% endblock %}
+{% block table %}
+{% if page_obj %}
+<div class="table-responsive">
+    <table class="my-table">
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Year</th>
+          <th>Per Capita</th>
+          <th>Coal</th>
+          <th>Oil</th>
+          <th>Gas</th>
+          <th>Cement</th>
+          <th>Flaring</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for percapitaemission in page_obj %}
+          <tr>
+            <td>{{percapitaemission.country}}</td>
+            <td>{{percapitaemission.year}}</td>
+            <td>{{percapitaemission.percapita}}</td>
+            <td>{{percapitaemission.coal}}</td>
+            <td>{{percapitaemission.oil}}</td>
+            <td>{{percapitaemission.gas}}</td>
+            <td>{{percapitaemission.cement}}</td>
+            <td>{{percapitaemission.flaring}}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+      <p>No per capita emissions available.</p>
+    {% endif %}
+
+    <div class="pagination my-5">
+      <ul class="pagination justify-content-center">
+        {% if page_obj.has_previous %}
+          <li class="page-item">
+            <a class="page-link" href="?page=1">&laquo; First</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="?page={{ page_obj.previous_page_number }}">&lsaquo; Previous</a>
+          </li>
+        {% else %}
+          <li class="page-item disabled">
+            <span class="page-link">&laquo; First</span>
+          </li>
+          <li class="page-item disabled">
+            <span class="page-link">&lsaquo; Previous</span>
+          </li>
+        {% endif %}
+
+        {% for num in page_obj.paginator.page_range %}
+          {% if page_obj.number == num %}
+            <li class="page-item active">
+              <span class="page-link">{{ num }} <span class="sr-only">(current)</span></span>
+            </li>
+          {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+            <li class="page-item">
+              <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+
+        {% if page_obj.has_next %}
+          <li class="page-item">
+            <a class="page-link" href="?page={{ page_obj.next_page_number }}">Next &rsaquo;</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="?page={{ page_obj.paginator.num_pages }}">Last &raquo;</a>
+          </li>
+        {% else %}
+          <li class="page-item disabled">
+            <span class="page-link">Next &rsaquo;</span>
+          </li>
+          <li class="page-item disabled">
+            <span class="page-link">Last &raquo;</span>
+          </li>
+        {% endif %}
+      </ul>
+    </div>
+</div>
+{% endblock %}
+
   </nav>
 </div>
 

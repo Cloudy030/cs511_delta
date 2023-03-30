@@ -17,10 +17,7 @@ def year(request):
     years=Year.objects.all()
     return render(request, 'emission/search.html', {'years':years} )
 
-def total(request):
-    return render(request, 'emission/total.html')
-
-def totalemission(request, format=None):
+def total(request, format=None):
     totalemissions = TotalEmission.objects.all()
 
     # Get the year from the request's GET parameters
@@ -62,7 +59,10 @@ def totalemission(request, format=None):
         return render(request, 'emission/totalemission_chart.html', {'totalemissions': totalemissions, 'format': format})
     else:
         # Render table template by default
-        return render(request, 'emission/totalemission.html', {'page_obj': page_obj, 'format': format})
+        return render(request, 'emission/total.html', {'page_obj': page_obj, 'format': format})
+
+
+
 
 
 
@@ -70,10 +70,7 @@ def totalemission(request, format=None):
   #totalemissions=TotalEmission.objects.all()
   #return render(request, 'emission/totalemission.html',{'totalemissions':totalemissions})
 
-def per_capita(request):
-    return render(request, 'emission/per_capita.html')
-
-def percapitaemission(request, format=None):
+def per_capita(request, format=None):
     percapitaemissions = PerCapitaEmission.objects.all()
 
     # Get the year from the request's GET parameters
@@ -115,7 +112,8 @@ def percapitaemission(request, format=None):
         return render(request, 'emission/per_capita_chart.html', {'percapitaemissions': percapitaemissions, 'format': format})
     else:
         # Render table template by default
-        return render(request, 'emission/percapitaemission.html', {'page_obj': page_obj, 'format': format})
+        return render(request, 'emission/per_capita.html', {'page_obj': page_obj, 'format': format, 'percapitaemissions': percapitaemissions})
+
 
 
 #def percapitaemission(request):
