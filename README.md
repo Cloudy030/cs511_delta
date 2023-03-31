@@ -16,13 +16,13 @@ Filtering function is implemented in many parts of the website with different cr
 - Per Capita CO2 emissions line graph (country, material)
 - Per Capita CO2 emissions bar graph (country, material)
 
-Visual components are implemented in the website
-- Total CO2 emissions line and bar graph
-- Per Capita CO2 emissions line and bar graph
+Data visual components are implemented in the website
+- Total CO2 emissions line and bar graph (country, material)
+- Per Capita CO2 emissions line and bar graph (country, material)
 
 ## Templates in the website
 There are 3 sets of templates in this web application.
-- Home Page (index.html)
+- Landing Page (index.html)
 - Total CO2 emissions Page (total.html)
   - Table
     - Showing annual CO2 emissions data rows from all countries and all years with proper pagination
@@ -36,22 +36,20 @@ There are 3 sets of templates in this web application.
     - Drop down search bar implemented for countries and years
       - Table showing per capita CO2 emissions data rows with selected country or year (total_filter.html)
   - Data Visual
-    - Showing line or graph for per capita CO2 emissions with selected country and material (percapitaemission_graph.html)
+    - Showing line or graph for per capita CO2 emissions with selected country and material (totalemission_graph.html)
 
 ## Models in the application
-The database model comprises 5 main Class objects
+The database model comprises 4 main Class objects
 - Year
   - This table refers to the dates in years where the CO2 emission of each country is considered
-  - The objects in the Year table were populated by iterating from the range 1996-2021 and this wll be used mainly for handling search/filtering requests
+  - The objects in the Year table were populated by iterating from the range 1996-2021 and this will be used mainly for handling search/filtering requests
 - Country
   - This table shows the countries and locations where the CO2 emissions from the different elements are produced
-- Total Emission
+- TotalEmission
   - This table gives the total emission of CO2 produced by the different sources i.e. coal, gas, oil, cement production in a country in a year
-- PerCapita Emission
-  - This table refers to the breakdown of the CO2 emission percapita per country within the years considered
-- Source
-  - This table provides the source where all the values gathered for CO2 emissions for the different elements for a country in a given year
-The objects for tables other than the Year were parsed from the csv files in the data directory. The parse program was written so that it deletes existing tables in the database and creates them again when run
+- PerCapitaEmission
+  - This table refers to the breakdown of the CO2 emission per capita per country within the years considered
+The objects for tables other than the Year were parsed from the CSV files in the data directory. The parse program was written so that it deletes existing tables in the database and recreate them again when run
 
 ## Basic setup of the virtual environment
 A virtual environment with Python version 3.10.7 is created. 
@@ -106,7 +104,7 @@ python3 manage.py runserver 0.0.0.0:8000
 ## Maintenance
 Latest code is pulled from GitHub for Render deployment.
 At most two websites can be opened at once from the Render deployed link.
-The number of rows of data in the three data csv files can be increased and include data from more number of years.
+The number of rows of data in the two data CSV files can be increased and include data from more number of years.
 However, the server ability on Render should also be considered when doing such decision.
 
 Generate git log using the following command:
@@ -115,10 +113,9 @@ git log --pretty=format:"%h - %an, %ad : %s" --graph > git-log.txt
 ~~~
 
 ## Testing
-Django tests for model setup and data input are used.
-Random data objects are created to be passed into the model in testing database for testing.
+Django tests for filter function, graph, HTML pages, views, model setup and data input are implemented.
 
-If you change anything in the static folder, please run this command first before running the next command:
+If you change anything in the static folder, please run this command before running the next command:
 ~~~
 python3 manage.py collectstatic
 ~~~
@@ -131,7 +128,7 @@ python3 manage.py test
 ## Documents
 Git-log: git.log.txt
 
-One page design and development report: CS551Q Team Delta one-page report.pdf
+One page design and development report: CS551Q Team Delta one-page report-1.pdf
 
 ## License
 MIT License
