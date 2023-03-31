@@ -63,19 +63,19 @@ class PerCapitaEmission(models.Model):
   def __str__(self):
     return f'{self.country}, {self.year}, {self.percapita}, {self.coal}, {self.oil}, {self.gas}, {self.cement}, {self.flaring}'
 
-class Source(models.Model):
-  # model for sources table from GCB2022v27_sources_flat.csv
-  # with country name as the foreign key with the Country class
-  # with automated generated id
-  # and other fields year, sources for the data:
-  # total emission of the country in the year, coal emission of the country in the year,
-  # oil emission of the country in the year, gas emission of the country in the year, 
-  # cement emission of the country in the year and flaring emission of the country in the year
-  id=models.BigAutoField(primary_key=True)
-  country=models.ForeignKey('Country', on_delete=models.CASCADE, null=True)
-  year=models.IntegerField()
-  coal=models.TextField()
-  oil=models.TextField()
-  gas=models.TextField()
-  cement=models.TextField()
-  flaring=models.TextField()
+# class Source(models.Model):
+#   # model for sources table from GCB2022v27_sources_flat.csv
+#   # with country name as the foreign key with the Country class
+#   # with automated generated id
+#   # and other fields year, sources for the data:
+#   # total emission of the country in the year, coal emission of the country in the year,
+#   # oil emission of the country in the year, gas emission of the country in the year, 
+#   # cement emission of the country in the year and flaring emission of the country in the year
+#   id=models.BigAutoField(primary_key=True)
+#   country=models.ForeignKey('Country', on_delete=models.CASCADE, null=True)
+#   year=models.IntegerField()
+#   coal=models.TextField()
+#   oil=models.TextField()
+#   gas=models.TextField()
+#   cement=models.TextField()
+#   flaring=models.TextField()

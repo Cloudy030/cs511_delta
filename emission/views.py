@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
-from .models import Year, Country, TotalEmission, PerCapitaEmission, Source
+from .models import Year, Country, TotalEmission, PerCapitaEmission#, Source
 import json
 
 # Create your views here.
@@ -72,28 +72,52 @@ def per_capita(request, format=None):
 
 
 def totalfilter(request):
-    # Get all the total emissions
-    total_emissions = TotalEmission.objects.all()
+    # # Get all the total emissions
+    # total_emissions = TotalEmission.objects.all()
 
-    # Get all the years and countries for the dropdowns
-    all_years = Year.objects.all()
-    all_countries = Country.objects.all()
+    # # Get all the years and countries for the dropdowns
+    # all_years = Year.objects.all()
+    # all_countries = Country.objects.all()
 
-    # Get the filters from the request
-    selected_country = request.POST.getlist('cfilter') or request.GET.getlist('cfilter')
-    selected_year = request.POST.getlist('yfilter') or request.GET.getlist('yfilter')
+    # # Get the filters from the request
+    # selected_country = request.POST.getlist('cfilter')
+    # selected_year = request.POST.getlist('yfilter')
 
-    # Filter the total emissions based on the selected filters
-    if selected_country and selected_year:
-        total_emissions_filtered = TotalEmission.objects.filter(country__in=selected_country, year__in=selected_year)
-    elif selected_country:
-        total_emissions_filtered = TotalEmission.objects.filter(country__in=selected_country)
-    elif selected_year:
-        total_emissions_filtered = TotalEmission.objects.filter(year__in=selected_year)
+    # # Filter the total emissions based on the selected filters
+    # if selected_country and selected_year:
+    #     total_emissions_filtered = TotalEmission.objects.filter(country__in=selected_country, year__in=selected_year)
+    # elif selected_country:
+    #     total_emissions_filtered = TotalEmission.objects.filter(country__in=selected_country)
+    # elif selected_year:
+    #     total_emissions_filtered = TotalEmission.objects.filter(year__in=selected_year)
+    # else:
+    #     total_emissions_filtered = total_emissions
+
+    # return render(request, 'emission/total_filter.html', {'total_emissions_filtered': total_emissions_filtered, 'all_years': all_years, 'all_countries': all_countries})
+    # #to do: add error handkling to check this is a post request
+    # if request.method != "POST":
+    #     return render(request, 'emission/total.html', {'page_obj': page_obj, 'format': format, 'years': years, 'countries': countries})
+
+    totalemission = TotalEmission.objects.all()
+    #for drowpdown search bar
+    years=Year.objects.all()
+    countries=Country.objects.all()
+    c=request.POST.get('cfilter')
+    y=request.POST.get('yfilter')
+    # print('my country info: ',c,request)
+    # print('my year info: ',y,request)
+    if c==None:
+        totalemi = TotalEmission.objects.filter(year=y)
+    elif y==None:
+        totalemi = TotalEmission.objects.filter(country=c)
     else:
-        total_emissions_filtered = total_emissions
+        totalemi = TotalEmission.objects.filter(country=c).filter(year=y)
 
-    return render(request, 'emission/total_filter.html', {'total_emissions_filtered': total_emissions_filtered, 'all_years': all_years, 'all_countries': all_countries})
+    
+    return render(request, 'emission/total_filter.html', {'totalemi': totalemi, 'format': format, 'years': years, 'countries': countries, 'totalemi': totalemi})
+
+
+
 
 
 
@@ -167,8 +191,8 @@ def percapitafilter(request, format=None):
     countries=Country.objects.all()
     c=request.POST.get('cfilter')
     y=request.POST.get('yfilter')
-    print('my country info: ',c,request)
-    print('my year info: ',y,request)
+    # print('my country info: ',c,request)
+    # print('my year info: ',y,request)
     if c==None:
         percapitaemi = PerCapitaEmission.objects.filter(year=y)
     elif y==None:

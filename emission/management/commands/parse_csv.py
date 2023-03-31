@@ -5,7 +5,7 @@ from django.db import models
 from django.core.management.base import BaseCommand, CommandError
 from django.db.utils import DatabaseError
 
-from emission.models import Year, Country, TotalEmission, PerCapitaEmission, Source
+from emission.models import Year, Country, TotalEmission, PerCapitaEmission#, Source
 
 class Command(BaseCommand):
     help = 'Load data from csv'
@@ -17,7 +17,7 @@ class Command(BaseCommand):
         Country.objects.all().delete()
         TotalEmission.objects.all().delete()
         PerCapitaEmission.objects.all().delete()
-        Source.objects.all().delete()
+        # Source.objects.all().delete()
         print('tables dropped successfully')
 
         for i in range(1996,2022):
@@ -104,29 +104,29 @@ class Command(BaseCommand):
         except FileNotFoundError:
             raise CommandError("GCB2022v27_percapita_flat.csv file not found")
 
-        try:
-            base_dir = Path(__file__).resolve().parent.parent.parent.parent
-            with open(str(base_dir) + '/data/GCB2022v27_sources_flat.csv', newline='') as f:
-                reader = csv.reader(f, delimiter=",")
-                next(reader)  # To skip header line
-                for row in reader:
-                    print(row)
+        # try:
+        #     base_dir = Path(__file__).resolve().parent.parent.parent.parent
+        #     with open(str(base_dir) + '/data/GCB2022v27_sources_flat.csv', newline='') as f:
+        #         reader = csv.reader(f, delimiter=",")
+        #         next(reader)  # To skip header line
+        #         for row in reader:
+        #             print(row)
 
-                    try:
-                        source = Source.objects.create(
-                            country = Country.objects.filter(country_name=row[0]).first(),
-                            year = int(row[2]),
-                            coal = row[4],
-                            oil = row[5],
-                            gas = row[6],
-                            cement = row[7],
-                            flaring = row[8],
-                        )
-                        source.save()
-                    except(ValueError, DatabaseError) as error:
-                        print(f"Error parsing row {row}: {error}")
-            print('Source Table Parsed Successfully')
-        except FileNotFoundError:
-            raise CommandError("GCB2022v27_sources_flat.csv file not found")
+        #             try:
+        #                 source = Source.objects.create(
+        #                     country = Country.objects.filter(country_name=row[0]).first(),
+        #                     year = int(row[2]),
+        #                     coal = row[4],
+        #                     oil = row[5],
+        #                     gas = row[6],
+        #                     cement = row[7],
+        #                     flaring = row[8],
+        #                 )
+        #                 source.save()
+        #             except(ValueError, DatabaseError) as error:
+        #                 print(f"Error parsing row {row}: {error}")
+        #     print('Source Table Parsed Successfully')
+        # except FileNotFoundError:
+        #     raise CommandError("GCB2022v27_sources_flat.csv file not found")
 
         print("data parsed successfully")

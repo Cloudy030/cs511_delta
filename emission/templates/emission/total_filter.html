@@ -73,7 +73,7 @@
 
         <button type="submit" class="btn btn-success">Search</button>
       </form>
-{% if total_emissions_filtered %}
+{% if totalemi %}
 <div class="table-responsive">
     <table class="my-table">
       <thead>
@@ -89,7 +89,7 @@
         </tr>
       </thead>
       <tbody>
-    {% for totalemi in total_emissions_filtered %}
+    {% for totalemi in totalemi %}
   <tr>
     <td>{{totalemi.country}}</td>
     <td>{{totalemi.year}}</td>
