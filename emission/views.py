@@ -39,7 +39,7 @@ def total(request, format=None):
     page_number = request.GET.get('page')
 
     # Create a Paginator object that contains the totalemissions
-    paginator = Paginator(totalemissions, 10) # Show 10 totalemissions per page
+    paginator = Paginator(totalemissions, 26) # Show 10 totalemissions per page
 
     try:
         # Get the Page object for the current page number
@@ -100,7 +100,7 @@ def per_capita(request, format=None):
     page_number = request.GET.get('page')
 
     # Create a Paginator object that contains the percapitaemissions
-    paginator = Paginator(percapitaemissions, 10) # Show 10 percapitaemissions per page
+    paginator = Paginator(percapitaemissions, 26) # Show 10 percapitaemissions per page
 
     try:
         # Get the Page object for the current page number
@@ -163,8 +163,6 @@ def totalfilter(request, format=None):
     #if request.method=='POST':
     c=request.POST.get('cfilter')
     y=request.POST.get('yfilter')
-    print('my country info: ',c,request)
-    print('my year info: ',y,request)
     if c==None:
         totalemi = TotalEmission.objects.filter(year=y)
     elif y==None:
@@ -178,7 +176,7 @@ def totalfilter(request, format=None):
     page_number = request.GET.get('page')
 
     # Create a Paginator object that contains the totalemissions
-    paginator = Paginator(totalemi, 10) # Show 10 totalemissions per page
+    paginator = Paginator(totalemi, 26) # Show 10 totalemissions per page
 
     try:
         # Get the Page object for the current page number
@@ -192,25 +190,6 @@ def totalfilter(request, format=None):
     
     return render(request, 'emission/total_filter.html', {'page_obj': page_obj, 'format': format, 'years': years, 'countries': countries, 'totalemi': totalemi})
 
-
-    # if format == 'map':
-    #     # Create a list of countries and their total emissions for the selected year
-    #     country_emissions = []
-    #     for emission in year_emissions:
-    #         country_emissions.append((emission.country.country_name, emission.total))
-    #     # Render map template
-    #     return render(request, 'emission/totalemission_map.html', {'country_emissions': country_emissions, 'format': format})
-    # elif format == 'chart':
-    #     def totalemission_chart (request,country):
-    #         country = request.GET.get('country')
-    #         country_emissions = country_emissions.objects.filter(
-    #             country = country_list).first()                    
-
-    #     # Render chart template
-    #     return render(request, 'emission/totalemission_chart.html', {'totalemissions': totalemissions, 'format': format})
-    # else:
-    #     # Render table template by default
-    #     return render(request, 'emission/total_filter.html', {'page_obj': page_obj, 'format': format, 'years': years, 'countries': countries})
 
 
 def search_matierial(request):
