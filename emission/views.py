@@ -215,17 +215,21 @@ def search_matierial(request):
     if request.method=='POST':
         matierial=request.POST.get("matierial")
         print(matierial)
-        country_name=request.POST.get("country_name")
-        print(country_name)
+        country_id=request.POST.get("country_id")
+        print(country_id)
 
-        id = Country.objects.filter(country_name=country_name).first()
-        print(id.id)
-        id_country=id.id
-        sources=TotalEmission.objects.filter(country_id=id_country)
+        #id = Country.objects.filter(country_name=country_name).first()
+        #print(id.id)
+        #id_country=id.id
+        sources=TotalEmission.objects.filter(country_id=country_id)
+        sources_pc=PerCapitaEmission.objects.filter(country_id=country_id)
+        print(sources)
+        print(sources_pc)
         sources_temp=[]
+        sources_temp_pc=[]
         if matierial=='Total':
             for source in sources:
-                sources_temp.append(source.oil)
+                sources_temp.append(source.total)
         elif matierial=='Coal':
             for source in sources:
                 sources_temp.append(source.coal)
@@ -242,12 +246,27 @@ def search_matierial(request):
             for source in sources:
                 sources_temp.append(source.flaring)
 
+        if matierial=='Total':
+            for source_pc in sources_pc:
+                sources_temp_pc.append(source_pc.percapita)
+        elif matierial=='Coal':
+            for source_pc in sources_pc:
+                sources_temp_pc.append(source_pc.coal)
+        elif  matierial=='Oil':
+            for source_pc in sources_pc:
+                sources_temp_pc.append(source_pc.oil)
+        elif  matierial=='Gas':
+            for source_pc in sources_pc:
+                sources_temp_pc.append(source_pc.gas)
+        elif  matierial=='Cement':
+            for source_pc in sources_pc:
+                sources_temp_pc.append(source_pc.cement)
+        elif  matierial=='Flaring':
+            for source_pc in sources_pc:
+                sources_temp_pc.append(source_pc.flaring)          
 
-
-        #sources=list(source)
-        #print(source)
         sources_list = json.dumps(sources_temp)
-        print(sources_list)
-        return render(request, 'emission/totalemission_graph.html',{'sources_list':sources_list,'countries':countries})
+        sources_list_pc = json.dumps(sources_temp_pc)
+        return render(request, 'emission/totalemission_graph.html',{'sources_list':sources_list,'countries':countries,'sources_list_pc':sources_list_pc})
 
     return render(request, 'emission/totalemission_graph.html',{'countries':countries})

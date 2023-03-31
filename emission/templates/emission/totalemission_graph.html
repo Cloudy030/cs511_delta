@@ -13,6 +13,10 @@
             position: relative;
             width: 500px;
     }
+    body {
+        backgroundColor: white;
+        background-image:none;
+    }
     </style>
     </head>
 
@@ -38,14 +42,14 @@
 </nav>
 <form action="search_matierial" method="post" id="country_filter">
   {% csrf_token %}
-      <select id="country_name" name="country_name" country="country">
+      <select id="country_id" name="country_id" country="country">
             {% for country in countries %}
-            <option value={{country.country_name}}>{{country.country_name}}</option>
+            <option value={{country.id}}>{{country.country_name}}</option>
             {% endfor %}
       </select>
 
   <select id="matierial" name="matierial">
-      <option value="Total">Total</option>
+      <option value="Total">Total/PerCapita</option>
       <option value="Coal">Coal</option>
       <option value="Oil">Oil</option>
       <option value="Gas">Gas</option>
@@ -56,16 +60,50 @@
   
 </form>
 
-<div>
+<script>
+  var chart_type='line';
+  var data_type='percapita'
+  var sources_list = JSON.parse('{{ sources_list }}');
+  var sources_list_pc = JSON.parse('{{ sources_list_pc }}');
+</script>
+
+<script>
+  function changeType() {
+    if(chart_type=='bar'){
+      chart_type='line';
+  } else {
+    chart_type='bar';
+  }
+  console.log('Chart type:', chart_type);
+  chart.config.type = chart_type;
+  chart.update();
+  }
+</script>
+
+<button onclick="changeType()">Switch Chart Type</button>
+
+<script>
+  function changeData() {
+  if(data_type=='total'){
+      chart.data.datasets[0].data = sources_list;
+  } else {
+      chart.data.datasets[0].data = sources_list_pc;
+  }
+  chart.update();
+  }
+</script>
+
+<button onclick="changeData()">Switch Data Type</button>
+
 <canvas id="myChart"></canvas>
-</div id="chart-wrapper">
+</div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <script type= 'text/javascript'>
-var sources_list = JSON.parse('{{ sources_list }}');
+
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
 // The type of chart we want to create
-type: 'line',
+type: chart_type,
 
 // The data for our dataset
 data: {
@@ -80,7 +118,7 @@ data: {
 
 // Configuration options go here
 options: {
-    responsive: true
+    responsive: true,
 }
 });
 </script>
