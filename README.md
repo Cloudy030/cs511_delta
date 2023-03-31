@@ -29,14 +29,14 @@ There are 3 sets of templates in this web application.
     - Drop down search bar implemented for countries and years
       - Table showing annual CO2 emissions data rows with selected country or year (total_filter.html)
   - Data Visual
-      - Showing line or bar graph for annual CO2 emissions from selected country and material (totalemission_graph.html)
+      - Showing line or bar graph for annual CO2 emissions with selected country and material (totalemission_graph.html)
 - Per Capita CO2 emissions Page (per_capita.html)
   - Table
     - Showing per capita CO2 emissions data rows from all countries and all years with proper pagination
     - Drop down search bar implemented for countries and years
       - Table showing per capita CO2 emissions data rows with selected country or year (total_filter.html)
-  - Data visual
-    - Showing line or graph for per capita CO2 emissions from selected country and material (percapitaemission_graph.html)
+  - Data Visual
+    - Showing line or graph for per capita CO2 emissions with selected country and material (percapitaemission_graph.html)
 
 ## Models in the application
 The database model comprises 5 main Class objects
