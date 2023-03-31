@@ -1,3 +1,7 @@
+* bbe130f - POK NGA HO, Fri Mar 31 11:19:47 2023 +0000 : git log update
+* ed7833c - Cloudy030, Fri Mar 31 08:35:05 2023 +0100 : update readme
+* dedf8e6 - Cloudy030, Fri Mar 31 08:13:30 2023 +0100 : update readme
+* db56b6d - Cloudy030, Fri Mar 31 08:12:29 2023 +0100 : Update README.md
 *   9b2c2a0 - POK NGA HO, Fri Mar 31 06:58:16 2023 +0000 : Merge branch 'main' of github.com:Cloudy030/cs511_delta into main
 |\  
 | * 7920614 - TASNIM FATEHA, Fri Mar 31 04:25:29 2023 +0000 : updated view for totalemission and percapitaemission
