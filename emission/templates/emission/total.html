@@ -7,7 +7,7 @@
     <title>Total Emission</title>
   </head>
 <body>
-
+<!-- navigation bar -->
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid d-flex justify-content-center">
     <div class="navbar" id="navbarNav">
@@ -56,7 +56,7 @@
 
             {% block table %}
             <!-- filter search bar -->
-            <form method="POST" action="{%url 'totalfilter' %}">
+      <form method="POST" action="{%url 'totalfilter' %}">
         {% csrf_token %}
         <select id="yfilter" name="yfilter" year="year">
             <option selected disabled=true>--Select Year--</option>
@@ -74,6 +74,7 @@
         <button type="submit" class="btn btn-success">Search</button>
       </form>
 {% if page_obj %}
+<!-- display all total emission data rows with pagination -->
 <div class="table-responsive">
     <table class="my-table">
       <thead>

@@ -39,7 +39,7 @@ There are 3 sets of templates in this web application.
     - Showing line or graph for per capita CO2 emissions with selected country and material (totalemission_graph.html)
 
 ## Models in the application
-The database model comprises 4 main Class objects
+The database model comprises 4 Class objects
 - Year
   - This table refers to the dates in years where the CO2 emission of each country is considered
   - The objects in the Year table were populated by iterating from the range 1996-2021 and this will be used mainly for handling search/filtering requests
@@ -126,9 +126,9 @@ python3 manage.py test
 ~~~
 
 ## Documents
-Git-log: git.log.txt
+Git-log: git-log.txt
 
-One page design and development report: CS551Q Team Delta one-page report-1.pdf
+One page design and development report: CS551Q Team Delta one-page report.pdf
 
 ## License
 MIT License
