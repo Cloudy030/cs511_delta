@@ -27,6 +27,7 @@ tr:nth-child(even) {
 
 body  {
     background-image: url('spheres-g14fa6d1b1_1920.jpg');
+    /* background image copied from https://cdn.pixabay.com/photo/2020/12/05/19/01/spheres-5806920_1280.jpg*/
 
   background-size:cover;
         -webkit-animation: slidein 100s;
@@ -143,6 +144,7 @@ span:nth-child(12) {
   }
 }
 
+/* inspiration took from design inspiration https://alvarotrigo.com/blog/css-text-animations/*/
 
 .center {
   display: flex;
