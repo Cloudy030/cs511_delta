@@ -1,26 +1,11 @@
 {% load static %}
-<!DOCTYPE html>
 <html>
-<head>
+  <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 <link rel="stylesheet" href="{% static 'emission/style.css' %}">
-
-<title>CO2 Emission graphs</title>
-<!-- below block is used to set chart style and to negate the generic background of the website for better view -->
-    <style>
-    #chart-wrapper {
-            display: inline-block;
-            position: relative;
-            width: 500px;
-    }
-    body {
-        backgroundColor: white;
-        background-image:none;
-    }
-    </style>
-    </head>
-
+    <title>Total Emission</title>
+  </head>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light">
@@ -28,21 +13,46 @@
     <div class="navbar" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+          <a class="nav-link" href="{% url 'index' %}">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{% url 'per_capita' %}">Per Capita Emission</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'search_matierial' %}">graph</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'total' %}">Total Emission</a>
         </li>
-
       </ul>
     </div>
   </div>
 </nav>
-<!-- We have a created a form to select the country and matierial. Country Name is shown to user and country id is passed to the backend-->
 
+        <div class="container">
+      <div class="row">
+          <h2 class="mb-3 text-white text-center pt-4" >Understanding Total Carbon Dioxide Emissions</h2>
+        <div class="col-md-4 blog-main">
+    <div class="blog-post py-5">
+    <div class="col-md-8">
+      <p class="text-white">Carbon dioxide (CO2) emissions are a major contributor to climate change, and understanding their impact and trends is crucial for addressing the issue. This chart shows the growth of global CO2 emissions from the mid-18th century to today.</p>
+      <p class="text-white">Before the Industrial Revolution, emissions were very low. However, emissions began to increase rapidly in the mid-20th century, with global emissions reaching 6 billion tonnes of CO2 in 1950. By 1990, emissions had almost quadrupled, reaching more than 22 billion tonnes. Today, we emit over 34 billion tonnes of CO2 each year.</p>
+      <p class="text-white">Although emissions growth has slowed in recent years, they have yet to reach their peak. It is crucial that we take action to reduce carbon emissions in order to mitigate the effects of climate change and protect our planet.</p>
+    </div>
+</div>
+</div><!-- /.blog-main -->
+
+<aside class="col-md-8 blog-sidebar py-5">
+<div class="p-5 rounded position-relative" style="height: 700px;font-size: 16px; background-color:#e2edf3">
+
+  <h4 class="font-italic">Annual CO2 emissions</h4>
+  <nav class="my-nav">
+    <ul class="nav nav-pills flex-row mt-3 my-nav-list">
+      <li class="nav-item mr-auto">
+        <a class="nav-link" href="{% url 'total' %}">Table</a>
+      </li>
+      <li class="nav-item mr-auto">
+        <a class="nav-link active" href="{% url 'search_matierial' %}">Data Visual</a>
+      </li>
+
+    </ul>
 <form action="search_matierial" method="post" id="country_filter">
   {% csrf_token %}
       <select id="country_id" name="country_id" country="country">
@@ -59,7 +69,7 @@
       <option value="Cement">Cement</option>
       <option value="Flaring">Flaring</option>
   </select>
-  <input type="Submit" value="Submit">
+  <button type="submit" class="btn btn-success">Search</button>
   
 </form>
 
@@ -145,3 +155,11 @@ options: {
 }
 });
 </script>
+  </nav>
+</div>
+
+</aside>
+      </div>
+    </div>
+  </body>
+</html>
