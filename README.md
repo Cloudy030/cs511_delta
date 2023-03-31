@@ -38,6 +38,21 @@ There are 3 sets of templates in this web application.
   - Graph
     - Showing line or graph for per capita CO2 emissions from selected country and material (percapitaemission_graph.html)
 
+## Models in the application
+The database model comprises 5 main Class objects
+- Year
+  - This table refers to the dates in years where the CO2 emission of each country is considered
+  - The objects in the Year table were populated by iterating from the range 1996-2021 and this wll be used mainly for handling search/filtering requests
+- Country
+  - This table shows the countries and locations where the CO2 emissions from the different elements are produced
+- Total Emission
+  - This table gives the total emission of CO2 produced by the different sources i.e. coal, gas, oil, cement production in a country in a year
+- PerCapita Emission
+  - This table refers to the breakdown of the CO2 emission percapita per country within the years considered
+- Source
+  - This table provides the source where all the values gathered for CO2 emissions for the different elements for a country in a given year
+The objects for tables other than the Year were parsed from the csv files in the data directory. The parse program was written so that it deletes existing tables in the database and creates them again when run
+
 ## Basic setup of the virtual environment
 A virtual environment with Python version 3.10.7 is created. 
 Run the following code in the terminal inside the project folder to setup the required virtual environment.
