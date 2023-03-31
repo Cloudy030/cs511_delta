@@ -126,7 +126,7 @@ python3 manage.py test
 ## Documents
 Git-log: git.log.txt
 
-One page design and development report: ?
+One page design and development report: CS551Q Team Delta one-page report
 
 ## License
 MIT License
