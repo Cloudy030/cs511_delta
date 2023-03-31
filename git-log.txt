@@ -1,9 +1,24 @@
-* e162fab - POK NGA HO, Thu Mar 30 19:30:18 2023 +0000 : change filter search button to green
-* b500393 - POK NGA HO, Thu Mar 30 19:09:17 2023 +0000 : update readme
-* 6ababa4 - POK NGA HO, Thu Mar 30 18:58:09 2023 +0000 : update git-log
-* c0f62dc - POK NGA HO, Thu Mar 30 18:57:01 2023 +0000 : update readme, comment unused methods in views.py and urls.py
-* 6325c08 - POK NGA HO, Thu Mar 30 18:33:48 2023 +0000 : per capita filter work without pagination direction to correct link
-* 7357f74 - POK NGA HO, Thu Mar 30 18:07:55 2023 +0000 : remove search bar in index.html
+*   9b2c2a0 - POK NGA HO, Fri Mar 31 06:58:16 2023 +0000 : Merge branch 'main' of github.com:Cloudy030/cs511_delta into main
+|\  
+| * 7920614 - TASNIM FATEHA, Fri Mar 31 04:25:29 2023 +0000 : updated view for totalemission and percapitaemission
+| * e7d9d31 - TASNIM FATEHA, Fri Mar 31 04:01:40 2023 +0000 : deleted unnecessary file for map and chart
+| * f8dc2ad - TASNIM FATEHA, Fri Mar 31 04:00:11 2023 +0000 : Added data visualization
+| * 6562204 - TASNIM FATEHA, Fri Mar 31 03:16:55 2023 +0000 : Fixed pagination in total,total_filter,per_capita,per_capita filter
+| * c321321 - AMALDEV EDAMANA SUDHAKARAN, Fri Mar 31 01:38:48 2023 +0000 : Chart  updates
+| *   5ef252a - AMALDEV EDAMANA SUDHAKARAN, Fri Mar 31 00:13:22 2023 +0000 : Merge branch 'main' of github.com:Cloudy030/cs511_delta into main
+| |\  
+| | * 09c2dfd - TASNIM FATEHA, Thu Mar 30 22:03:29 2023 +0000 : changing index page design,total and per capita page design change
+| * | f5f2fa3 - AMALDEV EDAMANA SUDHAKARAN, Fri Mar 31 00:12:41 2023 +0000 : Graph updates
+* | | dbb9e1e - POK NGA HO, Fri Mar 31 06:56:27 2023 +0000 : update readme
+| |/  
+|/|   
+* | e162fab - POK NGA HO, Thu Mar 30 19:30:18 2023 +0000 : change filter search button to green
+* | b500393 - POK NGA HO, Thu Mar 30 19:09:17 2023 +0000 : update readme
+* | 6ababa4 - POK NGA HO, Thu Mar 30 18:58:09 2023 +0000 : update git-log
+* | c0f62dc - POK NGA HO, Thu Mar 30 18:57:01 2023 +0000 : update readme, comment unused methods in views.py and urls.py
+* | 6325c08 - POK NGA HO, Thu Mar 30 18:33:48 2023 +0000 : per capita filter work without pagination direction to correct link
+* | 7357f74 - POK NGA HO, Thu Mar 30 18:07:55 2023 +0000 : remove search bar in index.html
+|/  
 * 61e06a0 - AMALDEV EDAMANA SUDHAKARAN, Thu Mar 30 16:29:27 2023 +0000 : Graph line
 * 46f7574 - POK NGA HO, Thu Mar 30 16:19:37 2023 +0000 : update git-log
 *   6c731f3 - POK NGA HO, Thu Mar 30 16:18:46 2023 +0000 : Merge branch 'main' of github.com:Cloudy030/cs511_delta into main
