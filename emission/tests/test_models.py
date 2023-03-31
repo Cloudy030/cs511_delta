@@ -1,5 +1,5 @@
 from django.test import TestCase, Client
-from emission.models import Country, TotalEmission, PerCapitaEmission, Source, Year
+from emission.models import Country, TotalEmission, PerCapitaEmission, Year
 from django.urls import reverse
 
 class YearModelTestCase(TestCase):
@@ -80,22 +80,4 @@ class PerCapitaEmissionModelTestCase(TestCase):
         self.assertEqual(percapita_emission.cement, 1.0)
         self.assertEqual(percapita_emission.flaring, 0.5)
 
-class SourceModelTestCase(TestCase):
-    def test_source_creation(self):
 
-        source = Source.objects.create(
-            coal="CDIAC 2022",
-            oil="CDIAC 2022",
-            gas="CDIAC 2022",
-            cement="CDIAC 2022",
-            flaring="Andrew cement",
-            year=2012
-        )
-
-
-        self.assertIsInstance(source, Source)
-        self.assertEqual(source.coal, "CDIAC 2022")
-        self.assertEqual(source.oil, "CDIAC 2022")
-        self.assertEqual(source.gas, "CDIAC 2022")
-        self.assertEqual(source.cement, "CDIAC 2022")
-        self.assertEqual(source.flaring, "Andrew cement")
