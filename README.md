@@ -1,5 +1,5 @@
 # Global Carbon Emission from Countries during 1996-2021
-This the group project of Team Delta to show global and national fossil carbon dioxide (CO2) emission from year 1996 to year 2021.
+This the group project of Team Delta to show global and national fossil carbon dioxide (CO2) emission for 26 years from year 1996 to year 2021.
 This project is developed with Django and deployed in Render. 
 Visit this link https://delta-emission.onrender.com to access the website.
 
@@ -8,22 +8,35 @@ produced by The Devastator by quantifying sources and emission levels.
 Such data is retrieved from the Global Carbon Project's fossil CO2 emissions dataset: 2022 release by Robbie Andrew and Glen P. Peters, CICERO Center for International Climate Research.
 
 ## Main features of the website
-There are ? templates in this web application.
-- Home Page
-  - Search function based on
-    - Country
-    - Type
-    - Sector
-- Annual CO2 emissions Page
-  - Chart
-  - Map
+Filtering function is implemented in many parts of the website with different criteria.
+- Total CO2 emissions table (country, year)
+- Per Capita CO2 emissions table (country, year)
+- Total CO2 emissions line graph (country, material)
+- Total CO2 emissions bar graph (country, material)
+- Per Capita CO2 emissions line graph (country, material)
+- Per Capita CO2 emissions bar graph (country, material)
+
+Visual components are implemented in the website
+- Total CO2 emissions line and bar graph
+- Per Capita CO2 emissions line and bar graph
+
+## Templates in the website
+There are 3 sets of templates in this web application.
+- Home Page (index.html)
+- Total CO2 emissions Page (total.html)
   - Table
-    - Showing data points of annual CO2 emissions from all countries 
-- Per Capita CO2 emissions Page
-  - Chart
-  - Map
+    - Showing annual CO2 emissions data rows from all countries and all years with proper pagination
+    - Drop down search bar implemented for countries and years
+      - Table showing annual CO2 emissions data rows with selected country or year (total_filter.html)
+  - Graph
+      - Showing line or bar graph for annual CO2 emissions from selected country and material (totalemission_graph.html)
+- Per Capita CO2 emissions Page (per_capita.html)
   - Table
-    - Showing data points of per capita CO2 emissions from all countries 
+    - Showing per capita CO2 emissions data rows from all countries and all years with proper pagination
+    - Drop down search bar implemented for countries and years
+      - Table showing per capita CO2 emissions data rows with selected country or year (total_filter.html)
+  - Graph
+    - Showing line or graph for per capita CO2 emissions from selected country and material (percapitaemission_graph.html)
 
 ## Basic setup of the virtual environment
 A virtual environment with Python version 3.10.7 is created. 

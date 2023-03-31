@@ -32,35 +32,25 @@
 <div class="center">
   <div class="row mb-3">
     <div class="col">
-      <h1>Global fossil CO2 emissions</h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <form method="POST" action="{%url 'total' %}">
-        {% csrf_token %}
-        <select year="year">
-            <option selected disabled=true>--Select Year--</option>
-            {% for year in years %}
-            <option value="{{ year.year }}">{{ year.year }}</option>
-            {% endfor %}
-      </select>
-      <select country="country">
-            <option selected disabled=true>--Select Country--</option>
-            {% for country in countries %}
-            <option value="{{ country.country_name }}">{{ country.country_name }}</option>
-            {% endfor %}
-      </select>
-        <!-- <div class="mb-3 d-inline-block">
-          <label for="year" class="form-label">year:</label>
-          <input type="dropdown" class="form-control" id="year">
-        </div> -->
-
-        <button type="submit" class="btn btn-primary">Search</button>
-      </form>
+      <<h1>
+  <span>Charting</span>
+  <span>the</span>
+  <span>course</span>
+  <span>of</span>
+  <span>CO2</span>
+  <span>Emissions:</span>
+  <span>Understanding</span>
+  <span>the</span>
+  <span>impact</span>
+  <span>on</span>
+  <span>our</span>
+  <span>planet</span>
+</h1>
     </div>
   </div>
 </div>
+
+
 
 
 </body>
