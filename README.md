@@ -57,6 +57,7 @@ The objects for tables other than the Year were parsed from the csv files in the
 A virtual environment with Python version 3.10.7 is created. 
 Run the following code in the terminal inside the project folder to setup the required virtual environment.
 ~~~
+pyenv update
 pyenv install 3.10.7
 pyenv local 3.10.7
 python3 -m venv .venv
