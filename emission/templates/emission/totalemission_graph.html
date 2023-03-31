@@ -42,7 +42,7 @@
 <aside class="col-md-8 blog-sidebar py-5">
 <div class="p-5 rounded position-relative" style="height: 700px;font-size: 16px; background-color:#e2edf3">
 
-  <h4 class="font-italic">Annual CO2 emissions</h4>
+  <h4 class="font-italic">CO2 emission plots</h4>
   <nav class="my-nav">
     <ul class="nav nav-pills flex-row mt-3 my-nav-list">
       <li class="nav-item mr-auto">
@@ -74,8 +74,8 @@
 </form>
 
 <script>
-  var chart_type='line';
-  var data_type='percapita'
+  var chart_type='bar';
+  var data_type='Total'
   var sources_list = JSON.parse('{{ sources_list }}'); //Parse Json object to javascript list
   var sources_list_pc = JSON.parse('{{ sources_list_pc }}');
   var country = JSON.parse('{{ country }}');
@@ -90,26 +90,38 @@
   }
   console.log('Chart type:', chart_type);
   chart.config.type = chart_type;
-  chart.update();
+  document.getElementById("chart-type-btn").textContent = chart_type;
+  chart.update();//Update chart type on UI
   }
 </script>
 
-<button onclick="changeType()">Switch Chart Type</button>
+<button id="chart-type-btn" onclick="changeType()"></button>
+<script>
+  document.getElementById("chart-type-btn").textContent = chart_type;
+</script>
 
 <script>
   function changeData() {//Function to toggle between PerCapita and Total data
-  if(data_type=='total'){
+  if(data_type=='PerCapita'){
       chart.data.datasets[0].data = sources_list;
-      data_type='percapita'
+      data_type='Total';
+      console.log(data_type);
   } else {
       chart.data.datasets[0].data = sources_list_pc;
-      data_type='total'
+      data_type='PerCapita';
+      console.log(data_type);
   }
   chart.update();
+  document.getElementById("data-type-btn").textContent = data_type;//Update data type on UI
   }
 </script>
 
-<button onclick="changeData()">Switch Data Type</button>
+<button id="data-type-btn" onclick="changeData()"></button>
+
+<script>
+  document.getElementById("data-type-btn").textContent = data_type;
+</script>
+
 
 <canvas id="myChart"></canvas>
 </div>
