@@ -17,10 +17,6 @@
             <option value="{{ country.id }}">{{ country.country_name }}</option>
             {% endfor %}
       </select>
-        <!-- <div class="mb-3 d-inline-block">
-          <label for="year" class="form-label">year:</label>
-          <input type="dropdown" class="form-control" id="year">
-        </div> -->
 
         <button type="submit" class="btn btn-success">Search</button>
       </form>
@@ -58,7 +54,6 @@
     {% else %}
 <p>No total emissions available.</p>
 {% endif %}
-
 
 <div class="pagination my-5">
   <ul class="pagination justify-content-center">

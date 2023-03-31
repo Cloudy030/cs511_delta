@@ -28,11 +28,11 @@
 
 <div class="container">
   <div class="row">
+    <h2 class="mb-3 text-white text-center pt-4" >Per Capita CO2 Emissions Across the World</h2>
     <div class="col-md-4 blog-main">
       <div class="blog-post py-5">
         <div class="row">
           <div class="col-md-8">
-            <h2 class="mb-3 text-white">Per Capita CO2 Emissions Across the World</h2>
             <p class="text-white">
               Per capita CO2 emissions are the CO2 emissions produced by the average citizen of a particular country. To calculate per capita emissions, the total emissions of a country are divided by its population. By examining per capita emissions across the world, we can gain insight into the level of inequality in carbon emissions that exists.
             </p>
@@ -45,26 +45,23 @@
     </div><!-- /.blog-main -->
 
 <aside class="col-md-8 blog-sidebar py-5">
-<div class="p-5 rounded position-relative" style="height: 700px;font-size: 16px; background-color:#e2edf3">
+<div class="p-5 rounded position-relative" style="height: 1300px;font-size: 16px; background-color:#e2edf3">
   <h4 class="font-italic">Per capita CO2 emissions</h4>
   <nav class="my-nav">
-    <ul class="nav nav-pills flex-row mt-3 my-nav-list">
+<ul class="nav nav-pills flex-row mt-3 my-nav-list">
       <li class="nav-item mr-auto">
         <a class="nav-link active" href="{% url 'per_capita' %}">Table</a>
       </li>
       <li class="nav-item mr-auto">
-        <a class="nav-link" href="per_capita_chart">Chart</a>
+        <a class="nav-link" href="{% url 'search_matierial' %}">Data Visual</a>
       </li>
-      <li class="nav-item mr-auto">
-        <a class="nav-link" href="{% url 'per_capita_map' %}">Graph</a>
-      </li>
+
     </ul>
-                    {% block content %}
-                {% endblock %}
+
 {% block table %}
 
            <!-- filter search bar -->
-            <form method="POST" action="{%url 'totalfilter' %}">
+            <form method="POST" action="{%url 'percapitafilter' %}">
         {% csrf_token %}
         <select id="yfilter" name="yfilter" year="year">
             <option selected disabled=true>--Select Year--</option>

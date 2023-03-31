@@ -27,23 +27,20 @@
 </nav>
 
         <div class="container">
-
       <div class="row">
+          <h2 class="mb-3 text-white text-center pt-4" >Understanding Total Carbon Dioxide Emissions</h2>
         <div class="col-md-4 blog-main">
-<div class="blog-post py-5">
-  <div class="row">
+    <div class="blog-post py-5">
     <div class="col-md-8">
-      <h2 class="mb-3 text-white" >Understanding Carbon Dioxide Emissions</h2>
       <p class="text-white">Carbon dioxide (CO2) emissions are a major contributor to climate change, and understanding their impact and trends is crucial for addressing the issue. This chart shows the growth of global CO2 emissions from the mid-18th century to today.</p>
       <p class="text-white">Before the Industrial Revolution, emissions were very low. However, emissions began to increase rapidly in the mid-20th century, with global emissions reaching 6 billion tonnes of CO2 in 1950. By 1990, emissions had almost quadrupled, reaching more than 22 billion tonnes. Today, we emit over 34 billion tonnes of CO2 each year.</p>
       <p class="text-white">Although emissions growth has slowed in recent years, they have yet to reach their peak. It is crucial that we take action to reduce carbon emissions in order to mitigate the effects of climate change and protect our planet.</p>
     </div>
-  </div>
 </div>
 </div><!-- /.blog-main -->
 
 <aside class="col-md-8 blog-sidebar py-5">
-<div class="p-5 rounded position-relative" style="height: 700px;font-size: 16px; background-color:#e2edf3">
+<div class="p-5 rounded position-relative" style="height: 1300px;font-size: 16px; background-color:#e2edf3">
 
   <h4 class="font-italic">Annual CO2 emissions</h4>
   <nav class="my-nav">
@@ -52,14 +49,11 @@
         <a class="nav-link active" href="{% url 'total' %}">Table</a>
       </li>
       <li class="nav-item mr-auto">
-        <a class="nav-link" href="{% url 'totalemission_chart' %}">Chart</a>
+        <a class="nav-link" href="{% url 'search_matierial' %}">Data Visual</a>
       </li>
-      <li class="nav-item mr-auto">
-        <a class="nav-link" href="{% url 'totalemission_map' %}">Graph</a>
-      </li>
+
     </ul>
-                {% block content %}
-                {% endblock %}
+
             {% block table %}
             <!-- filter search bar -->
             <form method="POST" action="{%url 'totalfilter' %}">
@@ -76,10 +70,6 @@
             <option value="{{ country.id }}">{{ country.country_name }}</option>
             {% endfor %}
       </select>
-        <!-- <div class="mb-3 d-inline-block">
-          <label for="year" class="form-label">year:</label>
-          <input type="dropdown" class="form-control" id="year">
-        </div> -->
 
         <button type="submit" class="btn btn-success">Search</button>
       </form>
