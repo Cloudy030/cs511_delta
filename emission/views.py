@@ -219,22 +219,17 @@ def search_matierial(request):
     country_id=""
     if request.method=='POST':
         matierial=request.POST.get("matierial")
-        print(matierial)
         country_id=request.POST.get("country_id")
-        print(country_id)
-
-        #id = Country.objects.filter(country_name=country_name).first()
-        #print(id.id)
-        #id_country=id.id
-        sources=TotalEmission.objects.filter(country_id=country_id)
-        sources_pc=PerCapitaEmission.objects.filter(country_id=country_id)
-        print(sources)
-        print(sources_pc)
+        country=Country.objects.filter(id=country_id)
+        sources=TotalEmission.objects.filter(country_id=country_id)#Countrywise filter for Total Emissions
+        sources_pc=PerCapitaEmission.objects.filter(country_id=country_id)#Countrywise filter for PerCapita Emissions
         sources_temp=[]
         sources_temp_pc=[]
+        #Two functions are used to filter out a column for respective datas
         if matierial=='Total':
             for source in sources:
                 sources_temp.append(source.total)
+                country=source.country
         elif matierial=='Coal':
             for source in sources:
                 sources_temp.append(source.coal)
@@ -254,6 +249,7 @@ def search_matierial(request):
         if matierial=='Total':
             for source_pc in sources_pc:
                 sources_temp_pc.append(source_pc.percapita)
+                country=source_pc.country
         elif matierial=='Coal':
             for source_pc in sources_pc:
                 sources_temp_pc.append(source_pc.coal)
@@ -270,9 +266,9 @@ def search_matierial(request):
             for source_pc in sources_pc:
                 sources_temp_pc.append(source_pc.flaring)          
 
-        sources_list = json.dumps(sources_temp)
+        sources_list = json.dumps(sources_temp)#Converting python object to JSON object to be passed to UI
         sources_list_pc = json.dumps(sources_temp_pc)
-        return render(request, 'emission/totalemission_graph.html',{'sources_list':sources_list,'countries':countries,'sources_list_pc':sources_list_pc})
+        return render(request, 'emission/totalemission_graph.html',{'sources_list':sources_list,'country':country,'sources_list_pc':sources_list_pc,'countries':countries})
 
     return render(request, 'emission/totalemission_graph.html',{'countries':countries})
 
