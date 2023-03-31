@@ -118,6 +118,11 @@ git log --pretty=format:"%h - %an, %ad : %s" --graph > git-log.txt
 Django tests for model setup and data input are used.
 Random data objects are created to be passed into the model in testing database for testing.
 
+If you change anything in the static folder, please run this command first before running the next command:
+~~~
+python3 manage.py collectstatic
+~~~
+
 For running tests, run the following command in the terminal:
 ~~~
 python3 manage.py test
@@ -126,7 +131,7 @@ python3 manage.py test
 ## Documents
 Git-log: git.log.txt
 
-One page design and development report: CS551Q Team Delta one-page report
+One page design and development report: CS551Q Team Delta one-page report.pdf
 
 ## License
 MIT License

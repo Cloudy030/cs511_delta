@@ -1,3 +1,4 @@
+* b783759 - POK NGA HO, Fri Mar 31 16:18:41 2023 +0000 : add one-page report with update readme
 * 885f651 - POK NGA HO, Fri Mar 31 15:31:59 2023 +0000 : remove source class
 * c64c0d6 - AMALDEV EDAMANA SUDHAKARAN, Fri Mar 31 14:42:51 2023 +0000 : Fix for toggle buttons in charts
 * e6fea41 - TASNIM FATEHA, Fri Mar 31 14:12:57 2023 +0000 : remove pagination from filtered option
